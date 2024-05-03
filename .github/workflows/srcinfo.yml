@@ -1,0 +1,34 @@
+name: Run srcinfo.sh on PR changes
+
+on:
+  pull_request:
+    branches: [ '*' ]
+    
+permissions:
+  contents: write
+
+jobs:
+  run-srcinfo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch script
+        run: |
+          wget https://raw.githubusercontent.com/oklopfer/debs/master/misc/srcinfo.sh
+          sudo chmod +x ./srcinfo.sh
+
+      - name: Run srcinfo.sh for changed files
+        run: |
+          for i in $(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep -E '^packages/[^/]+/[^/]+\.pacscript$'); do
+            ./srcinfo.sh "$i" | tee packages/"$i"/.SRCINFO > /dev/null
+          done
+
+      - name: Push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add .
+          git commit -m "Update SRCINFO files based on pull request changes"
+          git push origin ${{ github.head_ref }}
