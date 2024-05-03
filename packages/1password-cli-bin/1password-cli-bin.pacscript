@@ -7,7 +7,6 @@ pkgdesc="1Password CLI"
 sha256sums=("6d6c85b23500b3167f80affd4dea6ed71abbee309ffdc9ca1d2689614b2c9d89")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-
 package() {
   cd "${_archive}"
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
