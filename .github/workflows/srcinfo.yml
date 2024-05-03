@@ -23,7 +23,7 @@ jobs:
       - name: Run
         run: |
           for i in $(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep -E '^packages/[^/]+/[^/]+\.pacscript$'); do
-            ./srcinfo.sh "$i" | tee packages/"$i"/.SRCINFO > /dev/null
+            ./srcinfo.sh "$i" | tee ${i/*.pacscript}/.SRCINFO > /dev/null
           done
 
       - name: Push
