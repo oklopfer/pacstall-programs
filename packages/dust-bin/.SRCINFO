@@ -1,0 +1,8 @@
+pkgname="dust-bin"
+gives="dust"
+pkgver="0.8.6"
+pkgdesc="A more intuitive version of du in rust"
+declare -a source=([0]="https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz")
+declare -a breaks=([0]="dust" [1]="dust-git" [2]="dust-deb" [3]="dust-app")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7")

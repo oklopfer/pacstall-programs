@@ -1,0 +1,7 @@
+pkgname="rhino-pkg-git"
+gives="rhino-pkg"
+pkgver="0.1.2"
+pkgdesc="Rhino-pkg wrapper script"
+declare -a source=([0]="https://github.com/rhino-linux/rhino-pkg.git")
+declare -a depends=([0]="gettext")
+declare -a makedepends=([0]="make" [1]="gettext")

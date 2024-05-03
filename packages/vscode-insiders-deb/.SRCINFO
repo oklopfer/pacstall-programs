@@ -1,0 +1,12 @@
+pkgname="vscode-insiders-deb"
+gives="code-insiders"
+pkgver="1.81-insiders"
+pkgdesc="lightweight but powerful source code editor"
+url="https://code.visualstudio.com/"
+declare -a arch=([0]="amd64" [1]="arm64" [2]="armhf")
+declare -a source_amd64=([0]="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659743_amd64.deb")
+declare -a source_arm64=([0]="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659758_arm64.deb")
+declare -a source_armhf=([0]="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659148_armhf.deb")
+declare -a sha256sums_amd64=([0]="e4c764ecd3c76ebd2e21a20372270b7f06d37826c6c2e25201f728817bdb8617")
+declare -a sha256sums_arm64=([0]="96148a657e7b4789fced1cf72d4f6c06a7b9bef06bd83028146a8d4108ba96cd")
+declare -a sha256sums_armhf=([0]="fd3c6be35264605b2ef1d4bb10b6ff8837abf0cdbb99c83a4620970daebf9379")

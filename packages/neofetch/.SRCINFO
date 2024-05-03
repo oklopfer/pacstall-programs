@@ -1,0 +1,6 @@
+pkgname="neofetch"
+pkgver="7.1.0"
+pkgdesc="Command-line system information tool"
+declare -a source=([0]="https://github.com/dylanaraps/neofetch/archive/7.1.0.zip")
+declare -a optdepends=([0]="w3m-img: image preview" [1]="libsixel-dev: image preview" [2]="catimg: image preview" [3]="jp2a: image preview" [4]="caca-utils: image preview" [5]="libcaca-dev: image preview")
+declare -a sha256sums=([0]="e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1")

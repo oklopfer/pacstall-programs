@@ -1,0 +1,7 @@
+pkgname="st-lukesmith-git"
+gives="st"
+pkgver="0.0.1"
+declare -a source=([0]="https://github.com/LukeSmithxyz/st.git")
+declare -a depends=([0]="fontconfig")
+declare -a makedepends=([0]="make" [1]="libharfbuzz-bin" [2]="libxft-dev" [3]="libpango1.0-dev")
+declare -- license="MIT"

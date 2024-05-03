@@ -1,0 +1,7 @@
+pkgname="bemenu-git"
+gives="bemenu"
+pkgver="0.6.15"
+pkgdesc="Dynamic menu library and client program inspired by dmenu (git release)"
+declare -a source=([0]="https://github.com/Cloudef/bemenu.git")
+declare -a makedepends=([0]="scdoc" [1]="wayland-protocols" [2]="libcairo-dev" [3]="libpango1.0-dev" [4]="libxkbcommon-dev" [5]="libwayland-dev" [6]="libxinerama-dev" [7]="libncurses5-dev")
+declare -- breaks="bemenu-bin bemenu"

@@ -1,0 +1,7 @@
+pkgname="eza-git"
+gives="eza"
+pkgver="0.18.9"
+pkgdesc="A modern, maintained replacement for ls"
+declare -a source=([0]="https://github.com/eza-community/eza.git")
+declare -a makedepends=([0]="cargo" [1]="libgit2-dev" [2]="cmake" [3]="rustc" [4]="pandoc")
+declare -a incompatible=([0]="debian:bookworm")

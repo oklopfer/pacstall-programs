@@ -1,0 +1,6 @@
+pkgname="minecraft-launcher-deb"
+gives="minecraft-launcher"
+pkgver="1121"
+pkgdesc="Official Minecraft Launcher"
+declare -a source=([0]="https://launcher.mojang.com/download/Minecraft.deb")
+declare -a breaks=([0]="minecraft-launcher" [1]="minecraft-launcher-git" [2]="minecraft-launcher-bin" [3]="minecraft-launcher-app")

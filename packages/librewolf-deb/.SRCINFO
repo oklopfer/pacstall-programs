@@ -1,0 +1,10 @@
+pkgname="librewolf-deb"
+gives="librewolf"
+pkgver="107.0.1-2"
+pkgdesc="A fork of Firefox, focused on privacy, security and freedom"
+declare -a source=([0]="https://deb.librewolf.net/pool/jammy/librewolf_107.0.1-2_all.deb")
+declare -a breaks=([0]="librewolf-app" [1]="librewolf-bin" [2]="librewolf-git")
+declare -a replaces=([0]="librewolf")
+declare -a arch=([0]="amd64" [1]="any")
+declare -a incompatible=([0]="debian:bullseye")
+declare -a sha256sums=([0]="c66df74a6f466821ecbf5402d18d4537d513a4bcc25b25d99301dca6e07ad85e")

@@ -1,0 +1,10 @@
+pkgname="oh-my-posh-git"
+gives="oh-my-posh"
+pkgver="19.8.2"
+pkgdesc="A prompt theme engine for any shell"
+declare -a source=([0]="https://github.com/JanDeDobbeleer/oh-my-posh.git")
+declare -a makedepends=([0]="golang-1.21-go")
+declare -a pacdeps=([0]="nerd-fonts-hack")
+declare -a breaks=([0]="oh-my-posh")
+declare -a replaces=([0]="oh-my-posh")
+declare -a incompatible=([0]="*:bookworm")

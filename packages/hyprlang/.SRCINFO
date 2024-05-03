@@ -1,0 +1,9 @@
+pkgname="hyprlang"
+pkgver="0.5.0"
+pkgdesc="implementation library for the hypr config language"
+url="https://github.com/hyprwm/hyprlang"
+declare -a source=([0]="https://github.com/hyprwm/hyprlang/archive/v0.5.0/hyprlang-0.5.0.tar.gz")
+declare -a depends=([0]="build-essential")
+declare -a makedepends=([0]="cmake")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a sha256sums=([0]="c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2")

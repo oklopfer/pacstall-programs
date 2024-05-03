@@ -1,0 +1,8 @@
+pkgname="jellyfin-media-player-deb"
+gives="jellyfin-media-player"
+pkgver="1.9.1"
+pkgdesc="Jellyfin desktop client using jellyfin-web with embedded MPV player"
+declare -a source=([0]="https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.9.1/jellyfin-media-player_1.9.1-1_amd64-bullseye.deb")
+declare -a breaks=([0]="jellyfin-media-player-deb-bin" [1]="jellyfin-media-player-deb" [2]="jellyfin-media-player-deb-app")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="5cac8cdf9271abb14b3fab637d0ef5bc31415198d009417cfaf087cb4218a3cd")

@@ -1,0 +1,6 @@
+pkgname="parsec-deb"
+gives="parsec"
+pkgver="150-86e"
+pkgdesc="Simple, low-latency game streaming"
+declare -a source=([0]="https://builds.parsec.app/package/parsec-linux.deb")
+declare -a incompatible=([0]="debian:sid")

@@ -1,0 +1,5 @@
+pkgname="smartgit"
+pkgver="22.1.7"
+pkgdesc="Graphical Git client with support for GitHub, Bitbucket and GitLab"
+declare -a source=([0]="https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_7.tar.gz")
+declare -a depends=([0]="git" [1]="libgtk-3-0" [2]="libcurl4")

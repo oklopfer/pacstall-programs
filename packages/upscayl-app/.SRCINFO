@@ -1,0 +1,7 @@
+pkgname="upscayl-app"
+gives="upscayl"
+pkgver="2.5.5"
+pkgdesc="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
+declare -a source=([0]="https://github.com/TGS963/upscayl/releases/download/v2.5.5/Upscayl-2.5.5-linux.AppImage" [1]="upscayl.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/upscayl-app/upscayl.desktop" [2]="upscayl.png::https://raw.githubusercontent.com/TGS963/upscayl/main/main/build/icon.png")
+declare -a breaks=([0]="upscayl" [1]="upscayl-deb" [2]="upscayl-bin" [3]="upscayl-git")
+declare -a sha256sums=([0]="aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9" [1]="SKIP" [2]="SKIP")

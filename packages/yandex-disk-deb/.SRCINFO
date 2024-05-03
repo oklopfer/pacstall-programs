@@ -1,0 +1,8 @@
+pkgname="yandex-disk-deb"
+gives="yandex-disk"
+pkgver="0.1.6.1080"
+pkgdesc="Cloud service that lets users store files on 'cloud' servers and share them with others online"
+declare -a source=([0]="https://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.6.1080_amd64.deb")
+declare -a replaces=([0]="yandex-disk")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718")

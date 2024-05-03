@@ -1,0 +1,9 @@
+pkgname="linux-image-unsigned-deb"
+gives="linux-image-unsigned-6.9.0-060900rc6-generic"
+pkgver="6.9~rc6"
+pkgdesc="Ubuntu Linux mainline kernel (Unsigned image)"
+declare -a source=([0]="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc6/${CARCH}/linux-image-unsigned-6.9.0-060900rc6-generic_6.9.0-060900rc6.202404282134_${CARCH}.deb")
+declare -a pacdeps=([0]="linux-headers-generic-deb" [1]="linux-modules-deb")
+declare -a arch=([0]="arm64" [1]="amd64")
+declare -a sha256sums_amd64=([0]="48013764c08080470b70378d1650857a775f6544c8bdf4e0c5da686afc260709")
+declare -a sha256sums_arm64=([0]="fcaf757824b571e1fa8dd99b31ef708131b153377a3d353482d07879fe73d63b")

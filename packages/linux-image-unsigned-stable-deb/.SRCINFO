@@ -1,0 +1,9 @@
+pkgname="linux-image-unsigned-stable-deb"
+gives="linux-image-unsigned-6.8.8-060808-generic"
+pkgver="6.8.8"
+pkgdesc="Ubuntu Linux stable kernel (Unsigned image)"
+declare -a source=([0]="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.8.8/${CARCH}/linux-image-unsigned-6.8.8-060808-generic_6.8.8-060808.202404271536_${CARCH}.deb")
+declare -a pacdeps=([0]="linux-headers-generic-stable-deb" [1]="linux-modules-stable-deb")
+declare -a arch=([0]="arm64" [1]="amd64")
+declare -a sha256sums_amd64=([0]="4afc3f3bfa3a8a8d2f9d9181f6a45ba9f9f62a80720a3ca678a2177fa038a3e3")
+declare -a sha256sums_arm64=([0]="18df1b21d917943f1efd9bc32402e4abdb2d8387690842a5ff87424d044eda42")

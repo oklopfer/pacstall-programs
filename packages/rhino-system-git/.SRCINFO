@@ -1,0 +1,9 @@
+pkgname="rhino-system-git"
+gives="rhino-system"
+pkgver="0.0.1"
+pkgdesc="System info and upgrade utility by the Rhino Linux team"
+declare -a source=([0]="https://github.com/rhino-linux/rhino-system.git")
+declare -a depends=([0]="python3-gi" [1]="gir1.2-adw-1" [2]="gir1.2-gtk-4.0" [3]="gir1.2-vte-3.91" [4]="libadwaita-1-0" [5]="libvte-2.91-gtk4-0" [6]="gettext" [7]="desktop-file-utils" [8]="libglib2.0-dev" [9]="mesa-utils")
+declare -a makedepends=([0]="python3-gi" [1]="gir1.2-adw-1" [2]="gir1.2-gtk-4.0" [3]="gir1.2-vte-3.91" [4]="libadwaita-1-0" [5]="libvte-2.91-gtk4-0" [6]="gettext" [7]="desktop-file-utils" [8]="libglib2.0-dev" [9]="cmake" [10]="meson" [11]="ninja-build")
+declare -a pacdeps=([0]="rhino-pkg-git")
+declare -a incompatible=([0]="ubuntu:20.04" [1]="ubuntu:20.10" [2]="ubuntu:21.04" [3]="ubuntu:21.10" [4]="ubuntu:22.04" [5]="debian:*")

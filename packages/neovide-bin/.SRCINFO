@@ -1,0 +1,8 @@
+pkgname="neovide-bin"
+gives="neovide"
+pkgver="0.12.2"
+pkgrel="2"
+pkgdesc="No nonsense neovim client in Rust"
+declare -a source=([0]="https://github.com/neovide/neovide/releases/download/0.12.2/neovide-linux-x86_64.tar.gz" [1]="neovide.desktop::https://raw.githubusercontent.com/neovide/neovide/0.12.2/assets/neovide.desktop" [2]="LICENSE::https://raw.githubusercontent.com/neovide/neovide/0.12.2/LICENSE" [3]="https://raw.githubusercontent.com/neovide/neovide/0.12.2/assets/neovide-16x16.png" [4]="https://raw.githubusercontent.com/neovide/neovide/0.12.2/assets/neovide-32x32.png" [5]="https://raw.githubusercontent.com/neovide/neovide/0.12.2/assets/neovide-48x48.png" [6]="https://raw.githubusercontent.com/neovide/neovide/0.12.2/assets/neovide-256x256.png")
+declare -a breaks=([0]="neovide" [1]="neovide-git" [2]="neovide-deb" [3]="neovide-app")
+declare -a sha256sums=([0]="f2e13a9d1941ea8418b5fde5a884892202657aff0b8fcddcf540b7d4caa69c24" [1]="SKIP" [2]="SKIP" [3]="SKIP" [4]="SKIP" [5]="SKIP" [6]="SKIP")

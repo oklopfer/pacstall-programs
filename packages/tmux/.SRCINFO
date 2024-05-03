@@ -1,0 +1,9 @@
+pkgname="tmux"
+pkgver="3.3"
+pkgdesc="A terminal multiplexer"
+declare -a source=([0]="https://github.com/tmux/tmux/releases/download/3.3/tmux-3.3.tar.gz")
+declare -a makedepends=([0]="gcc" [1]="make" [2]="pkg-config" [3]="bison" [4]="libncurses-dev" [5]="libevent-dev")
+declare -a optdepends=([0]="libutempter-dev: Record user sessions to utmp and wtmp files")
+declare -a breaks=([0]="tmux-git" [1]="tmux-bin" [2]="tmux-deb" [3]="tmux-app")
+declare -a replaces=([0]="tmux")
+declare -a sha256sums=([0]="b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc")

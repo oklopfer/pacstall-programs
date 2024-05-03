@@ -1,0 +1,10 @@
+pkgname="rhino-pine-core"
+pkgver="2023.4"
+pkgrel="10"
+pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
+priority="essential"
+declare -a source=([0]="https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
+declare -a depends=([0]="initramfs-tools" [1]="printer-driver-all-enforce")
+declare -a pacdeps=([0]="unicorn-mobile-git" [1]="rhino-kvantum-theme-git" [2]="rhino-plymouth-theme-git" [3]="rhino-pkg-git" [4]="rhino-neofetch-git" [5]="rhino-system-git" [6]="u-boot-mobian-deb" [7]="mobile-usb-networking-deb" [8]="pacstall-qa-git")
+declare -a replaces=([0]="rhino-core" [1]="rhino-server-core" [2]="rhino-ubxi-core")
+declare -a compatible=([0]="ubuntu:devel" [1]="ubuntu:oracular")

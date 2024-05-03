@@ -1,0 +1,8 @@
+pkgname="cutefish-qt-plugins-git"
+gives="cutefish-qt-plugins"
+pkgver="0.5"
+pkgdesc="Unify Qt application style of CutefishOS"
+declare -a source=([0]="https://github.com/cutefishos/qt-plugins.git")
+declare -a depends=([0]="libkf5windowsystem-dev" [1]="libdbusmenu-qt5-dev" [2]="libqt5xdg-dev" [3]="qtquickcontrols2-5-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="libxcb-ewmh-dev" [7]="qttools5-dev")
+declare -- license="GPL-3.0"

@@ -1,0 +1,8 @@
+pkgname="kirc"
+pkgver="0.3.2"
+pkgdesc="A tiny IRC client written in POSIX C99"
+declare -a source=([0]="https://github.com/mcpcpc/kirc/archive/refs/tags/0.3.2.tar.gz")
+declare -a makedepends=([0]="automake")
+declare -a breaks=([0]="kirc-git")
+declare -a replaces=([0]="kirc")
+declare -a sha256sums=([0]="a45172198873fb34c64150262be4515a7be268a5c00566c79f03a8ea2dd7900e")

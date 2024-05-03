@@ -1,0 +1,8 @@
+pkgname="tutanota-app"
+gives="tutanota"
+pkgver="218.240227.0"
+pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
+declare -a source=([0]="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage" [1]="tutanota.desktop" [2]="tutanota.png::https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png")
+declare -a breaks=([0]="tutanota-deb" [1]="tutanota-bin" [2]="tutanota-git" [3]="tutanota")
+declare -a replaces=([0]="tutanota")
+declare -a sha256sums=([0]="2acd38e99da3c9c39beb7ab7835ea726b1e9687d05247f9cf9919395d7c79652" [1]="SKIP" [2]="e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76")

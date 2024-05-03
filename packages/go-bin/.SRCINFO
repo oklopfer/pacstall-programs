@@ -1,0 +1,9 @@
+pkgname="go-bin"
+gives="go"
+pkgver="1.21.6"
+pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+declare -a source=([0]="https://go.dev/dl/go1.21.6.linux-amd64.tar.gz")
+declare -a breaks=([0]="go" [1]="go-git" [2]="go-app" [3]="go-deb" [4]="golang" [5]="golang-git" [6]="golang-deb" [7]="golang-bin" [8]="golang-app" [9]="golang-go")
+declare -a replaces=([0]="golang-go")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4")

@@ -1,0 +1,7 @@
+pkgname="lunacy-deb"
+gives="lunacy"
+pkgver="9.5.0"
+pkgdesc="Free design software that keeps your flow with AI tools and built-in graphics"
+declare -a source=([0]="https://lcdn.icons8.com/setup/Lunacy_9.5.0.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="746db12e8a91409b1a47bbf4d22378e863f88c1f1656bc5aca7d824902c25254")

@@ -1,0 +1,9 @@
+pkgname="keybase-deb"
+gives="keybase"
+pkgver="6.0.2-20220610191041.a459abf326"
+pkgdesc="The Keybase Go client, filesystem, and GUI"
+declare -a source=([0]="https://prerelease.keybase.io/linux_binaries/deb/keybase_6.0.2-20220610191041.a459abf326_amd64.deb")
+declare -a breaks=([0]="keybase-git" [1]="keybase-app" [2]="keybase")
+declare -a replaces=([0]="keybase")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="14c85b312b891eae5de44d1d4d5024d36cbce545e686d299624e2a71b9e14712")

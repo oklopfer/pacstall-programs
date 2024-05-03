@@ -1,0 +1,8 @@
+pkgname="cutefish-filemanager-git"
+gives="cutefish-filemanager"
+pkgver="0.8"
+pkgdesc="Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design."
+declare -a source=([0]="https://github.com/cutefishos/filemanager.git")
+declare -a depends=([0]="fishui" [1]="libcutefish" [2]="kio" [3]="libkf5solid-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
+declare -- license="GPL-3.0"

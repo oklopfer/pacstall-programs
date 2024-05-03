@@ -1,0 +1,10 @@
+pkgname="scrcpy"
+pkgver="2.4"
+pkgdesc="Display and control your Android device"
+url="https://github.com/Genymobile/scrcpy"
+declare -a source=([0]="https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.4.tar.gz" [1]="scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.4/scrcpy-server-v2.4")
+declare -a depends=([0]="adb" [1]="ffmpeg" [2]="libsdl2-2.0-0" [3]="libusb-1.0-0")
+declare -a makedepends=([0]="libavcodec-dev" [1]="libavdevice-dev" [2]="libavformat-dev" [3]="libavutil-dev" [4]="libsdl2-dev" [5]="libswresample-dev" [6]="libusb-1.0-0-dev" [7]="meson" [8]="ninja-build")
+declare -a replaces=([0]="scrcpy")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a sha256sums=([0]="60596f6d4c11163083da3e6805666326873ed57f7defd8a20256b928a1d3503b" [1]="93c272b7438605c055e127f7444064ed78fa9ca49f81156777fd201e79ce7ba3")

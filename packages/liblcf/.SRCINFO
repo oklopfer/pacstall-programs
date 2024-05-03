@@ -1,0 +1,9 @@
+pkgname="liblcf"
+pkgver="0.8"
+pkgdesc="Library to handle RPG Maker 2000/2003 and EasyRPG projects"
+declare -a source=([0]="https://easyrpg.org/downloads/player/0.8/liblcf-0.8.tar.xz")
+declare -a depends=([0]="libexpat1" [1]="libicu72")
+declare -a makedepends=([0]="pkg-config" [1]="libexpat1-dev" [2]="libicu-dev")
+declare -a provides=([0]="lcf2xml")
+declare -a arch=([0]="i386" [1]="amd64" [2]="arm64" [3]="armhf")
+declare -a sha256sums=([0]="6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386")

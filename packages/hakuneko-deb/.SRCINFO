@@ -1,0 +1,14 @@
+pkgname="hakuneko-deb"
+gives="hakuneko-desktop"
+pkgver="8.3.4"
+pkgdesc="HakuNeko is a cross-platform downloader for manga and anime from various websites"
+url="https://github.com/manga-download/hakuneko"
+declare -a arch=([0]="amd64" [1]="arm64" [2]="armhf" [3]="i386")
+declare -a source_amd64=([0]="https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_${CARCH}.deb")
+declare -a source_arm64=([0]="https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_${CARCH}.deb")
+declare -a source_armhf=([0]="https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_${CARCH}.deb")
+declare -a source_i386=([0]="https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_${CARCH}.deb")
+declare -a sha256sums_amd64=([0]="48e9a77015695fe69390ac99b54184cf793f31c3452d174fcf41052ccb2ae211")
+declare -a sha256sums_arm64=([0]="5e4b992b58a67ddac96410975e10577befe67479c1c2b3d12b2bcbaf6f6c003a")
+declare -a sha256sums_armhf=([0]="4dabbfa9d775da72499f594bfdda86adc62a5caaa579c73b9d4ccf5d778c903d")
+declare -a sha256sums_i386=([0]="3608ff4e8a3257fffedfa2dcea6501cb6d0d203235a2e4c6e6bbf01b93dce240")

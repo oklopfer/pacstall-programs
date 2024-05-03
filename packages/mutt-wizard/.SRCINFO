@@ -1,0 +1,8 @@
+pkgname="mutt-wizard"
+pkgver="3.3.1"
+pkgdesc="Simple interface to auto-configure neomutt and isync with safe passwords"
+declare -a source=([0]="https://github.com/lukesmithxyz/mutt-wizard/archive/v3.3.1.tar.gz")
+declare -a depends=([0]="neomutt" [1]="isync" [2]="msmtp" [3]="notmuch" [4]="pass" [5]="curl")
+declare -a optdepends=([0]="imagemagick: view images inside of the neomutt TUI" [1]="w3m: view HTML email and images inside of the neomutt TUI" [2]="lynx: view HTML email inside of the neomutt TUI" [3]="links: view HTML email inside of the neomutt TUI" [4]="elinks: view HTML email inside of the neomutt TUI" [5]="urlview: list URLs found in mails to open them in a browser" [6]="abook: contact store and tab completion" [7]="cron: set up automatic mail syncing")
+declare -a breaks=([0]="mutt-wizard" [1]="mutt-wizard-git")
+declare -a sha256sums=([0]="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53")

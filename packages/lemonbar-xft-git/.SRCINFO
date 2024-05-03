@@ -1,0 +1,7 @@
+pkgname="lemonbar-xft-git"
+pkgver="0.0.1"
+pkgdesc="A lightweight xcb based bar with ported xft support."
+declare -a source=([0]="git+https://gitlab.com/protesilaos/lemonbar-xft")
+declare -a makedepends=([0]="build-essential" [1]="libx11-dev" [2]="libxft-dev" [3]="libx11-xcb-dev" [4]="libxcb-randr0-dev" [5]="libxcb-xinerama0-dev")
+declare -a breaks=([0]="bar" [1]="lemonbar")
+declare -a sha256sums=([0]="c2ca60846e0cade326969dd3f1f10e723f1a94d90d0335132b844932e41effff")

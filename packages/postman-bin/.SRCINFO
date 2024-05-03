@@ -1,0 +1,8 @@
+pkgname="postman-bin"
+gives="postman"
+pkgver="10.18.10"
+pkgdesc="Build, test, and document your APIs faster"
+declare -a source=([0]="https://dl.pstmn.io/download/version/10.18.10/linux64" [1]="postman.desktop::https://aur.archlinux.org/cgit/aur.git/plain/postman.desktop?h=postman-bin")
+declare -a depends=([0]="libxss1" [1]="libnss3" [2]="libgtk-3-0")
+declare -a breaks=([0]="postman" [1]="postman-deb" [2]="postman-app")
+declare -a sha256sums=([0]="08063d6f63bed6f44e5047c64517997b1f5287995bdec202e1313154744be95a" [1]="SKIP")

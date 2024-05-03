@@ -1,0 +1,8 @@
+pkgname="lf-bin"
+gives="lf"
+pkgver="31"
+pkgdesc="Terminal file manager written in Go"
+declare -a source=([0]="https://github.com/gokcehan/lf/releases/download/r31/lf-linux-${CARCH}.tar.gz")
+declare -a breaks=([0]="lf-git")
+declare -a replaces=([0]="lf")
+declare -a arch=([0]="amd64" [1]="i386" [2]="arm64" [3]="armhf" [4]="mips" [5]="mips64el" [6]="ppc64" [7]="ppc64el" [8]="s390x")

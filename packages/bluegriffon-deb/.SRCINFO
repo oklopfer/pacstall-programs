@@ -1,0 +1,8 @@
+pkgname="bluegriffon-deb"
+gives="bluegriffon"
+pkgver="3.1"
+pkgdesc="The next-gen Web and EPUB Editor based on the rendering engine of Firefox"
+declare -a source=([0]="http://bluegriffon.org/freshmeat/3.1/bluegriffon-3.1.Ubuntu18.04-x86_64.deb")
+declare -a breaks=([0]="bluegriffon" [1]="bluegriffon-git" [2]="bluegriffon-bin" [3]="bluegriffon-app")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6")

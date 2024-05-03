@@ -1,0 +1,7 @@
+pkgname="discord-canary"
+pkgver="0.0.327"
+pkgdesc="Chat for Communities and Friends - Unstable"
+declare -a source=([0]="https://dl-canary.discordapp.net/apps/linux/0.0.327/discord-canary-0.0.327.tar.gz")
+declare -a depends=([0]="libc6" [1]="libasound2" [2]="libatomic1" [3]="libnotify4" [4]="libnspr4" [5]="libnss3" [6]="libstdc++6" [7]="libxss1" [8]="libxtst6" [9]="libc++1" [10]="libatk1.0-0" [11]="libatk-bridge2.0-0" [12]="libcups2" [13]="libdrm2" [14]="libgtk-3-0" [15]="libgbm1")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="a8c7b282cdc463913e252db466299c0bc5fd185493bf6c5cf270cf4a1eddc75a")

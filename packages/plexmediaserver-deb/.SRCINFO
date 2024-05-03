@@ -1,0 +1,8 @@
+pkgname="plexmediaserver-deb"
+gives="plexmediaserver"
+pkgver="1.32.0.6918-6f393eda1"
+pkgdesc="Plex organizes all of your personal media so you can easily access and enjoy it"
+declare -a source=([0]="https://downloads.plex.tv/plex-media-server-new/1.32.0.6918-6f393eda1/debian/plexmediaserver_1.32.0.6918-6f393eda1_${CARCH}.deb")
+declare -a replaces=([0]="plexmediaserver")
+declare -a sha256sums_amd64=([0]="f6b1a6524d26eed04b4a8e4b790d5fbf6ae798aed643d0150d43d4d1aa972eb3")
+declare -a sha256sums_arm64=([0]="abc3d990f19216711a7ae7562c506aded2fe74c7ba6bc616f92c8cf89c0da600")

@@ -1,0 +1,6 @@
+pkgname="planner-git"
+pkgver="4.1"
+pkgdesc="Task manager with Todoist support designed for GNU/Linux"
+declare -a source=([0]="https://github.com/alainm23/planner.git")
+declare -a depends=([0]="libgtk-3-0" [1]="libgee-0.8-2" [2]="libjson-glib-1.0-0" [3]="libjson-glib-1.0-common" [4]="libsqlite3-0" [5]="libsoup2.4-1" [6]="libgranite5" [7]="libgranite-common" [8]="libwebkit2gtk-4.0-37" [9]="libecal-2.0-1" [10]="libedataserver-1.2-26" [11]="libpeas-1.0-0" [12]="libpeas-common" [13]="libical3" [14]="libhandy-1-0" [15]="valac" [16]="elementary-icon-theme" [17]="libevolution")
+declare -a makedepends=([0]="meson" [1]="ninja-build" [2]="libgtk-3-dev" [3]="libgee-0.8-dev" [4]="libjson-glib-dev" [5]="libsqlite3-dev" [6]="libsoup2.4-dev" [7]="libgranite-dev" [8]="libwebkit2gtk-4.0-dev" [9]="libecal2.0-dev" [10]="libedataserver1.2-dev" [11]="libpeas-dev" [12]="libical-dev" [13]="libhandy-1-dev")

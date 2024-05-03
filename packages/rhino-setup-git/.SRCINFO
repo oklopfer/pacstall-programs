@@ -1,0 +1,10 @@
+pkgname="rhino-setup-git"
+gives="rhino-setup"
+pkgver="2023.3"
+pkgrel="2"
+pkgdesc="Rhino Linux Setup Prompt"
+declare -a source=([0]="https://github.com/rhino-linux/rhino-setup.git")
+declare -a depends=([0]="libgtk-4-dev" [1]="libadwaita-1-dev" [2]="gettext" [3]="desktop-file-utils")
+declare -a makedepends=([0]="libgtk-4-dev" [1]="libadwaita-1-dev" [2]="gettext" [3]="desktop-file-utils" [4]="rustc" [5]="cargo" [6]="meson" [7]="ninja-build")
+declare -- replaces="rhino-setup-bin"
+declare -a incompatible=([0]="debian:*")

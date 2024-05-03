@@ -1,0 +1,8 @@
+pkgname="git-extras-git"
+gives="git-extras"
+pkgver="7.0.0"
+pkgdesc="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
+declare -a source=([0]="https://github.com/tj/git-extras.git")
+declare -a depends=([0]="git" [1]="bsdmainutils")
+declare -a breaks=([0]="git-extras-bin")
+declare -a replaces=([0]="git-extras")

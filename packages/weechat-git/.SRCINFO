@@ -1,0 +1,9 @@
+pkgname="weechat-git"
+gives="weechat"
+pkgver="4.0.2"
+pkgdesc="Free chat client, fast and light, designed for many operating systems"
+declare -a source=([0]="https://github.com/weechat/weechat.git")
+declare -a depends=([0]="libncursesw5-dev" [1]="libcurl4-gnutls-dev" [2]="libgcrypt20-dev" [3]="libgnutls28-dev" [4]="zlib1g-dev" [5]="libzstd-dev" [6]="gettext" [7]="ca-certificates" [8]="libaspell-dev" [9]="python3-dev" [10]="libperl-dev" [11]="ruby-dev" [12]="liblua5.4-dev" [13]="tcl-dev" [14]="guile-2.2-dev" [15]="libv8-dev" [16]="php-dev" [17]="libphp-embed" [18]="libxml2-dev" [19]="libargon2-dev" [20]="libsodium-dev" [21]="asciidoctor" [22]="ruby-pygments.rb" [23]="libcpputest-dev")
+declare -a makedepends=([0]="build-essential" [1]="pkg-config" [2]="g++")
+declare -- breaks="weechat-devel weechat"
+declare -a replaces=([0]="weechat-curses" [1]="weechat-plugins" [2]="weechat-python" [3]="weechat-perl" [4]="weechat-devel-curses" [5]="weechat-devel-plugins" [6]="weechat-devel-python" [7]="weechat-devel-perl")

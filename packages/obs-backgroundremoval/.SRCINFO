@@ -1,0 +1,10 @@
+pkgname="obs-backgroundremoval"
+pkgver="1.1.12"
+pkgdesc="OBS plugin to replace the background in portrait images and video"
+declare -a source=([0]="https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.1.12.tar.gz")
+declare -a makedepends=([0]="libobs-dev" [1]="libcurl4-openssl-dev" [2]="libssl-dev" [3]="qt6-base-dev" [4]="libgl1-mesa-dev" [5]="ninja-build" [6]="cmake")
+declare -a breaks=([0]="obs-backgroundremoval-git")
+declare -a replaces=([0]="obs-backgroundremoval")
+declare -a arch=([0]="amd64")
+declare -a incompatible=([0]="*:jammy" [1]="*:focal" [2]="*:bionic" [3]="*:buster" [4]="*:bullseye")
+declare -a sha256sums=([0]="50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa")

@@ -1,0 +1,8 @@
+pkgname="hyperfine-bin"
+gives="hyperfine"
+pkgver="1.17.0"
+pkgdesc="A command-line benchmarking tool"
+declare -a source=([0]="https://github.com/sharkdp/hyperfine/releases/download/v1.17.0/hyperfine-v1.17.0-x86_64-unknown-linux-musl.tar.gz")
+declare -a breaks=([0]="hyperfine" [1]="hyperfine-git" [2]="hyperfine-deb" [3]="hyperfine-app")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47")

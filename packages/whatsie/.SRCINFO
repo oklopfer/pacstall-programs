@@ -1,0 +1,9 @@
+pkgname="whatsie"
+gives="whatsie"
+pkgver="4.14.1"
+pkgdesc="Feature rich WhatsApp Client for Desktop Linux"
+url="https://github.com/keshavbhatt/whatsie"
+declare -a source=([0]="https://github.com/keshavbhatt/whatsie/archive/refs/tags/v4.14.1.tar.gz")
+declare -a depends=([0]="libqt5webengine5" [1]="libqt5webenginewidgets5" [2]="libqt5location5")
+declare -a makedepends=([0]="qtbase5-dev" [1]="qtdeclarative5-dev" [2]="qtlocation5-dev" [3]="libqt5webchannel5-dev" [4]="qtwebengine5-dev" [5]="qtwebengine5-dev-tools")
+declare -a sha256sums=([0]="369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311")

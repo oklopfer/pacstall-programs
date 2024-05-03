@@ -1,0 +1,12 @@
+pkgname="teamviewer-deb"
+gives="teamviewer"
+pkgver="15.53.6"
+pkgdesc="Application for remote desktop sharing and online meetings"
+declare -a source=([0]="https://download.teamviewer.com/download/linux/teamviewer_${CARCH}.deb")
+declare -a depends=([0]="libqt5x11extras5" [1]="libqt5quickcontrols2-5" [2]="libqt5webengine5" [3]="libqt5svg5" [4]="hicolor-icon-theme")
+declare -a breaks=([0]="teamviewer" [1]="teamviewer-bin" [2]="teamviewer-git" [3]="teamviewer-app" [4]="teamviewer-deb")
+declare -a replaces=([0]="teamviewer")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -- license="custom"
+declare -a sha256sums_amd64=([0]="9955eb3241b2684cae7845ae93102ffb41a8e176b52100a3973eb047667ceae3")
+declare -a sha256sums_arm64=([0]="dd429662e8c72590d819fe73a27bcb99fc98348d8db38d20c595b26648430efd")

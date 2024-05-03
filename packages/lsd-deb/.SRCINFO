@@ -1,0 +1,10 @@
+pkgname="lsd-deb"
+gives="lsd"
+pkgver="1.0.0"
+pkgdesc="The next gen ls command"
+declare -a source=([0]="https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_${CARCH}.deb")
+declare -a arch=([0]="amd64" [1]="arm64" [2]="i386")
+declare -a source_i386=([0]="https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_${CARCH}.deb")
+declare -a sha256sums_amd64=([0]="488b098e9cc4bb193c10d3a9abe8b06282099ee73a3e9f7f1febd19a9d9b89f0")
+declare -a sha256sums_arm64=([0]="4a0e6931823869b401a7ef3dae26e3c027aaee3c42bd62129ee2c6a93489412d")
+declare -a sha256sums_i386=([0]="3a9d7193f90cce0884edb6f1c2230ec5cf942fd122e75691fc32cf3e8f728dcb")

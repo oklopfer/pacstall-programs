@@ -1,0 +1,7 @@
+pkgname="neovim"
+pkgver="0.9.5"
+pkgdesc="Neovim is a vim fork maintained by the community"
+declare -a source=([0]="https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz")
+declare -a makedepends=([0]="gettext" [1]="libtool" [2]="libtool-bin" [3]="autoconf" [4]="automake" [5]="cmake" [6]="g++" [7]="pkg-config")
+declare -a replaces=([0]="neovim" [1]="nvim" [2]="neovim-runtime")
+declare -a sha256sums=([0]="fe74369fc30a32ec7a086b1013acd0eacd674e7570eb1acc520a66180c9e9719")

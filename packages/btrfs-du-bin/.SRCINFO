@@ -1,0 +1,6 @@
+pkgname="btrfs-du-bin"
+gives="btrfs-du"
+pkgver="0.0.7"
+pkgdesc="Easily print BTRFS subvolume/snapshot disk usage"
+declare -a source=([0]="https://github.com/nachoparker/btrfs-du/archive/refs/tags/v0.0.7.tar.gz")
+declare -a depends=([0]="btrfs-progs")

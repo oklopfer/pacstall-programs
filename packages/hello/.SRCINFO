@@ -1,0 +1,9 @@
+pkgname="hello"
+pkgver="2.12.1"
+pkgdesc="GNU implementation of the classic program that prints 'Hello, world!' when you run it"
+declare -a source=([0]="https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz")
+declare -a depends=([0]="libc6")
+declare -a makedepends=([0]="build-essential")
+declare -a breaks=([0]="hello-git" [1]="hello-traditional")
+declare -a replaces=([0]="hello")
+declare -a sha256sums=([0]="8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20")

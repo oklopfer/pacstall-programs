@@ -1,0 +1,6 @@
+pkgname="libcamera-git"
+gives="libcamera"
+pkgver="0.1.0"
+pkgdesc="Open source camera stack and framework"
+declare -a source=([0]="https://git.libcamera.org/libcamera/libcamera.git")
+declare -a makedepends=([0]="build-essential" [1]="ninja-build" [2]="pkg-config" [3]="libyaml-dev" [4]="python3-yaml" [5]="python3-ply" [6]="python3-jinja2" [7]="libssl-dev" [8]="openssl" [9]="libdw-dev" [10]="libunwind-dev" [11]="libudev-dev" [12]="python3-sphinx" [13]="doxygen" [14]="graphviz" [15]="texlive-latex-extra" [16]="libgstreamer1.0-dev" [17]="libgstreamer-plugins-base1.0-dev" [18]="libdrm-dev" [19]="libjpeg-dev" [20]="libsdl2-dev" [21]="libexif-dev" [22]="qtbase5-dev" [23]="libqt5core5a" [24]="libqt5gui5" [25]="libqt5widgets5" [26]="qttools5-dev-tools" [27]="libtiff-dev" [28]="liblttng-ust-dev" [29]="python3-jinja2" [30]="lttng-tools" [31]="meson")

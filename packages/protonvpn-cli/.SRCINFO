@@ -1,0 +1,10 @@
+pkgname="protonvpn-cli"
+pkgver="3.13.0"
+pkgdesc="Official ProtonVPN Linux app (CLI)"
+declare -a source=([0]="https://github.com/ProtonVPN/linux-cli/archive/refs/tags/3.13.0.tar.gz")
+declare -a depends=([0]="python3-dialog")
+declare -a makedepends=([0]="python3-setuptools")
+declare -a pacdeps=([0]="protonvpn-nm-lib" [1]="proton-python-client")
+declare -- breaks="protonvpn-cli-git"
+declare -a replaces=([0]="protonvpn-cli")
+declare -a sha256sums=([0]="d295d6c899638a88d615e2cacb078ecf2aee8c771ebb087c9edb43aea25aacd9")

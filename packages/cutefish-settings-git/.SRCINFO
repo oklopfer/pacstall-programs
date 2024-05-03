@@ -1,0 +1,8 @@
+pkgname="cutefish-settings-git"
+gives="cutefish-settings"
+pkgver="0.8"
+pkgdesc="System Settings application for Cutefish Desktop."
+declare -a source=([0]="https://github.com/cutefishos/settings.git")
+declare -a depends=([0]="fishui" [1]="libfontconfig1" [2]="libfreetype-dev" [3]="libicu-dev" [4]="libkf5coreaddons-dev" [5]="libcutefish" [6]="modemmanager-qt-dev" [7]="libkf5networkmanagerqt-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
+declare -- license="GPL-3.0"

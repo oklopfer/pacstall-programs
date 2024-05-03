@@ -1,0 +1,7 @@
+pkgname="heroic-games-launcher-deb"
+gives="heroic"
+pkgver="2.14.1"
+pkgdesc="An Open Source alternative to the Epic Games launcher"
+declare -a source=([0]="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.14.1/heroic_2.14.1_amd64.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="dc9e846e0fa31e9f584aec6d9c162598a07bb7035d1a9b65c5885c0fa967089f")

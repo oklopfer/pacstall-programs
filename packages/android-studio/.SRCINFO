@@ -1,0 +1,7 @@
+pkgname="android-studio"
+pkgver="2023.2.1.25"
+pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
+declare -a source=([0]="https://dl.google.com/dl/android/studio/ide-zips/2023.2.1.25/android-studio-2023.2.1.25-linux.tar.gz" [1]="android-studio.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop")
+declare -a depends=([0]="libc6-i386" [1]="lib32ncurses6" [2]="lib32stdc++6" [3]="lib32z1" [4]="libbz2-1.0:i386")
+declare -a replaces=([0]="android-studio" [1]="android-studio-beta" [2]="android-studio-canary")
+declare -a sha256sums=([0]="cd63ead467dc92a08ff6b3695c01d57e802976fc64acddcd31cd6a2427ffa1bc" [1]="SKIP")

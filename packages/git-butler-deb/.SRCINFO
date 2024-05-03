@@ -1,0 +1,11 @@
+pkgname="git-butler-deb"
+gives="git-butler"
+pkgver="0.10.22-703"
+pkgdesc="Git Branching, Refined
+A Git client for simultaneous branches on top of your existing workflow."
+declare -a source=([0]="https://releases.gitbutler.com/releases/release/0.10.22-703/linux/x86_64/git-butler_0.10.22_amd64.deb")
+declare -a depends=([0]="libayatana-appindicator3-1" [1]="libwebkit2gtk-4.0-37" [2]="libgtk-3-0")
+declare -a breaks=([0]="git-butler-git" [1]="git-butler-bin")
+declare -a replaces=([0]="git-butler")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="fb1e068b6b6fa8f191d5c48d2662c8b24b8c9f990a1b85d928721da2a48e5cfd")

@@ -1,0 +1,9 @@
+pkgname="notion-app-enhanced-deb"
+gives="notion-app-enhanced"
+pkgver="2.0.18-1"
+pkgdesc="The all-in-one workspace for your notes and tasks, but enhanced"
+declare -a source=([0]="https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/notion-app-enhanced_2.0.18-1_amd64.deb")
+declare -a breaks=([0]="notion-app-enhanced-app" [1]="notion-app-deb" [2]="notion-app-app")
+declare -a replaces=([0]="notion-app-enhanced")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="b4c2b63eff8c93201ce6ddfef9b0cbd53a3fb7cec9fcd01e3a877d4a9c943bfc")

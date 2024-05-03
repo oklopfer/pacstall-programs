@@ -1,0 +1,10 @@
+pkgname="github-cli-deb"
+gives="gh"
+pkgver="2.42.1"
+pkgdesc="GitHub's official command line tool"
+declare -a source=([0]="https://github.com/cli/cli/releases/download/v2.42.1/gh_2.42.1_linux_${CARCH}.deb")
+declare -a breaks=([0]="gh-bin" [1]="gh-git")
+declare -a replaces=([0]="gh")
+declare -a arch=([0]="arm64" [1]="amd64")
+declare -a sha256sums_amd64=([0]="2b053228c8fd7902054cddd44015a77446c014652d5257a2150c694843c7fa36")
+declare -a sha256sums_arm64=([0]="6eb3eac5eeb4467d74d917bea96a50a40cc6c3ac70b853f537c9843c3a551623")

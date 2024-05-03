@@ -1,0 +1,8 @@
+pkgname="fm6000-git"
+gives="fm6000"
+pkgver="0.0.1"
+pkgdesc="A simple fetch tool written in Perl"
+declare -a source=([0]="https://github.com/anhsirk0/fetch-master-6000.git")
+declare -a depends=([0]="perl")
+declare -a breaks=([0]="fm6000")
+declare -a sha256sums=([0]="d0127441a11db8d640a28753a8494a5155514e161415ca7b2c5ab3b33024517f")

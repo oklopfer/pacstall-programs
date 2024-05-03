@@ -1,0 +1,9 @@
+pkgname="pgmigrate"
+pkgver="1.0.7"
+pkgdesc="Simple tool to evolve PostgreSQL schema easily"
+declare -a source=([0]="https://github.com/yandex/pgmigrate/archive/refs/tags/1.0.7.tar.gz")
+declare -a depends=([0]="python3" [1]="python3-sqlparse" [2]="python3-yaml" [3]="python3-psycopg2")
+declare -a makedepends=([0]="python3-setuptools")
+declare -- breaks="pgmigrate-git"
+declare -a replaces=([0]="pgmigrate")
+declare -a sha256sums=([0]="ba39ee6198b1132a5306c3cce79d16644c507d7be999fbcc9c039cd3307693f6")

@@ -1,0 +1,8 @@
+pkgname="steam-deb"
+gives="steam-launcher"
+pkgver="1.0.0.79"
+pkgdesc="Steam is a video game digital distribution service by Valve"
+declare -a source=([0]="https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb")
+declare -a breaks=([0]="steam-launcher-bin" [1]="steam-launcher-app")
+declare -a replaces=([0]="steam-launcher")
+declare -a arch=([0]="amd64")

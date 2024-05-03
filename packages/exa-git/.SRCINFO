@@ -1,0 +1,6 @@
+pkgname="exa-git"
+gives="exa"
+pkgver="0.10.1"
+pkgdesc="exa is an improved file lister with more features and better defaults"
+declare -a source=([0]="https://github.com/ogham/exa.git")
+declare -a makedepends=([0]="cargo" [1]="libgit2-dev" [2]="cmake" [3]="rustc")

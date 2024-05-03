@@ -1,0 +1,9 @@
+pkgname="nomachine-deb"
+gives="nomachine"
+pkgver="8.4.2_1"
+pkgdesc="Remote desktop software designed for anyone who wants to access a single or multiple computers."
+declare -a source=([0]="https://download.nomachine.com/download/8.4/Linux/nomachine_8.4.2_1_${CARCH}.deb")
+declare -a breaks=([0]="nomachine-bin" [1]="nomachine-app" [2]="nomachine-git")
+declare -a replaces=([0]="nomachine")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="0934b3cf8468d3748a84a084b5eebd4c06974499e29a1f512ae61488357962fa")

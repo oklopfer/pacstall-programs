@@ -1,0 +1,7 @@
+pkgname="xmind-vana-deb"
+gives="xmind-vana"
+pkgver="23.05.1745"
+pkgdesc="Mind mapping and brainstorming app"
+declare -a source=([0]="https://dl3.xmind.net/Xmind-for-Linux-amd64bit-23.05.1745.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1")

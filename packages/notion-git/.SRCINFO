@@ -1,0 +1,7 @@
+pkgname="notion-git"
+gives="notion-git"
+pkgver="4.0.2"
+pkgdesc="The notion window manager"
+declare -a source=([0]="https://github.com/raboof/notion.git")
+declare -a depends=([0]="build-essential" [1]="lua5.1" [2]="liblua5.1-0-dev" [3]="libx11-dev" [4]="libxext-dev" [5]="libsm-dev" [6]="gettext" [7]="libxinerama-dev" [8]="libxrandr-dev" [9]="libxft-dev")
+declare -a breaks=([0]="notion")

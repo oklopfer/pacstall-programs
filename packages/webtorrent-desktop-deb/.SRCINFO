@@ -1,0 +1,8 @@
+pkgname="webtorrent-desktop-deb"
+gives="webtorrent-desktop"
+pkgver="0.24.0"
+pkgdesc="The streaming torrent app."
+declare -a source=([0]="https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/webtorrent-desktop_0.24.0_amd64.deb")
+declare -a replaces=([0]="webtorrent-desktop")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="2110c6e81f2ebeae74e8194ec49e80f8357573c57222d2d472623355fb1307b0")

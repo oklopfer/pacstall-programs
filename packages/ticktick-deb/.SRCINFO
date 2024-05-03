@@ -1,0 +1,11 @@
+pkgname="ticktick-deb"
+gives="ticktick"
+pkgver="2.0.10"
+pkgdesc="A powerful to-do & task management app with seamless cloud synchronization across all your devices"
+url="https://ticktick.com"
+declare -a breaks=([0]="ticktick" [1]="ticktick-bin" [2]="ticktick-git" [3]="ticktick-app" [4]="ticktick-deb")
+declare -a replaces=([0]="ticktick")
+declare -a source_amd64=([0]="https://ticktick-download-linux.s3.amazonaws.com/download/linux/linux_deb_x64/ticktick-2.0.10-amd64.deb")
+declare -a source_arm64=([0]="https://ticktick-download-linux.s3.amazonaws.com/download/linux/linux_deb_x64/ticktick-2.0.10-arm64.deb")
+declare -a sha256sums_amd64=([0]="c22827ed4d69e075fafd1c27326da255235a611867f086ba4107795fa9b70741")
+declare -a sha256sums_arm64=([0]="8e5c2ff5c9f223d5803b153a38ab34dbf326c6c4f107549df64fceb24f3a0521")

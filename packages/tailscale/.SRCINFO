@@ -1,0 +1,10 @@
+pkgname="tailscale"
+pkgver="1.58.2"
+pkgdesc="Private WireGuard networks made easy"
+url="https://tailscale.com"
+declare -a source=([0]="https://github.com/tailscale/tailscale/archive/refs/tags/v1.58.2.tar.gz")
+declare -a depends=([0]="iptables")
+declare -a makedepends=([0]="golang-go" [1]="git")
+declare -a arch=([0]="amd64")
+declare -a incompatible=([0]="ubuntu:jammy" [1]="debian:bookworm")
+declare -a sha256sums=([0]="452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a")

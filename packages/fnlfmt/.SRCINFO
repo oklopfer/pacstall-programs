@@ -1,0 +1,8 @@
+pkgname="fnlfmt"
+pkgver="0.3.0"
+pkgdesc="A formatter for fennel source code"
+declare -a source=([0]="https://git.sr.ht/~technomancy/fnlfmt/archive/0.3.0.tar.gz")
+declare -a depends=([0]="lua5.3")
+declare -a makedepends=([0]="lua5.3")
+declare -a breaks=([0]="-bin" [1]="-git" [2]="-deb" [3]="-app")
+declare -a sha256sums=([0]="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156")

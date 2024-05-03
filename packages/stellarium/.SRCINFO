@@ -1,0 +1,6 @@
+pkgname="stellarium"
+pkgver="23.2"
+pkgdesc="Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope."
+declare -a source=([0]="https://github.com/Stellarium/stellarium/releases/download/v23.2/stellarium-23.2.tar.xz")
+declare -a makedepends=([0]="cmake" [1]="zlib1g-dev" [2]="libgl1-mesa-dev" [3]="libdrm-dev" [4]="gcc" [5]="g++" [6]="graphviz" [7]="doxygen" [8]="gettext" [9]="libxkbcommon-x11-dev" [10]="libgps-dev" [11]="gstreamer1.0-plugins-base" [12]="gstreamer1.0-plugins-good" [13]="gstreamer1.0-pulseaudio" [14]="gstreamer1.0-libav" [15]="gstreamer1.0-vaapi" [16]="qt6-base-private-dev" [17]="qt6-multimedia-dev" [18]="qt6-positioning-dev" [19]="qt6-tools-dev" [20]="qt6-tools-dev-tools" [21]="qt6-base-dev-tools" [22]="qt6-qpa-plugins" [23]="qt6-image-formats-plugins" [24]="qt6-l10n-tools" [25]="qt6-webengine-dev" [26]="qt6-webengine-dev-tools" [27]="libqt6charts6-dev" [28]="libqt6charts6" [29]="libqt6opengl6-dev" [30]="libqt6positioning6-plugins" [31]="libqt6serialport6-dev" [32]="qt6-base-dev" [33]="libqt6webenginecore6-bin" [34]="libqt6webengine6-data" [35]="qml6-module-qtcharts")
+declare -a sha256sums=([0]="3aee154d0de3ed484e3e6fee027cf73e6dd0a677b3ea1af348b225ac02339008")

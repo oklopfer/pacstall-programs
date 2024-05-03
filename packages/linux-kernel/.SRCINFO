@@ -1,0 +1,5 @@
+pkgname="linux-kernel"
+pkgver="6.9~rc6"
+pkgdesc="Provides the latest Linux kernel via the Ubuntu mainline repositories"
+declare -a source=([0]="https://github.com/oklopfer/debs/raw/master/empty.tar.xz")
+declare -a pacdeps=([0]="linux-headers-deb" [1]="linux-headers-generic-deb" [2]="linux-modules-deb" [3]="linux-image-unsigned-deb")

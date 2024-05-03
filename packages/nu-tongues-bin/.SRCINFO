@@ -1,0 +1,10 @@
+pkgname="nu-tongues-bin"
+gives="nu-tongues"
+pkgver="0.1.0"
+pkgdesc="A translaton plugin for nushell. Allows nushell scripts to set up commands to get translated strings."
+url="https://github.com/rhino-linux/nu-tongues"
+declare -a source=([0]="https://github.com/rhino-linux/nu-tongues/releases/download/v0.1.0/nu-tongues_v0.1.0_${CARCH}.zip")
+declare -a pacdeps=([0]="nushell-bin")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a sha256sums_amd64=([0]="8fa03893368db208cf6fe1e65264e4d4374f5bb6b4b09b4dde5df31a85eaf34f")
+declare -a sha256sums_arm64=([0]="29d3a06c6188b66738dcbecc9efaf2ce0708e17243e298adcd5710aac2a356e8")

@@ -1,0 +1,8 @@
+pkgname="gtkhash"
+pkgver="1.4"
+pkgdesc="gtkhash is a desktop utility for computing message digests or checksums."
+declare -a source=([0]="https://github.com/tristanheaven/gtkhash/releases/download/v1.4/gtkhash-1.4.tar.xz")
+declare -a depends=([0]="libgtk-3-dev" [1]="libglib2.0-dev" [2]="libgcrypt-dev" [3]="nettle-dev" [4]="libb2-dev" [5]="openssl" [6]="libmbedtls-dev")
+declare -a makedepends=([0]="autoconf" [1]="automake" [2]="libtool" [3]="intltool" [4]="wget")
+declare -a replaces=([0]="gtkhash")
+declare -a sha256sums=([0]="20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4")

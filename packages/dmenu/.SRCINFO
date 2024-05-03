@@ -1,0 +1,7 @@
+pkgname="dmenu"
+pkgver="5.2"
+pkgdesc="A generic menu for X"
+declare -a source=([0]="https://dl.suckless.org/tools/dmenu-5.2.tar.gz")
+declare -a makedepends=([0]="libxinerama-dev" [1]="libxft-dev")
+declare -a breaks=([0]="dmenu" [1]="dmenu_run" [2]="dmenu_path")
+declare -a sha256sums=([0]="d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792")

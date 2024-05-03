@@ -1,0 +1,8 @@
+pkgname="cmake-deb"
+gives="cmake"
+pkgver="3.25.1"
+pkgdesc="CMake data files (modules, templates and documentation)"
+declare -a source=([0]="http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.25.1-1ubuntu1_amd64.deb")
+declare -a pacdeps=([0]="cmake-data-deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="a8c139c0cf500e47a521930f9e0cf5a814fbed60145a29bb37e7f7ae03a27ca4")

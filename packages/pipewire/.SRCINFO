@@ -1,0 +1,7 @@
+pkgname="pipewire"
+pkgver="0.3.65"
+pkgdesc="Server and user space API to deal with multimedia pipelines"
+declare -a source=([0]="https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.65/pipewire-0.3.65.zip")
+declare -a makedepends=([0]="meson" [1]="libdbus-1-dev" [2]="debhelper-compat" [3]="findutils" [4]="libasound2-dev" [5]="libavcodec-dev" [6]="libavfilter-dev" [7]="libavformat-dev" [8]="libdbus-1-dev" [9]="libglib2.0-dev" [10]="libgstreamer1.0-dev" [11]="libgstreamer-plugins-base1.0-dev" [12]="libsbc-dev" [13]="libsdl2-dev" [14]="libudev-dev" [15]="libva-dev" [16]="libv4l-dev" [17]="libx11-dev" [18]="ninja-build" [19]="pkg-config" [20]="python3-docutils" [21]="python3-pip")
+declare -a incompatible=([0]="debian:stable")
+declare -a sha256sums=([0]="f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30")

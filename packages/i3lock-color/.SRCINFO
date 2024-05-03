@@ -1,0 +1,10 @@
+pkgname="i3lock-color"
+gives="i3lock"
+pkgver="2.13.c.5"
+pkgdesc="The world's most popular non-default computer lockscreen."
+declare -a source=([0]="https://github.com/Raymo111/i3lock-color/archive/refs/tags/2.13.c.5.tar.gz")
+declare -a depends=([0]="libxcb-composite0-dev" [1]="libpam0g-dev" [2]="libev-dev" [3]="libcairo2-dev" [4]="libxkbcommon-x11-dev" [5]="libjpeg-dev" [6]="libxcb-xrm-dev" [7]="pkg-config")
+declare -a makedepends=([0]="autoconf" [1]="gcc" [2]="pkg-config" [3]="libpam0g-dev" [4]="libcairo2-dev" [5]="libfontconfig1-dev" [6]="libxcb-composite0-dev" [7]="libev-dev" [8]="libx11-xcb-dev" [9]="libxcb-xkb-dev" [10]="libxcb-xinerama0-dev" [11]="libxcb-randr0-dev" [12]="libxcb-image0-dev" [13]="libxcb-util0-dev" [14]="libxcb-xrm-dev" [15]="libxkbcommon-dev" [16]="libxkbcommon-x11-dev" [17]="libjpeg-dev")
+declare -a breaks=([0]="i3lock")
+declare -a replaces=([0]="i3lock")
+declare -a sha256sums=([0]="46f15cbbf339873266e014f70b5e1ec02177f0295302b615a7bd85bef40d8ad2")

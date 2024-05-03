@@ -1,0 +1,7 @@
+pkgname="xfce4-settings-pine-git"
+gives="xfce4-settings"
+pkgver="4.18.0"
+pkgdesc="XFCE4 patch that allows Pine64 Devices to auto-rotate"
+declare -a source=([0]="https://github.com/oklopfer/xfce4-settings.git")
+declare -a makedepends=([0]="xfce4-dev-tools" [1]="libexo-2-dev" [2]="libgarcon-1-dev" [3]="libxfce4ui-2-dev")
+declare -a replaces=([0]="xfce4-settings")

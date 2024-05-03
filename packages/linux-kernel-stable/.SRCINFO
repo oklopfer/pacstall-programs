@@ -1,0 +1,5 @@
+pkgname="linux-kernel-stable"
+pkgver="6.8.8"
+pkgdesc="Provides the latest stable Linux kernel via the Ubuntu mainline repositories"
+declare -a source=([0]="https://github.com/oklopfer/debs/raw/master/empty.tar.xz")
+declare -a pacdeps=([0]="linux-headers-stable-deb" [1]="linux-headers-generic-stable-deb" [2]="linux-modules-stable-deb" [3]="linux-image-unsigned-stable-deb")

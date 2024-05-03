@@ -1,0 +1,11 @@
+pkgname="xdg-desktop-portal-hyprland"
+pkgver="1.2.5"
+pkgrel="1"
+pkgdesc="xdg-desktop-portal backend for hyprland"
+declare -a source=([0]="https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/v1.2.5/v1.2.5.tar.gz" [1]="https://github.com/hyprwm/hyprland-protocols.git#branch=v0.2")
+declare -a depends=([0]="pipewire" [1]="xdg-desktop-portal" [2]="grim" [3]="slurp")
+declare -a makedepends=([0]="cmake" [1]="pkg-config" [2]="meson" [3]="ninja-build" [4]="scdoc" [5]="wayland-utils" [6]="wayland-protocols" [7]="libgbm-dev" [8]="libinih-dev" [9]="uuid-dev" [10]="qt6-base-dev" [11]="qt6-wayland-dev" [12]="libpipewire-0.3-dev" [13]="libsdbus-c++-dev" [14]="libsdbus-c++-bin")
+declare -a pacdeps=([0]="libdrm")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a compatible=([0]="ubuntu:devel" [1]="debian:sid" [2]="ubuntu:mantic" [3]="ubuntu:noble")
+declare -a sha256sums=([0]="c8ba3d173a580d8b4ec9a5ee15e7780d266e536a78a12aa28d8234e0854ae86d" [1]="SKIP")

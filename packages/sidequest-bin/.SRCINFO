@@ -1,0 +1,8 @@
+pkgname="sidequest-bin"
+gives="sidequest"
+pkgver="0.10.36"
+pkgdesc="Place to get more apps for your Oculus Quest by sideloading"
+declare -a source=([0]="https://github.com/SideQuestVR/SideQuest/releases/download/v0.10.36/SideQuest-0.10.36.tar.xz" [1]="sidequest.png::https://sidequestvr.com/assets/images/score-logo.png")
+declare -a breaks=([0]="sidequest" [1]="sidequest-git" [2]="sidequest-deb" [3]="sidequest-app")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="8228904ed14a4a67038c18be349056b7e7ad713537536473a00a0744ed061fd1" [1]="SKIP")

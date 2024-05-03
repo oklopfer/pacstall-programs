@@ -1,0 +1,7 @@
+pkgname="mcontrolcenter-bin"
+gives="mcontrolcenter"
+pkgver="0.4.1"
+pkgdesc="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
+declare -a source=([0]="https://github.com/dmitry-s93/MControlCenter/releases/download/0.4.1/MControlCenter-0.4.1-bin.tar.gz")
+declare -a depends=([0]="libqt5widgets5")
+declare -a sha256sums=([0]="81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc")

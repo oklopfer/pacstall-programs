@@ -1,0 +1,7 @@
+pkgname="realvnc-vnc-viewer-deb"
+gives="realvnc-vnc-viewer"
+pkgver="7.6.0"
+pkgdesc="VNC Viewer, from RealVNC, is remote access software that enables you to securely connect to and control a remote computer"
+declare -a source=([0]="https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.6.0-Linux-x64.deb")
+declare -a breaks=([0]="realvnc-vnc-viewer" [1]="realvnc-vnc-viewer-bin" [2]="realvnc-vnc-viewer-app")
+declare -a sha256sums=([0]="394ad2c5a87f7dd7a492938b64403ff2efc94a446d505ca506dca04fdb572f17")

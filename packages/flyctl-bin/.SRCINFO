@@ -1,0 +1,7 @@
+pkgname="flyctl-bin"
+pkgver="0.2.31"
+pkgdesc="Command line tool for fly.io services"
+declare -a source=([0]="https://github.com/superfly/flyctl/releases/download/v0.2.31/flyctl_0.2.31_Linux_arm64.tar.gz")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a sha256sums_amd64=([0]="2af82bd13c9fed05fd11682ddc646c436353c87519d91482350d7a0edbb59841")
+declare -a sha256sums_arm64=([0]="b7d5b38c6e6e0d6907520db81caf66cefd086a34d959b9d1fcf7427510f63c60")

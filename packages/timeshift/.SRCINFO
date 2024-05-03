@@ -1,0 +1,10 @@
+pkgname="timeshift"
+pkgver="23.07.1"
+pkgrel="2"
+pkgdesc="System restore utility that takes snapshots at regular intervals using rsync or BTRFS."
+declare -a source=([0]="https://github.com/linuxmint/timeshift/archive/refs/tags/23.07.1.zip")
+declare -a depends=([0]="rsync" [1]="btrfs-progs")
+declare -a makedepends=([0]="debhelper" [1]="autotools-dev" [2]="gzip" [3]="valac" [4]="libgtk-3-dev" [5]="libgee-0.8-dev" [6]="libjson-glib-dev" [7]="libvte-2.91-dev" [8]="libxapp-dev" [9]="meson" [10]="ninja-build" [11]="help2man")
+declare -a breaks=([0]="timeshift-git" [1]="timeshift-deb" [2]="timeshift-bin" [3]="timeshift-app")
+declare -a replaces=([0]="timeshift-btrfs")
+declare -a sha256sums=([0]="7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2")

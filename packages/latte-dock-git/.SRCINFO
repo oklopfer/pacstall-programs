@@ -1,0 +1,9 @@
+pkgname="latte-dock-git"
+gives="latte-dock"
+pkgver="0.10.8"
+pkgdesc="Replacement dock for Plasma desktops, providing an elegant and intuitive experience for your tasks and plasmoids"
+declare -a source=([0]="https://invent.kde.org/plasma/latte-dock.git")
+declare -a depends=([0]="plasma-workspace" [1]="plasma-desktop")
+declare -a makedepends=([0]="cmake" [1]="extra-cmake-modules" [2]="qtdeclarative5-dev" [3]="libqt5x11extras5-dev" [4]="libkf5iconthemes-dev" [5]="libkf5plasma-dev" [6]="libkf5windowsystem-dev" [7]="libkf5declarative-dev" [8]="libkf5xmlgui-dev" [9]="libkf5activities-dev" [10]="build-essential" [11]="libxcb-util-dev" [12]="libkf5wayland-dev" [13]="git" [14]="gettext" [15]="libkf5archive-dev" [16]="libkf5notifications-dev" [17]="libxcb-util0-dev" [18]="libsm-dev" [19]="libkf5crash-dev" [20]="libkf5newstuff-dev" [21]="libxcb-shape0-dev" [22]="libxcb-randr0-dev" [23]="libx11-dev" [24]="libx11-xcb-dev" [25]="kirigami2-dev" [26]="libwayland-dev" [27]="libwayland-client0" [28]="plasma-wayland-protocols" [29]="libqt5waylandclient5-dev" [30]="qtwayland5-dev-tools" [31]="python3-pip" [32]="plasma-workspace-dev")
+declare -a breaks=([0]="latte-dock" [1]="latte-dock-bin")
+declare -a incompatible=([0]="debian:bullseye")

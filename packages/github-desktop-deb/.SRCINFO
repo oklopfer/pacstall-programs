@@ -1,0 +1,9 @@
+pkgname="github-desktop-deb"
+gives="github-desktop"
+pkgver="3.3.10"
+pkgdesc="Fork of GitHub Desktop to support various Linux distributions"
+declare -a source=([0]="https://github.com/shiftkey/desktop/releases/download/release-3.3.10-linux1/GitHubDesktop-linux-${CARCH}-3.3.10-linux1.deb")
+declare -a arch=([0]="amd64" [1]="arm64" [2]="armhf")
+declare -a sha256sums_amd64=([0]="cf3abaa7f0c0426812c38280518aadad02a420f92c2f39144231b3c0edba5a04")
+declare -a sha256sums_arm64=([0]="aec957d95ec694113a650395a7e71f37d469192c3364358fe5b9b6fe44ed853a")
+declare -a sha256sums_armhf=([0]="fd1340f570d06cdb6ef7652a49fc475ced8bbe2511af7f97359c2a7ebba2491f")

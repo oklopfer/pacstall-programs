@@ -1,0 +1,10 @@
+pkgname="anytype-deb"
+gives="anytype"
+pkgver="0.37.3"
+pkgdesc="Operating environment for the new internet.
+Anytype is a next generation software that breaks
+down barriers between applications, gives back privacy
+and data ownership to users."
+declare -a source=([0]="https://github.com/anyproto/anytype-ts/releases/download/v0.37.3/anytype_0.37.3_amd64.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="0877d61d598f2917ef5a8a30974e63f1bb3dbefd0d67065b8ace07617523fba4")

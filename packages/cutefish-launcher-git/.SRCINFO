@@ -1,0 +1,8 @@
+pkgname="cutefish-launcher-git"
+gives="cutefish-launcher"
+pkgver="0.8"
+pkgdesc="CutefishOS's full-screen application launcher"
+declare -a source=([0]="https://github.com/cutefishos/launcher.git")
+declare -a depends=([0]="fishui" [1]="libcutefish" [2]="libkf5windowsystem-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
+declare -- license="GPL-3.0"

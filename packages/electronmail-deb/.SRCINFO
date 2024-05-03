@@ -1,0 +1,9 @@
+pkgname="electronmail-deb"
+gives="electron-mail"
+pkgver="5.1.8"
+pkgdesc="Unofficial ProtonMail Desktop App"
+declare -a source=([0]="https://github.com/vladimiry/ElectronMail/releases/download/v5.1.8/electron-mail-5.1.8-linux-amd64.deb")
+declare -a breaks=([0]="electron-mail-app")
+declare -a replaces=([0]="electron-mail")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="36d3a99e390fc3e33a275f27ca93e50f1027e04a56bd0d5192f66c80b312075a")

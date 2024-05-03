@@ -1,0 +1,7 @@
+pkgname="amfora-bin"
+gives="amfora"
+pkgver="1.10.0"
+pkgdesc="Amfora aims to be the best looking Gemini client with the most features"
+declare -a source=([0]="https://github.com/makeworld-the-better-one/amfora/releases/download/v1.10.0/amfora_1.10.0_linux_64-bit" [1]="amfora.png::https://roboticoverlords.org/amfora.png" [2]="amfora.desktop::https://raw.githubusercontent.com/makeworld-the-betterne/amfora/master/amfora.desktop")
+declare -a breaks=([0]="amfora" [1]="amfora-git" [2]="amfora-deb" [3]="amfora-app")
+declare -a sha256sums=([0]="b2e9e50954345b38c4481e200944950675d30cdd4e1d7eef50d5b3a528cc1a0a" [1]="3d029d05cff8c42e82685ce7a61fcaa2118e4cbb6a547816a7d5150868a11092" [2]="812e1faad6f6d4817eac60d36813472afebe2980cd2e661151a3d98669274207")

@@ -1,0 +1,7 @@
+pkgname="walc-app"
+gives="walc"
+pkgver="0.2.1"
+pkgdesc="An unofficial WhatsApp Desktop client for linux systems."
+declare -a source=([0]="https://github.com/cstayyab/WALC/releases/download/v0.2.1/walc.AppImage")
+declare -a breaks=([0]="walc" [1]="walc-bin" [2]="walc-git" [3]="walc-deb")
+declare -a sha256sums=([0]="6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560")

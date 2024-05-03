@@ -1,0 +1,10 @@
+pkgname="docker-bin"
+gives="docker"
+pkgver="24.0.7"
+pkgdesc="Docker Engine Static Binaries"
+declare -a source=([0]="https://download.docker.com/linux/static/stable/x86_64/docker-24.0.7.tgz")
+declare -a depends=([0]="procps" [1]="git" [2]="iptables" [3]="fuse-overlayfs")
+declare -a replaces=([0]="docker-desktop" [1]="docker-ce" [2]="docker-ce-cli" [3]="containerd.io")
+declare -a arch=([0]="arm64" [1]="amd64")
+declare -a sha256sums_amd64=([0]="984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d")
+declare -a sha256sums_arm64=([0]="fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776")

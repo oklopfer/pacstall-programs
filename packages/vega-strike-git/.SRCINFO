@@ -1,0 +1,6 @@
+pkgname="vega-strike-git"
+pkgver="0.8.0"
+pkgdesc="Space Flight Simulator and trading game"
+declare -a source=([0]="https://github.com/vegastrike/Assets-Production.git")
+declare -a makedepends=([0]="make")
+declare -- pacdeps="vega-strike-engine-git"

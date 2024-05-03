@@ -1,0 +1,8 @@
+pkgname="cutefish-dock-git"
+gives="cutefish-dock"
+pkgver="0.8"
+pkgdesc="CutefishOS application dock."
+declare -a source=([0]="https://github.com/cutefishos/dock.git")
+declare -a depends=([0]="fishui" [1]="libcutefish" [2]="libqt5svg5-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev" [7]="libqt5x11extras5-dev" [8]="libkf5windowsystem-dev")
+declare -- license="GPL-3.0"

@@ -1,0 +1,6 @@
+pkgname="reshade-shaders-git"
+gives="reshade-shaders-git"
+pkgver="0.0.1"
+pkgdesc="A collection of post-processing shaders written in the ReShade FX shader language, to be used by vkBasalt"
+declare -a source=([0]="https://github.com/crosire/reshade-shaders.git")
+declare -a breaks=([0]="reshade-shaders-git" [1]="reshade-shaders-git-bin" [2]="reshade-shaders-git-deb" [3]="reshade-shaders-git-app")

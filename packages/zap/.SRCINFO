@@ -1,0 +1,8 @@
+pkgname="zap"
+gives="zap"
+pkgver="2.2.1"
+pkgdesc="A delightful AppImage package manager"
+declare -a source=([0]="https://github.com/srevinsaju/zap/releases/download/v2.2.1/zap-amd64")
+declare -a depends=([0]="curl" [1]="grep" [2]="jq" [3]="wget")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="4972edd5da1be5c5dd2fa14619c7068b09fd9dc31c1feea50ed564cdb14df6bc")

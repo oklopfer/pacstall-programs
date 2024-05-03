@@ -1,0 +1,10 @@
+pkgname="keepassxc"
+gives="org.freedesktop.secrets"
+pkgver="2.7.6"
+pkgdesc="Cross-platform community-driven port of Keepass password manager"
+declare -a source=([0]="https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz")
+declare -a depends=([0]="argon2" [1]="botan" [2]="curl" [3]="hicolor-icon-theme" [4]="libxtst6" [5]="minizip" [6]="libpcsclite1" [7]="qrencode" [8]="libqt5x11extras5" [9]="libqt5svg5" [10]="libminizip1" [11]="libqrencode4" [12]="qt5-qmake" [13]="qtbase5-dev" [14]="qtchooser" [15]="qt5-qmake" [16]="qtbase5-dev-tools")
+declare -a makedepends=([0]="cmake" [1]="asciidoctor" [2]="libqrencode-dev" [3]="libbotan-2-dev" [4]="libargon2-dev" [5]="libpcsclite-dev" [6]="libminizip-dev" [7]="libusb-1.0-0-dev" [8]="libreadline-dev" [9]="libqt5x11extras5-dev" [10]="libqt5svg5-dev" [11]="zlib1g-dev" [12]="libxtst-dev" [13]="qtbase5-private-dev" [14]="qttools5-dev" [15]="qtbase5-dev" [16]="qt5-qmake" [17]="qtbase5-dev-tools" [18]="qtdeclarative5-dev")
+declare -a optdepends=([0]="xclip: keepassxc-cli clipboard support under X server" [1]="wl-clipboard: keepassxc-cli clipboard support under Wayland")
+declare -a breaks=([0]="keepassxc" [1]="keepassxc-bin" [2]="keepassxc-git" [3]="keepassxc-deb")
+declare -a sha256sums=([0]="a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670")

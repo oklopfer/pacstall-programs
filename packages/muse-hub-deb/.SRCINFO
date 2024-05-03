@@ -1,0 +1,8 @@
+pkgname="muse-hub-deb"
+gives="muse-hub"
+pkgver="1.0.1.451"
+pkgdesc="Manage MuseScore Libraries"
+declare -a source=([0]="https://pub-c7a32e5b5d834ec9aeef400105452a42.r2.dev/Muse_Hub.deb")
+declare -a depends=([0]="icu-devtools")
+declare -a provides=([0]="muse-hub" [1]="muse-hub-service")
+declare -a sha256sums=([0]="0896fd96d72cb18102c2436794caffadd67382d5377b84468a514601847cc3e9")

@@ -1,0 +1,8 @@
+pkgname="hyprpicker"
+pkgver="0.2.0"
+pkgdesc="wlroots-compatible Wayland color picker"
+declare -a source=([0]="https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.2.0.tar.gz")
+declare -a makedepends=([0]="cmake" [1]="meson" [2]="ninja-build" [3]="wayland-utils" [4]="wayland-protocols" [5]="libwayland-dev" [6]="libwlroots-dev" [7]="libmagic-dev" [8]="libpango1.0-dev" [9]="libjpeg-dev")
+declare -a arch=([0]="amd64" [1]="arm64")
+declare -a compatible=([0]="ubuntu:devel" [1]="debian:sid" [2]="ubuntu:mantic" [3]="ubuntu:noble")
+declare -a sha256sums=([0]="fa1b0c29682f5ede5a03d754770d152f38d869bc1faa300564680cef2de0758a")

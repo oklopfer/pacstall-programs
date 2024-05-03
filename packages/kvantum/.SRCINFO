@@ -1,0 +1,8 @@
+pkgname="kvantum"
+pkgver="1.0.10"
+pkgdesc="SVG-based theme engine for Qt"
+declare -a source=([0]="https://github.com/tsujan/Kvantum/releases/download/V1.0.10/Kvantum-1.0.10.tar.xz")
+declare -a makedepends=([0]="g++" [1]="cmake" [2]="libx11-dev" [3]="qtbase5-dev" [4]="libqt5svg5-dev" [5]="libqt5x11extras5-dev" [6]="libkf5windowsystem-dev" [7]="libxext-dev")
+declare -a breaks=([0]="qt5-style-kvantum")
+declare -a incompatible=([0]="debian:bullseye")
+declare -a sha256sums=([0]="4a070a1a6fac3d1861010aa44d34e665e4697bc64c4c5015a6448203c31f1f1f")

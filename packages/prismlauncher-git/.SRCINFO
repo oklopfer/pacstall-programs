@@ -1,0 +1,6 @@
+pkgname="prismlauncher-git"
+gives="prismlauncher"
+pkgver="8.2"
+pkgdesc="Custom launcher for Minecraft"
+declare -a source=([0]="https://github.com/PrismLauncher/PrismLauncher.git")
+declare -a makedepends=([0]="qt6-base-dev" [1]="qtbase5-dev" [2]="qtchooser" [3]="qt5-qmake" [4]="qmake6" [5]="qtbase5-dev-tools" [6]="cmake" [7]="ninja-build" [8]="extra-cmake-modules" [9]="zlib1g-dev" [10]="openjdk-17-jdk" [11]="libgl1-mesa-dev" [12]="scdoc" [13]="qt6-5compat-dev")

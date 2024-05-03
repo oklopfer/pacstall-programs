@@ -1,0 +1,9 @@
+pkgname="gomuks-deb"
+gives="gomuks"
+pkgver="0.3.0"
+pkgdesc="A terminal based Matrix client written in Go"
+declare -a source=([0]="https://github.com/tulir/gomuks/releases/download/v0.3.0/gomuks_0.3.0-1_amd64.deb")
+declare -a breaks=([0]="gomuks-git" [1]="gomuks-bin" [2]="gomuks-app")
+declare -a replaces=([0]="gomuks")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="c02fa1446744efc4b57ad4c4bad640e7c0f969ff78a3e594be92f30cfd115a66")

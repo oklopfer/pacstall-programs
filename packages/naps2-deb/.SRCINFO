@@ -1,0 +1,10 @@
+pkgname="naps2-deb"
+gives="naps2"
+pkgver="7.4.2"
+pkgdesc="NAPS2 is a document scanning application with a focus on simplicity and ease of use"
+declare -a depends=([0]="libsane2")
+declare -a arch=([0]="arm64" [1]="amd64")
+declare -a source_amd64=([0]="https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-x64.deb")
+declare -a source_arm64=([0]="https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-arm64.deb")
+declare -a sha256sums_amd64=([0]="8ed4d4cf00b8270f841510b2cb848ddfa7627fcd60b8f29adb30878b5b56d48a")
+declare -a sha256sums_arm64=([0]="b81bedd28f2f1774fc0fb7c9e5b60ace295b148214239bbfca46df6c198b305d")

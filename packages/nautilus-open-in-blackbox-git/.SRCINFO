@@ -1,0 +1,6 @@
+pkgname="nautilus-open-in-blackbox-git"
+gives="nautilus-open-in-blackbox"
+pkgver="0.1.1"
+pkgdesc="Open current directory in BlackBox from Nautilus context menu"
+declare -a source=([0]="https://github.com/ppvan/nautilus-open-in-blackbox.git")
+declare -a depends=([0]="python3-nautilus")

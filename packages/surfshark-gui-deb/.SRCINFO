@@ -1,0 +1,7 @@
+pkgname="surfshark-gui-deb"
+gives="surfshark"
+pkgver="1.3.0-1616"
+pkgdesc="SurfShark VPN Client"
+declare -a source=([0]="https://ocean.surfshark.com/debian/pool/main/s/surfshark/surfshark_1.3.0-1616_amd64.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d")

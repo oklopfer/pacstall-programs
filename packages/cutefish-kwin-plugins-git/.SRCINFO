@@ -1,0 +1,8 @@
+pkgname="cutefish-kwin-plugins-git"
+gives="cutefish-kwin-plugins"
+pkgver="0.8"
+pkgdesc="CutefishOS KWin Plugins."
+declare -a source=([0]="https://github.com/cutefishos/kwin-plugins.git")
+declare -a depends=([0]="libkf5config-dev" [1]="libkdecorations2-dev" [2]="libkf5guiaddons-dev" [3]="libkf5coreaddons-dev" [4]="libkf5configwidgets-dev" [5]="libkf5windowsystem-dev" [6]="libkf5wayland-dev" [7]="kwin-dev")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
+declare -- license="GPL-3.0"

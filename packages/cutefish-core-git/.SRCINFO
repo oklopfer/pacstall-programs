@@ -1,0 +1,8 @@
+pkgname="cutefish-core-git"
+gives="cutefish-core"
+pkgver="0.8"
+pkgdesc="System backend and start session and more."
+declare -a source=([0]="https://github.com/cutefishos/core.git")
+declare -a depends=([0]="fishui" [1]="libpulse-dev" [2]="libxtst6" [3]="libpolkit-agent-1-dev" [4]="libxcb-randr0-dev" [5]="libxcb1-dev" [6]="libsm-dev" [7]="libxcursor-dev" [8]="libxcb-xfixes0-dev" [9]="libxcb-damage0-dev" [10]="libxcb-composite0-dev" [11]="libxcb-shm0-dev" [12]="libxcb-util-dev" [13]="libxcb-image0-dev" [14]="libxtst-dev" [15]="libpulse-dev" [16]="libpolkit-qt5-1-dev" [17]="libkf5windowsystem-dev" [18]="libkf5globalaccel-dev" [19]="libqt5x11extras5-dev" [20]="qtbase5-dev" [21]="qtdeclarative5-dev" [22]="qtquickcontrols2-5-dev" [23]="qttools5-dev" [24]="qttools5-dev-tools")
+declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
+declare -- license="GPL-3.0"

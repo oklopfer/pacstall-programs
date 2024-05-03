@@ -1,0 +1,8 @@
+pkgname="powertop-git"
+gives="powertop"
+pkgver="2.15"
+pkgdesc="Linux tool used to diagnose issues with power consumption and power management"
+declare -a source=([0]="https://github.com/fenrus75/powertop.git")
+declare -a makedepends=([0]="libpci-dev" [1]="libnl-3-dev" [2]="libnl-genl-3-dev" [3]="gettext" [4]="libgettextpo-dev" [5]="autopoint" [6]="gettext" [7]="libncurses5-dev" [8]="libncursesw5-dev" [9]="libtool-bin" [10]="dh-autoreconf" [11]="autoconf-archive" [12]="pkg-config")
+declare -a breaks=([0]="powertop")
+declare -a replaces=([0]="powertop")

@@ -1,0 +1,7 @@
+pkgname="fsearch-deb"
+gives="fsearch"
+pkgver="0.2.3"
+pkgdesc="FSearch is a fast file search utility, inspired by Everything Search Engine"
+declare -a source=([0]="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_0.2.3-1+3.15_amd64.deb")
+declare -a arch=([0]="amd64")
+declare -a sha256sums=([0]="40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8")

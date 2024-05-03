@@ -1,0 +1,9 @@
+pkgname="ttf-fira-sans"
+gives="ttf-fira-sans"
+pkgver="4.202"
+pkgdesc="Mozilla's typeface used in Firefox OS"
+declare -a source=([0]="https://fonts.google.com/download?family=Fira%20Sans")
+declare -a breaks=([0]="ttf-fira-sans")
+declare -a replaces=([0]="ttf-fira-sans")
+declare -- license="OFL-1.1"
+declare -a sha256sums=([0]="5a3059fbde784f57a58ffb55e15660ae6022c724ecbc468f58c0aaa2311c05f9")

@@ -1,0 +1,7 @@
+pkgname="linux-headers-deb"
+gives="linux-headers-6.9.0-060900rc6"
+pkgver="6.9~rc6"
+pkgdesc="Ubuntu Linux mainline kernel (Headers)"
+declare -a source=([0]="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc6/amd64/linux-headers-6.9.0-060900rc6_6.9.0-060900rc6.202404282134_all.deb")
+declare -a arch=([0]="any")
+declare -a sha256sums=([0]="2d36527971d06c28c4237546eaa87cef6ff47dc390ff1fec3888ecf88cde076e")
