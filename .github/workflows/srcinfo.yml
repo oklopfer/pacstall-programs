@@ -26,7 +26,7 @@ jobs:
                   allvars=("pkgname" "gives" "pkgver" "pkgrel" "epoch" "pkgdesc" "url" "priority") \
                   allars=("arch" "source" "depends" "makedepends" "checkdepends" "optdepends" "pacdeps" "conflicts" "breaks" \
                   "replaces" "provides" "incompatible" "compatible" "backup" "mask" "noextract" "nosubmodules" "license")
-              source ${1}
+              source "${1}"
               for src in "${known_archs_src[@]}"; do
                   for vars in {source,depends,makedepends,optdepends,pacdeps,checkdepends,provides,conflicts,breaks,replaces}; do
                       allars+=("${vars}_${src}")
@@ -40,20 +40,30 @@ jobs:
                   done
               done
               for var in "${allvars[@]}"; do
-                  [[ -n ${!var} ]] && echo "${var} = ${!var}"
+                  declare -n "rar=${var}"
+                  if [[ -n ${rar} ]]; then
+                      rar="${rar//+([[:space:]])/ }"
+                      rar="${rar#[[:space:]]}"
+                      rar="${rar%[[:space:]]}"
+                      echo "${var} = ${rar}"
+                  fi
               done
               for ar in "${allars[@]}"; do
                   declare -n "bar=${ar}"
-                  [[ -n ${bar[@]} ]] &&
-                  for ars in "${bar[@]}"; do
-                      if [[ ${ars} =~ CARCH_REPLACE ]]; then
-                          for aars in ${arch[@]}; do
-                              echo "${ar}_${aars} = ${ars}" | sed -e "s/CARCH_REPLACE/${aars}/g"
-                          done
-                      else
-                          echo "${ar} = ${ars}"
-                      fi
-                  done
+                  if [[ -n ${bar[@]} ]]; then
+                      for ars in "${bar[@]}"; do
+                          ars="${ars//+([[:space:]])/ }"
+                          ars="${ars#[[:space:]]}"
+                          ars="${ars%[[:space:]]}"
+                          if [[ ${ars} =~ CARCH_REPLACE ]]; then
+                              for aars in ${arch[@]}; do
+                                  echo "${ar}_${aars} = ${ars}" | sed -e "s/CARCH_REPLACE/${aars}/g"
+                              done
+                          else
+                              echo "${ar} = ${ars}"
+                          fi
+                      done
+                  fi
               done
               unset "${allars[@]}" "${allvars[@]}"
           }
