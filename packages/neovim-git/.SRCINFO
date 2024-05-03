@@ -1,7 +1,18 @@
-pkgname="neovim-git"
-gives="neovim"
-pkgver="0.9.1"
-pkgdesc="Vim fork maintained by the community"
-declare -a source=([0]="https://github.com/neovim/neovim.git")
-declare -a makedepends=([0]="ninja-build" [1]="gettext" [2]="libtool-bin" [3]="autoconf" [4]="automake" [5]="cmake" [6]="g++" [7]="pkg-config" [8]="unzip")
-declare -a breaks=([0]="neovim-bin" [1]="neovim" [2]="neovim-app" [3]="neovim-deb")
+pkgname = neovim-git
+gives = neovim
+pkgver = 0.9.1
+pkgdesc = Vim fork maintained by the community
+source = https://github.com/neovim/neovim.git
+makedepends = ninja-build
+makedepends = gettext
+makedepends = libtool-bin
+makedepends = autoconf
+makedepends = automake
+makedepends = cmake
+makedepends = g++
+makedepends = pkg-config
+makedepends = unzip
+breaks = neovim-bin
+breaks = neovim
+breaks = neovim-app
+breaks = neovim-deb

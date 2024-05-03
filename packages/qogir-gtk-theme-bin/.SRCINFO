@@ -1,9 +1,13 @@
-pkgname="qogir-gtk-theme-bin"
-gives="qogir-gtk-theme"
-pkgver="2023-02-27"
-pkgdesc="Qogir is a flat Design theme for GTK"
-declare -a source=([0]="https://github.com/vinceliuice/Qogir-theme/archive/2023-02-27.tar.gz")
-declare -a depends=([0]="gtk2-engines-murrine" [1]="gtk2-engines-pixbuf")
-declare -a makedepends=([0]="libsass1")
-declare -a breaks=([0]="qogir-gtk-theme" [1]="qogir-gtk-theme-git" [2]="qogir-gtk-theme-deb" [3]="qogir-gtk-theme-app")
-declare -a sha256sums=([0]="211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb")
+pkgname = qogir-gtk-theme-bin
+gives = qogir-gtk-theme
+pkgver = 2023-02-27
+pkgdesc = Qogir is a flat Design theme for GTK
+source = https://github.com/vinceliuice/Qogir-theme/archive/2023-02-27.tar.gz
+depends = gtk2-engines-murrine
+depends = gtk2-engines-pixbuf
+makedepends = libsass1
+breaks = qogir-gtk-theme
+breaks = qogir-gtk-theme-git
+breaks = qogir-gtk-theme-deb
+breaks = qogir-gtk-theme-app
+sha256sums = 211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb

@@ -1,10 +1,19 @@
-pkgname="rhino-core"
-pkgver="2023.4"
-pkgrel="10"
-pkgdesc="Transitional package to provide all core Rhino Linux software"
-priority="essential"
-declare -a source=([0]="https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
-declare -a depends=([0]="printer-driver-all-enforce")
-declare -a pacdeps=([0]="unicorn-desktop-git" [1]="rhino-kvantum-theme-git" [2]="rhino-plymouth-theme-git" [3]="rhino-pkg-git" [4]="rhino-neofetch-git" [5]="rhino-system-git" [6]="pacstall-qa-git")
-declare -a replaces=([0]="rhino-pine-core" [1]="rhino-server-core" [2]="rhino-ubxi-core")
-declare -a compatible=([0]="ubuntu:devel" [1]="ubuntu:oracular")
+pkgname = rhino-core
+pkgver = 2023.4
+pkgrel = 10
+pkgdesc = Transitional package to provide all core Rhino Linux software
+priority = essential
+source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
+depends = printer-driver-all-enforce
+pacdeps = unicorn-desktop-git
+pacdeps = rhino-kvantum-theme-git
+pacdeps = rhino-plymouth-theme-git
+pacdeps = rhino-pkg-git
+pacdeps = rhino-neofetch-git
+pacdeps = rhino-system-git
+pacdeps = pacstall-qa-git
+replaces = rhino-pine-core
+replaces = rhino-server-core
+replaces = rhino-ubxi-core
+compatible = ubuntu:devel
+compatible = ubuntu:oracular

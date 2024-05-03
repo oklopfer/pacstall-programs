@@ -1,6 +1,9 @@
-pkgname="yafetch-git"
-gives="yafetch"
-pkgver="0.1.0"
-pkgdesc="Yet another fetch tool"
-declare -a source=([0]="https://github.com/Elsie19/yafetch.git")
-declare -a breaks=([0]="yafetch-deb" [1]="yafetch-bin" [2]="yafetch-app" [3]="yafetch-git")
+pkgname = yafetch-git
+gives = yafetch
+pkgver = 0.1.0
+pkgdesc = Yet another fetch tool
+source = https://github.com/Elsie19/yafetch.git
+breaks = yafetch-deb
+breaks = yafetch-bin
+breaks = yafetch-app
+breaks = yafetch-git

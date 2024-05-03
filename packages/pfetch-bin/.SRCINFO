@@ -1,7 +1,11 @@
-pkgname="pfetch-bin"
-gives="pfetch"
-pkgver="0.6.0"
-pkgdesc="A lightweight and simple fetch tool"
-declare -a source=([0]="https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip")
-declare -a breaks=([0]="pfetch" [1]="pfetch-bin" [2]="pfetch-deb" [3]="pfetch-app" [4]="pfetch-git")
-declare -a sha256sums=([0]="ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39")
+pkgname = pfetch-bin
+gives = pfetch
+pkgver = 0.6.0
+pkgdesc = A lightweight and simple fetch tool
+source = https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
+breaks = pfetch
+breaks = pfetch-bin
+breaks = pfetch-deb
+breaks = pfetch-app
+breaks = pfetch-git
+sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39

@@ -1,8 +1,11 @@
-pkgname="st-distrotube-git"
-gives="st"
-pkgver="0.0.1"
-pkgdesc="Distrotube's st build"
-declare -a source=([0]="https://gitlab.com/dwt1/st-distrotube.git")
-declare -a depends=([0]="fontconfig")
-declare -a makedepends=([0]="make" [1]="libharfbuzz-bin" [2]="libxft-dev" [3]="libpango1.0-dev")
-declare -- breaks="st"
+pkgname = st-distrotube-git
+gives = st
+pkgver = 0.0.1
+pkgdesc = Distrotube's st build
+source = https://gitlab.com/dwt1/st-distrotube.git
+depends = fontconfig
+makedepends = make
+makedepends = libharfbuzz-bin
+makedepends = libxft-dev
+makedepends = libpango1.0-dev
+breaks = st

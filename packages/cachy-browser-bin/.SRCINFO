@@ -1,7 +1,7 @@
-pkgname="cachy-browser-bin"
-gives="cachy-browser"
-pkgver="125.0.1"
-pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and freedom"
-declare -a source=([0]="https://mirror.cachyos.org/repo/x86_64/cachyos/cachy-browser-125.0.1-1-x86_64.pkg.tar.zst")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="dfa769b0ead5a544502cb307e77c19a00ec3d4586ecc73c6e8cf213d79a68d73")
+pkgname = cachy-browser-bin
+gives = cachy-browser
+pkgver = 125.0.1
+pkgdesc = Community-maintained fork of Firefox, focused on privacy, security and freedom
+arch = amd64
+source = https://mirror.cachyos.org/repo/x86_64/cachyos/cachy-browser-125.0.1-1-x86_64.pkg.tar.zst
+sha256sums = dfa769b0ead5a544502cb307e77c19a00ec3d4586ecc73c6e8cf213d79a68d73

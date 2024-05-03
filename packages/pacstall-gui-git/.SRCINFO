@@ -1,7 +1,13 @@
-pkgname="pacstall-gui-git"
-gives="pacstall-gui"
-pkgver="0.0.1"
-pkgdesc="A gui for Pacstall written in bash."
-declare -a source=([0]="https://github.com/cat-master21/pacstall-gui.git")
-declare -a depends=([0]="yad" [1]="sed" [2]="adwaita-icon-theme" [3]="policykit-1" [4]="desktop-file-utils")
-declare -a breaks=([0]="pacstall-gui" [1]="pacstall-gui-bin" [2]="pacstall-gui-deb")
+pkgname = pacstall-gui-git
+gives = pacstall-gui
+pkgver = 0.0.1
+pkgdesc = A gui for Pacstall written in bash.
+source = https://github.com/cat-master21/pacstall-gui.git
+depends = yad
+depends = sed
+depends = adwaita-icon-theme
+depends = policykit-1
+depends = desktop-file-utils
+breaks = pacstall-gui
+breaks = pacstall-gui-bin
+breaks = pacstall-gui-deb

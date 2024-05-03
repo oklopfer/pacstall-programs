@@ -1,7 +1,15 @@
-pkgname="ani-cli-bin"
-gives="ani-cli"
-pkgver="4.8"
-pkgdesc="A cli tool to browse and play anime"
-declare -a source=([0]="https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli" [1]="ani-cli.1::https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli.1")
-declare -a depends=([0]="grep" [1]="sed" [2]="wget" [3]="mpv" [4]="aria2" [5]="ffmpeg" [6]="fzf")
-declare -a sha256sums=([0]="4a21690493b4aee4165f1881b19d9d696c9f56c5687940e587c542c6caa7c6fe" [1]="SKIP")
+pkgname = ani-cli-bin
+gives = ani-cli
+pkgver = 4.8
+pkgdesc = A cli tool to browse and play anime
+source = https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli
+source = ani-cli.1::https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli.1
+depends = grep
+depends = sed
+depends = wget
+depends = mpv
+depends = aria2
+depends = ffmpeg
+depends = fzf
+sha256sums = 4a21690493b4aee4165f1881b19d9d696c9f56c5687940e587c542c6caa7c6fe
+sha256sums = SKIP

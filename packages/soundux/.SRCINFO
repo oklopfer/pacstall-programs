@@ -1,7 +1,15 @@
-pkgname="soundux"
-pkgver="0.2.7"
-pkgdesc="A cross-platform soundboard"
-declare -a source=([0]="https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz")
-declare -a makedepends=([0]="cmake" [1]="libx11-dev" [2]="libxi-dev" [3]="libwebkit2gtk-4.0-dev" [4]="libappindicator3-1" [5]="libappindicator3-dev" [6]="libssl-dev" [7]="libpulse-dev" [8]="libpipewire-0.3-dev")
-declare -a incompatible=([0]="debian:*")
-declare -a sha256sums=([0]="017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7")
+pkgname = soundux
+pkgver = 0.2.7
+pkgdesc = A cross-platform soundboard
+source = https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz
+makedepends = cmake
+makedepends = libx11-dev
+makedepends = libxi-dev
+makedepends = libwebkit2gtk-4.0-dev
+makedepends = libappindicator3-1
+makedepends = libappindicator3-dev
+makedepends = libssl-dev
+makedepends = libpulse-dev
+makedepends = libpipewire-0.3-dev
+incompatible = debian:*
+sha256sums = 017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7

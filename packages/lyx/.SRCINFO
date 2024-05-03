@@ -1,8 +1,21 @@
-pkgname="lyx"
-pkgver="2.3.7-1"
-pkgdesc="An advanced WYSIWYM document processor & LaTeX front-end"
-declare -a source=([0]="https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-2.3.7-1.tar.gz")
-declare -a depends=([0]="libqt5svg5-dev" [1]="texlive-base" [2]="python3" [3]="imagemagick" [4]="libhunspell-dev" [5]="file" [6]="hicolor-icon-theme" [7]="desktop-file-utils")
-declare -a makedepends=([0]="bc" [1]="libx11-dev" [2]="qtbase5-dev" [3]="libenchant-2-dev" [4]="libqt5svg5-dev" [5]="pkg-config")
-declare -a optdepends=([0]="rcs: built-in version control system" [1]="texlive-latex-base: float wrap support")
-declare -a sha256sums=([0]="910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd")
+pkgname = lyx
+pkgver = 2.3.7-1
+pkgdesc = An advanced WYSIWYM document processor & LaTeX front-end
+source = https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-2.3.7-1.tar.gz
+depends = libqt5svg5-dev
+depends = texlive-base
+depends = python3
+depends = imagemagick
+depends = libhunspell-dev
+depends = file
+depends = hicolor-icon-theme
+depends = desktop-file-utils
+makedepends = bc
+makedepends = libx11-dev
+makedepends = qtbase5-dev
+makedepends = libenchant-2-dev
+makedepends = libqt5svg5-dev
+makedepends = pkg-config
+optdepends = rcs: built-in version control system
+optdepends = texlive-latex-base: float wrap support
+sha256sums = 910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd

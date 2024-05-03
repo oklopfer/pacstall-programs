@@ -1,7 +1,9 @@
-pkgname="opendoas-git"
-gives="opendoas"
-pkgver="6.8.2"
-pkgdesc="A portable fork of the OpenBSD doas command"
-declare -a source=([0]="https://github.com/Duncaen/OpenDoas.git")
-declare -a makedepends=([0]="bison" [1]="libpam0g-dev")
-declare -a breaks=([0]="opendoas" [1]="opendoas-bin")
+pkgname = opendoas-git
+gives = opendoas
+pkgver = 6.8.2
+pkgdesc = A portable fork of the OpenBSD doas command
+source = https://github.com/Duncaen/OpenDoas.git
+makedepends = bison
+makedepends = libpam0g-dev
+breaks = opendoas
+breaks = opendoas-bin

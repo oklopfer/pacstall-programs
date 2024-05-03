@@ -1,8 +1,8 @@
-pkgname="zoom-deb"
-gives="zoom"
-pkgver="6.0.2.4680"
-pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
-declare -a source=([0]="https://zoom.us/client/6.0.2.4680/zoom_amd64.deb")
-declare -a replaces=([0]="zoom")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="5c3b18dcb05b1bdcf941ca881981ae5e34425ebc53538d9267976987c622e181")
+pkgname = zoom-deb
+gives = zoom
+pkgver = 6.0.2.4680
+pkgdesc = Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution.
+arch = amd64
+source = https://zoom.us/client/6.0.2.4680/zoom_amd64.deb
+replaces = zoom
+sha256sums = 5c3b18dcb05b1bdcf941ca881981ae5e34425ebc53538d9267976987c622e181

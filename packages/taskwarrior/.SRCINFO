@@ -1,10 +1,16 @@
-pkgname="taskwarrior"
-gives="taskwarrior"
-pkgver="2.6.2"
-pkgdesc="Taskwarrior is a command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions."
-declare -a source=([0]="https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6.2/task-2.6.2.tar.gz")
-declare -a depends=([0]="uuid-dev" [1]="gnutls-dev")
-declare -a makedepends=([0]="g++" [1]="cmake" [2]="git")
-declare -a breaks=([0]="taskwarrior-app" [1]="taskwarrior-deb" [2]="taskwarrior-bin" [3]="taskwarrior-git")
-declare -a replaces=([0]="taskwarrior")
-declare -a sha256sums=([0]="b1d3a7f000cd0fd60640670064e0e001613c9e1cb2242b9b3a9066c78862cfec")
+pkgname = taskwarrior
+gives = taskwarrior
+pkgver = 2.6.2
+pkgdesc = Taskwarrior is a command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions.
+source = https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6.2/task-2.6.2.tar.gz
+depends = uuid-dev
+depends = gnutls-dev
+makedepends = g++
+makedepends = cmake
+makedepends = git
+breaks = taskwarrior-app
+breaks = taskwarrior-deb
+breaks = taskwarrior-bin
+breaks = taskwarrior-git
+replaces = taskwarrior
+sha256sums = b1d3a7f000cd0fd60640670064e0e001613c9e1cb2242b9b3a9066c78862cfec

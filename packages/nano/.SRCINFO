@@ -1,7 +1,17 @@
-pkgname="nano"
-pkgver="7.2"
-pkgdesc="Free replacement for the Pico text editor"
-declare -a source=([0]="https://nano-editor.org/dist/v7/nano-7.2.tar.xz")
-declare -a makedepends=([0]="libncurses-dev" [1]="groff" [2]="autoconf" [3]="make" [4]="automake" [5]="autopoint" [6]="gcc" [7]="gettext" [8]="git" [9]="pkg-config" [10]="texinfo")
-declare -- license="GPL3"
-declare -a sha256sums=([0]="86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526")
+pkgname = nano
+pkgver = 7.2
+pkgdesc = Free replacement for the Pico text editor
+source = https://nano-editor.org/dist/v7/nano-7.2.tar.xz
+makedepends = libncurses-dev
+makedepends = groff
+makedepends = autoconf
+makedepends = make
+makedepends = automake
+makedepends = autopoint
+makedepends = gcc
+makedepends = gettext
+makedepends = git
+makedepends = pkg-config
+makedepends = texinfo
+license = GPL3
+sha256sums = 86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526

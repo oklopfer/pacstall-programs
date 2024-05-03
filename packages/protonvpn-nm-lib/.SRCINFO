@@ -1,9 +1,21 @@
-pkgname="protonvpn-nm-lib"
-pkgver="3.8.0"
-pkgdesc="The ProtonVPN NM (NetworkManager) Library is intended for every ProtonVPN service user"
-declare -a source=([0]="https://github.com/ProtonVPN/protonvpn-nm-lib/archive/refs/tags/3.8.0.tar.gz")
-declare -a depends=([0]="python3" [1]="network-manager" [2]="network-manager-openvpn" [3]="openvpn" [4]="gir1.2-nm-1.0" [5]="libsecret-tools" [6]="dbus-x11" [7]="gnome-keyring" [8]="network-manager-openvpn-gnome")
-declare -a makedepends=([0]="python3-setuptools" [1]="python3-xdg" [2]="python3-xdg" [3]="python3-distro" [4]="python3-keyring")
-declare -- breaks="protonvpn-nm-lib-git"
-declare -a replaces=([0]="protonvpn-nm-lib")
-declare -a sha256sums=([0]="c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97")
+pkgname = protonvpn-nm-lib
+pkgver = 3.8.0
+pkgdesc = The ProtonVPN NM (NetworkManager) Library is intended for every ProtonVPN service user
+source = https://github.com/ProtonVPN/protonvpn-nm-lib/archive/refs/tags/3.8.0.tar.gz
+depends = python3
+depends = network-manager
+depends = network-manager-openvpn
+depends = openvpn
+depends = gir1.2-nm-1.0
+depends = libsecret-tools
+depends = dbus-x11
+depends = gnome-keyring
+depends = network-manager-openvpn-gnome
+makedepends = python3-setuptools
+makedepends = python3-xdg
+makedepends = python3-xdg
+makedepends = python3-distro
+makedepends = python3-keyring
+breaks = protonvpn-nm-lib-git
+replaces = protonvpn-nm-lib
+sha256sums = c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97

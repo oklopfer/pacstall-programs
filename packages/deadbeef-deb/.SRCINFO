@@ -1,10 +1,14 @@
-pkgname="deadbeef-deb"
-gives="deadbeef-static"
-pkgver="1.9.6"
-pkgdesc="A modular cross-platform audio player"
-url="https://deadbeef.sourceforge.io"
-declare -a source=([0]="https://cfhcable.dl.sourceforge.net/project/deadbeef/travis/linux/1.9.6/deadbeef-static_1.9.6-1_amd64.deb")
-declare -a breaks=([0]="deadbeef-static" [1]="deadbeef-static-bin" [2]="deadbeef-static-git" [3]="deadbeef-static-app" [4]="deadbeef-static-deb")
-declare -a replaces=([0]="deadbeef-static")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6")
+pkgname = deadbeef-deb
+gives = deadbeef-static
+pkgver = 1.9.6
+pkgdesc = A modular cross-platform audio player
+url = https://deadbeef.sourceforge.io
+arch = amd64
+source = https://cfhcable.dl.sourceforge.net/project/deadbeef/travis/linux/1.9.6/deadbeef-static_1.9.6-1_amd64.deb
+breaks = deadbeef-static
+breaks = deadbeef-static-bin
+breaks = deadbeef-static-git
+breaks = deadbeef-static-app
+breaks = deadbeef-static-deb
+replaces = deadbeef-static
+sha256sums = c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6

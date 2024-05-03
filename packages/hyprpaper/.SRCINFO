@@ -1,8 +1,21 @@
-pkgname="hyprpaper"
-pkgver="0.4.0"
-pkgdesc="Wayland wallpaper utility with IPC controls"
-declare -a source=([0]="https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.4.0.tar.gz")
-declare -a makedepends=([0]="cmake" [1]="meson" [2]="ninja-build" [3]="wayland-utils" [4]="wayland-protocols" [5]="libwayland-dev" [6]="libwlroots-dev" [7]="libmagic-dev" [8]="libpango1.0-dev" [9]="libjpeg-dev")
-declare -a arch=([0]="amd64" [1]="arm64")
-declare -a compatible=([0]="ubuntu:devel" [1]="debian:sid" [2]="ubuntu:mantic" [3]="ubuntu:noble")
-declare -a sha256sums=([0]="cabd8181aa64dead3a0ed6e801e391c54b07f3400eecb9dcf2a01ac5d1cf47d3")
+pkgname = hyprpaper
+pkgver = 0.4.0
+pkgdesc = Wayland wallpaper utility with IPC controls
+arch = amd64
+arch = arm64
+source = https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.4.0.tar.gz
+makedepends = cmake
+makedepends = meson
+makedepends = ninja-build
+makedepends = wayland-utils
+makedepends = wayland-protocols
+makedepends = libwayland-dev
+makedepends = libwlroots-dev
+makedepends = libmagic-dev
+makedepends = libpango1.0-dev
+makedepends = libjpeg-dev
+compatible = ubuntu:devel
+compatible = debian:sid
+compatible = ubuntu:mantic
+compatible = ubuntu:noble
+sha256sums = cabd8181aa64dead3a0ed6e801e391c54b07f3400eecb9dcf2a01ac5d1cf47d3

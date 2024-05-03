@@ -1,9 +1,31 @@
-pkgname="spot-client-git"
-gives="spot-client"
-pkgver="0.4.0"
-pkgdesc="Gtk/Rust native Spotify (premium only) client"
-declare -a source=([0]="https://github.com/xou816/spot.git")
-declare -a depends=([0]="libgtk-4-dev" [1]="libadwaita-1-dev" [2]="libpulse-dev" [3]="libasound2-dev" [4]="libssl-dev" [5]="openssl")
-declare -a makedepends=([0]="libgtk-4-dev" [1]="libadwaita-1-dev" [2]="libpulse-dev" [3]="libasound2-dev" [4]="rustc" [5]="cargo" [6]="meson" [7]="ninja-build" [8]="cmake" [9]="openssl" [10]="libssl-dev")
-declare -a arch=([0]="amd64")
-declare -a incompatible=([0]="ubuntu:bionic" [1]="ubuntu:focal" [2]="ubuntu:jammy" [3]="ubuntu:kinetic" [4]="debian:stretch" [5]="debian:buster" [6]="debian:bullseye" [7]="debian:sid")
+pkgname = spot-client-git
+gives = spot-client
+pkgver = 0.4.0
+pkgdesc = Gtk/Rust native Spotify (premium only) client
+arch = amd64
+source = https://github.com/xou816/spot.git
+depends = libgtk-4-dev
+depends = libadwaita-1-dev
+depends = libpulse-dev
+depends = libasound2-dev
+depends = libssl-dev
+depends = openssl
+makedepends = libgtk-4-dev
+makedepends = libadwaita-1-dev
+makedepends = libpulse-dev
+makedepends = libasound2-dev
+makedepends = rustc
+makedepends = cargo
+makedepends = meson
+makedepends = ninja-build
+makedepends = cmake
+makedepends = openssl
+makedepends = libssl-dev
+incompatible = ubuntu:bionic
+incompatible = ubuntu:focal
+incompatible = ubuntu:jammy
+incompatible = ubuntu:kinetic
+incompatible = debian:stretch
+incompatible = debian:buster
+incompatible = debian:bullseye
+incompatible = debian:sid

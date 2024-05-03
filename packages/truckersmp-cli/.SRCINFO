@@ -1,10 +1,15 @@
-pkgname="truckersmp-cli"
-gives="truckersmp-cli"
-pkgver="0.10.1"
-pkgdesc="A simple launcher to play ATS and ETS2 with Multiplayer through TruckersMP."
-declare -a source=([0]="https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/0.10.1.tar.gz")
-declare -a depends=([0]="python3" [1]="libsdl2-2.0-0")
-declare -a makedepends=([0]="python3-setuptools" [1]="gcc-mingw-w64" [2]="libsdl2-dev")
-declare -a optdepends=([0]="python3-vdf: automatic steam account detection" [1]="steam: possibility to use proton" [2]="wine: possibility to use wine")
-declare -a breaks=([0]="truckersmp-cli-git")
-declare -a sha256sums=([0]="3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16")
+pkgname = truckersmp-cli
+gives = truckersmp-cli
+pkgver = 0.10.1
+pkgdesc = A simple launcher to play ATS and ETS2 with Multiplayer through TruckersMP.
+source = https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/0.10.1.tar.gz
+depends = python3
+depends = libsdl2-2.0-0
+makedepends = python3-setuptools
+makedepends = gcc-mingw-w64
+makedepends = libsdl2-dev
+optdepends = python3-vdf: automatic steam account detection
+optdepends = steam: possibility to use proton
+optdepends = wine: possibility to use wine
+breaks = truckersmp-cli-git
+sha256sums = 3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16

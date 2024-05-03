@@ -1,8 +1,24 @@
-pkgname="lf-bin"
-gives="lf"
-pkgver="31"
-pkgdesc="Terminal file manager written in Go"
-declare -a source=([0]="https://github.com/gokcehan/lf/releases/download/r31/lf-linux-${CARCH}.tar.gz")
-declare -a breaks=([0]="lf-git")
-declare -a replaces=([0]="lf")
-declare -a arch=([0]="amd64" [1]="i386" [2]="arm64" [3]="armhf" [4]="mips" [5]="mips64el" [6]="ppc64" [7]="ppc64el" [8]="s390x")
+pkgname = lf-bin
+gives = lf
+pkgver = 31
+pkgdesc = Terminal file manager written in Go
+arch = amd64
+arch = i386
+arch = arm64
+arch = armhf
+arch = mips
+arch = mips64el
+arch = ppc64
+arch = ppc64el
+arch = s390x
+source_amd64 = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-amd64.tar.gz
+source_i386 = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-i386.tar.gz
+source_arm64 = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-arm64.tar.gz
+source_armhf = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-armhf.tar.gz
+source_mips = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-mips.tar.gz
+source_mips64el = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-mips64el.tar.gz
+source_ppc64 = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-ppc64.tar.gz
+source_ppc64el = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-ppc64el.tar.gz
+source_s390x = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-s390x.tar.gz
+breaks = lf-git
+replaces = lf

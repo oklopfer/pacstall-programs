@@ -1,10 +1,21 @@
-pkgname="megasync-deb"
-gives="megasync"
-pkgver="5.2.0"
-pkgdesc="Easy automated syncing between your computers and your MEGA cloud drive"
-url="https://mega.nz"
-declare -a source=([0]="https://mega.nz/linux/repo/_/amd64/megasync_5.2.0-2.1_amd64.deb")
-declare -a breaks=([0]="megasync" [1]="megasync-bin" [2]="megasync-git" [3]="megasync-app" [4]="megasync-deb")
-declare -a replaces=([0]="megasync")
-declare -a arch=([0]="amd64")
-declare -a incompatible=([0]="debian:sid" [1]="*:buster" [2]="*:stretch" [3]="*:jessie" [4]="debian:testing" [5]="*:bionic" [6]="*:focal" [7]="*:kinetic")
+pkgname = megasync-deb
+gives = megasync
+pkgver = 5.2.0
+pkgdesc = Easy automated syncing between your computers and your MEGA cloud drive
+url = https://mega.nz
+arch = amd64
+source = https://mega.nz/linux/repo/_/amd64/megasync_5.2.0-2.1_amd64.deb
+breaks = megasync
+breaks = megasync-bin
+breaks = megasync-git
+breaks = megasync-app
+breaks = megasync-deb
+replaces = megasync
+incompatible = debian:sid
+incompatible = *:buster
+incompatible = *:stretch
+incompatible = *:jessie
+incompatible = debian:testing
+incompatible = *:bionic
+incompatible = *:focal
+incompatible = *:kinetic

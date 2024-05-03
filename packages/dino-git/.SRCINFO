@@ -1,6 +1,9 @@
-pkgname="dino-git"
-gives="dino"
-pkgver="0.1.1"
-pkgdesc="An extensible database system written in Bash"
-declare -a source=([0]="https://github.com/Elsie19/Dino.git")
-declare -a breaks=([0]="dino" [1]="dino-app" [2]="dino-bin" [3]="dino-deb")
+pkgname = dino-git
+gives = dino
+pkgver = 0.1.1
+pkgdesc = An extensible database system written in Bash
+source = https://github.com/Elsie19/Dino.git
+breaks = dino
+breaks = dino-app
+breaks = dino-bin
+breaks = dino-deb

@@ -1,8 +1,10 @@
-pkgname="uwufetch"
-pkgver="1.7"
-pkgdesc="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
-declare -a source=([0]="https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip")
-declare -a makedepends=([0]="gcc")
-declare -a optdepends=([0]="viu: image preview" [1]="lshw: hardware info")
-declare -a breaks=([0]="uwufetch-git" [1]="uwufetch-bin")
-declare -a sha256sums=([0]="1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab")
+pkgname = uwufetch
+pkgver = 1.7
+pkgdesc = A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace.
+source = https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip
+makedepends = gcc
+optdepends = viu: image preview
+optdepends = lshw: hardware info
+breaks = uwufetch-git
+breaks = uwufetch-bin
+sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab

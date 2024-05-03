@@ -1,7 +1,22 @@
-pkgname="discord-canary"
-pkgver="0.0.327"
-pkgdesc="Chat for Communities and Friends - Unstable"
-declare -a source=([0]="https://dl-canary.discordapp.net/apps/linux/0.0.327/discord-canary-0.0.327.tar.gz")
-declare -a depends=([0]="libc6" [1]="libasound2" [2]="libatomic1" [3]="libnotify4" [4]="libnspr4" [5]="libnss3" [6]="libstdc++6" [7]="libxss1" [8]="libxtst6" [9]="libc++1" [10]="libatk1.0-0" [11]="libatk-bridge2.0-0" [12]="libcups2" [13]="libdrm2" [14]="libgtk-3-0" [15]="libgbm1")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="a8c7b282cdc463913e252db466299c0bc5fd185493bf6c5cf270cf4a1eddc75a")
+pkgname = discord-canary
+pkgver = 0.0.327
+pkgdesc = Chat for Communities and Friends - Unstable
+arch = amd64
+source = https://dl-canary.discordapp.net/apps/linux/0.0.327/discord-canary-0.0.327.tar.gz
+depends = libc6
+depends = libasound2
+depends = libatomic1
+depends = libnotify4
+depends = libnspr4
+depends = libnss3
+depends = libstdc++6
+depends = libxss1
+depends = libxtst6
+depends = libc++1
+depends = libatk1.0-0
+depends = libatk-bridge2.0-0
+depends = libcups2
+depends = libdrm2
+depends = libgtk-3-0
+depends = libgbm1
+sha256sums = a8c7b282cdc463913e252db466299c0bc5fd185493bf6c5cf270cf4a1eddc75a

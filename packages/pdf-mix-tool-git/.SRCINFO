@@ -1,9 +1,19 @@
-pkgname="pdf-mix-tool-git"
-gives="pdf-mix-tool"
-pkgver="1.1.1"
-pkgdesc="a GUI application to split, merge, rotate and mix PDF files"
-declare -a source=([0]="https://gitlab.com/scarpetta/pdfmixtool.git")
-declare -a depends=([0]="libqpdf28")
-declare -a makedepends=([0]="libqpdf-dev" [1]="make" [2]="cmake" [3]="libmagick++-6.q16-dev" [4]="libqt5svg5-dev" [5]="qtbase5-dev" [6]="qtbase5-dev-tools" [7]="qttools5-dev")
-declare -a optdepends=([0]="ImageMagick: image manipulation tool")
-declare -a breaks=([0]="pdf-mix-tool" [1]="pdf-mix-tool-bin" [2]="pdf-mix-tool-app" [3]="pdf-mix-tool-deb")
+pkgname = pdf-mix-tool-git
+gives = pdf-mix-tool
+pkgver = 1.1.1
+pkgdesc = a GUI application to split, merge, rotate and mix PDF files
+source = https://gitlab.com/scarpetta/pdfmixtool.git
+depends = libqpdf28
+makedepends = libqpdf-dev
+makedepends = make
+makedepends = cmake
+makedepends = libmagick++-6.q16-dev
+makedepends = libqt5svg5-dev
+makedepends = qtbase5-dev
+makedepends = qtbase5-dev-tools
+makedepends = qttools5-dev
+optdepends = ImageMagick: image manipulation tool
+breaks = pdf-mix-tool
+breaks = pdf-mix-tool-bin
+breaks = pdf-mix-tool-app
+breaks = pdf-mix-tool-deb

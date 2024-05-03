@@ -1,6 +1,12 @@
-pkgname="dotdrop"
-pkgver="1.13.2"
-pkgdesc="Save your dotfiles once, deploy them everywhere"
-declare -a source=([0]="https://github.com/deadc0de6/dotdrop/archive/refs/tags/v1.13.2.zip")
-declare -a depends=([0]="python3" [1]="python3-docopt" [2]="python3-setools" [3]="python3-jinja2" [4]="python3-ruamel.yaml" [5]="python3-magic" [6]="diffutils")
-declare -a sha256sums=([0]="b69deab3cf22b0cde5faacf5d90292abcade142da0b00513dc774dfc2e8f6203")
+pkgname = dotdrop
+pkgver = 1.13.2
+pkgdesc = Save your dotfiles once, deploy them everywhere
+source = https://github.com/deadc0de6/dotdrop/archive/refs/tags/v1.13.2.zip
+depends = python3
+depends = python3-docopt
+depends = python3-setools
+depends = python3-jinja2
+depends = python3-ruamel.yaml
+depends = python3-magic
+depends = diffutils
+sha256sums = b69deab3cf22b0cde5faacf5d90292abcade142da0b00513dc774dfc2e8f6203

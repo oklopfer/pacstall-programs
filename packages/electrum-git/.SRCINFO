@@ -1,8 +1,13 @@
-pkgname="electrum-git"
-gives="electrum"
-pkgver="4.4.5"
-pkgdesc="FOSS Bitcoin wallet written in Python - Git version"
-declare -a source=([0]="https://github.com/spesmilo/electrum.git")
-declare -a depends=([0]="python3-pyqt5" [1]="python3" [2]="libsecp256k1-0" [3]="python3-cryptography")
-declare -a makedepends=([0]="python3-setuptools")
-declare -a breaks=([0]="electrum-bin" [1]="electrum" [2]="electrum-app")
+pkgname = electrum-git
+gives = electrum
+pkgver = 4.4.5
+pkgdesc = FOSS Bitcoin wallet written in Python - Git version
+source = https://github.com/spesmilo/electrum.git
+depends = python3-pyqt5
+depends = python3
+depends = libsecp256k1-0
+depends = python3-cryptography
+makedepends = python3-setuptools
+breaks = electrum-bin
+breaks = electrum
+breaks = electrum-app

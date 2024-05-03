@@ -1,7 +1,8 @@
-pkgname="fselect-git"
-gives="fselect"
-pkgver="0.8.4"
-pkgdesc="Find files with SQL-like queries"
-declare -a source=([0]="https://github.com/jhspetersson/fselect.git")
-declare -a makedepends=([0]="cargo" [1]="rustc")
-declare -a incompatible=([0]="debian:bullseye")
+pkgname = fselect-git
+gives = fselect
+pkgver = 0.8.4
+pkgdesc = Find files with SQL-like queries
+source = https://github.com/jhspetersson/fselect.git
+makedepends = cargo
+makedepends = rustc
+incompatible = debian:bullseye

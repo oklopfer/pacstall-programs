@@ -1,10 +1,25 @@
-pkgname="anydesk-bin"
-gives="anydesk"
-pkgver="6.3.0"
-pkgdesc="Platform independent remote access to personal computers and other devices running the host application - Binary version"
-declare -a source=([0]="https://download.anydesk.com/linux/anydesk-6.3.0-amd64.tar.gz")
-declare -a depends=([0]="libc6" [1]="libgcc1" [2]="libglib2.0-0" [3]="libgtk2.0-0" [4]="libstdc++6" [5]="libx11-6" [6]="libxcb-shm0" [7]="libxcb1" [8]="libpango1.0-dev" [9]="libcairo2" [10]="libxrandr2" [11]="libx11-xcb1" [12]="libxtst6" [13]="libxfixes3" [14]="libxdamage1" [15]="libgtkglext1")
-declare -a breaks=([0]="anydesk-deb")
-declare -a replaces=([0]="anydesk")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="b1e3337d35ce19af93963829988b2014e8acfbbf6bd1b5adfb8bc7dcd6fee452")
+pkgname = anydesk-bin
+gives = anydesk
+pkgver = 6.3.0
+pkgdesc = Platform independent remote access to personal computers and other devices running the host application - Binary version
+arch = amd64
+source = https://download.anydesk.com/linux/anydesk-6.3.0-amd64.tar.gz
+depends = libc6
+depends = libgcc1
+depends = libglib2.0-0
+depends = libgtk2.0-0
+depends = libstdc++6
+depends = libx11-6
+depends = libxcb-shm0
+depends = libxcb1
+depends = libpango1.0-dev
+depends = libcairo2
+depends = libxrandr2
+depends = libx11-xcb1
+depends = libxtst6
+depends = libxfixes3
+depends = libxdamage1
+depends = libgtkglext1
+breaks = anydesk-deb
+replaces = anydesk
+sha256sums = b1e3337d35ce19af93963829988b2014e8acfbbf6bd1b5adfb8bc7dcd6fee452

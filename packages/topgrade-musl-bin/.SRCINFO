@@ -1,8 +1,12 @@
-pkgname="topgrade-musl-bin"
-gives="topgrade"
-pkgver="14.0.0"
-pkgdesc="Upgrades everything on your system"
-declare -a source=([0]="https://github.com/topgrade-rs/topgrade/releases/download/v14.0.0/topgrade-v14.0.0-x86_64-unknown-linux-musl.tar.gz")
-declare -a breaks=([0]="topgrade" [1]="topgrade-deb" [2]="topgrade-app" [3]="topgrade-git" [4]="topgrade-bin")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="f9fc5378ef86dc40efbd0e40a7b62b8e1470ce4f00c0ea101f512520d3bfe797")
+pkgname = topgrade-musl-bin
+gives = topgrade
+pkgver = 14.0.0
+pkgdesc = Upgrades everything on your system
+arch = amd64
+source = https://github.com/topgrade-rs/topgrade/releases/download/v14.0.0/topgrade-v14.0.0-x86_64-unknown-linux-musl.tar.gz
+breaks = topgrade
+breaks = topgrade-deb
+breaks = topgrade-app
+breaks = topgrade-git
+breaks = topgrade-bin
+sha256sums = f9fc5378ef86dc40efbd0e40a7b62b8e1470ce4f00c0ea101f512520d3bfe797

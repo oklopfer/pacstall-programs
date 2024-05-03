@@ -1,10 +1,23 @@
-pkgname="an-anime-game-launcher-bin"
-gives="an-anime-game-launcher"
-pkgver="3.9.5"
-pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
-declare -a source=([0]="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.9.5/anime-game-launcher" [1]="icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png")
-declare -a depends=([0]="xdelta3")
-declare -a optdepends=([0]="mangohud: FPS Hud/GUI" [1]="gamemode: Game Optimizations" [2]="vkbasalt: Required to use custom shaders (install this and reshade-shaders-git)")
-declare -a breaks=([0]="an-anime-game-launcher" [1]="an-anime-game-launcher-deb" [2]="an-anime-game-launcher-app" [3]="an-anime-game-launcher-git")
-declare -a incompatible=([0]="ubuntu:bionic" [1]="ubuntu:focal" [2]="ubuntu:jammy" [3]="ubuntu:kinetic" [4]="debian:stretch" [5]="debian:buster" [6]="debian:bullseye")
-declare -a sha256sums=([0]="b6a036ec76d4fc2573263fad61ff3ed1e937fa8bdf3e0cddfd79a8cd65e9bb55" [1]="SKIP")
+pkgname = an-anime-game-launcher-bin
+gives = an-anime-game-launcher
+pkgver = 3.9.5
+pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.9.5/anime-game-launcher
+source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
+depends = xdelta3
+optdepends = mangohud: FPS Hud/GUI
+optdepends = gamemode: Game Optimizations
+optdepends = vkbasalt: Required to use custom shaders (install this and reshade-shaders-git)
+breaks = an-anime-game-launcher
+breaks = an-anime-game-launcher-deb
+breaks = an-anime-game-launcher-app
+breaks = an-anime-game-launcher-git
+incompatible = ubuntu:bionic
+incompatible = ubuntu:focal
+incompatible = ubuntu:jammy
+incompatible = ubuntu:kinetic
+incompatible = debian:stretch
+incompatible = debian:buster
+incompatible = debian:bullseye
+sha256sums = b6a036ec76d4fc2573263fad61ff3ed1e937fa8bdf3e0cddfd79a8cd65e9bb55
+sha256sums = SKIP

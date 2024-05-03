@@ -1,7 +1,7 @@
-pkgname="nordvpn-deb"
-gives="nordvpn"
-pkgver="3.17.0"
-pkgdesc="NordVPN's CLI tool"
-declare -a source=([0]="https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn_3.17.0_amd64.deb")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="d12c830f9e4fe949942a00fd874fdd3e426d5694478feae5482c9f53065ebbf1")
+pkgname = nordvpn-deb
+gives = nordvpn
+pkgver = 3.17.0
+pkgdesc = NordVPN's CLI tool
+arch = amd64
+source = https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn_3.17.0_amd64.deb
+sha256sums = d12c830f9e4fe949942a00fd874fdd3e426d5694478feae5482c9f53065ebbf1

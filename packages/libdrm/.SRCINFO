@@ -1,12 +1,20 @@
-pkgname="libdrm"
-pkgver="2.4.120"
-pkgrel="2"
-pkgdesc="Userspace interface to kernel DRM services"
-url="https://dri.freedesktop.org/"
-declare -a source=([0]="https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz")
-declare -a depends=([0]="libpciaccess0" [1]="libc6")
-declare -a makedepends=([0]="python3-docutils" [1]="meson" [2]="ninja-build" [3]="libcairo2-dev" [4]="libpciaccess-dev" [5]="libc6-dev")
-declare -a replaces=([0]="libdrm-dev")
-declare -a provides=([0]="libdrm" [1]="libdrm-dev")
-declare -a arch=([0]="amd64" [1]="arm64")
-declare -a sha256sums=([0]="3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a")
+pkgname = libdrm
+pkgver = 2.4.120
+pkgrel = 2
+pkgdesc = Userspace interface to kernel DRM services
+url = https://dri.freedesktop.org/
+arch = amd64
+arch = arm64
+source = https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
+depends = libpciaccess0
+depends = libc6
+makedepends = python3-docutils
+makedepends = meson
+makedepends = ninja-build
+makedepends = libcairo2-dev
+makedepends = libpciaccess-dev
+makedepends = libc6-dev
+replaces = libdrm-dev
+provides = libdrm
+provides = libdrm-dev
+sha256sums = 3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a

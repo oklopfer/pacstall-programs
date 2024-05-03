@@ -1,10 +1,27 @@
-pkgname="steamtinkerlaunch-git"
-gives="steamtinkerlaunch"
-pkgver="12.12"
-pkgdesc="Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs."
-declare -a source=([0]="https://github.com/frostworx/steamtinkerlaunch.git")
-declare -a depends=([0]="gawk" [1]="xdotool" [2]="wget" [3]="vim" [4]="xdotool" [5]="x11-utils")
-declare -a optdepends=([0]="strace: system call tracer" [1]="gamemode: linux gaming optimizer" [2]="mangohud: vulkan/opengl monitoring hud" [3]="winetricks: wine settings tweaker" [4]="vkbasalt: vulkan graphics enhancer" [5]="goverlay: vulkan overlay configurator" [6]="scummvm: VM for point-and-click games" [7]="gameconqueror: memory editing for cheating")
-declare -a pacdeps=([0]="yad")
-declare -a breaks=([0]="steamtinkerlaunch" [1]="steamtinkerlaunch-git-git" [2]="steamtinkerlaunch-git-deb" [3]="steamtinkerlaunch-git-app" [4]="steamtinkerlaunch-git-deb" [5]="steamtinkerlaunch-git-bin")
-declare -a replaces=([0]="steamtinkerlaunch")
+pkgname = steamtinkerlaunch-git
+gives = steamtinkerlaunch
+pkgver = 12.12
+pkgdesc = Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs.
+source = https://github.com/frostworx/steamtinkerlaunch.git
+depends = gawk
+depends = xdotool
+depends = wget
+depends = vim
+depends = xdotool
+depends = x11-utils
+optdepends = strace: system call tracer
+optdepends = gamemode: linux gaming optimizer
+optdepends = mangohud: vulkan/opengl monitoring hud
+optdepends = winetricks: wine settings tweaker
+optdepends = vkbasalt: vulkan graphics enhancer
+optdepends = goverlay: vulkan overlay configurator
+optdepends = scummvm: VM for point-and-click games
+optdepends = gameconqueror: memory editing for cheating
+pacdeps = yad
+breaks = steamtinkerlaunch
+breaks = steamtinkerlaunch-git-git
+breaks = steamtinkerlaunch-git-deb
+breaks = steamtinkerlaunch-git-app
+breaks = steamtinkerlaunch-git-deb
+breaks = steamtinkerlaunch-git-bin
+replaces = steamtinkerlaunch

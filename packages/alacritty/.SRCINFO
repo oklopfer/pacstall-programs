@@ -1,7 +1,16 @@
-pkgname="alacritty"
-pkgver="0.13.2"
-pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
-declare -a source=([0]="https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz")
-declare -a makedepends=([0]="cargo" [1]="cmake" [2]="pkg-config" [3]="libfreetype6-dev" [4]="libfontconfig1-dev" [5]="libxcb-xfixes0-dev" [6]="python3" [7]="gzip" [8]="scdoc")
-declare -a incompatible=([0]="debian:bullseye" [1]="debian:bookworm")
-declare -a sha256sums=([0]="e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90")
+pkgname = alacritty
+pkgver = 0.13.2
+pkgdesc = A fast, cross-platform, OpenGL terminal emulator
+source = https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz
+makedepends = cargo
+makedepends = cmake
+makedepends = pkg-config
+makedepends = libfreetype6-dev
+makedepends = libfontconfig1-dev
+makedepends = libxcb-xfixes0-dev
+makedepends = python3
+makedepends = gzip
+makedepends = scdoc
+incompatible = debian:bullseye
+incompatible = debian:bookworm
+sha256sums = e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90

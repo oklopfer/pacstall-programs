@@ -1,8 +1,17 @@
-pkgname="tidal-hifi-bin"
-gives="tidal-hifi"
-pkgver="5.8.0"
-pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
-declare -a source=([0]="https://github.com/Mastermindzh/tidal-hifi/releases/download/5.8.0/tidal-hifi-5.8.0.tar.gz" [1]="icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png" [2]="tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin")
-declare -a depends=([0]="libxss1" [1]="libnss3" [2]="libgtk-3-0")
-declare -a breaks=([0]="tidal-hifi" [1]="tidal-hifi-deb" [2]="tidal-hifi-app" [3]="tidal-hifi-git")
-declare -a sha256sums=([0]="598da80fc2cfe4065f0ba07fbb08ecab44e8dde76ba8d88d2a491cc6f3780ce9" [1]="SKIP" [2]="SKIP")
+pkgname = tidal-hifi-bin
+gives = tidal-hifi
+pkgver = 5.8.0
+pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
+source = https://github.com/Mastermindzh/tidal-hifi/releases/download/5.8.0/tidal-hifi-5.8.0.tar.gz
+source = icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png
+source = tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin
+depends = libxss1
+depends = libnss3
+depends = libgtk-3-0
+breaks = tidal-hifi
+breaks = tidal-hifi-deb
+breaks = tidal-hifi-app
+breaks = tidal-hifi-git
+sha256sums = 598da80fc2cfe4065f0ba07fbb08ecab44e8dde76ba8d88d2a491cc6f3780ce9
+sha256sums = SKIP
+sha256sums = SKIP

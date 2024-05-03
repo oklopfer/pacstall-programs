@@ -1,7 +1,8 @@
-pkgname="tre-git"
-gives="tre"
-pkgver="0.4.0"
-pkgdesc="Tree command, improved"
-declare -a source=([0]="https://github.com/dduan/tre.git")
-declare -a makedepends=([0]="cargo" [1]="rustc")
-declare -a incompatible=([0]="debian:bullseye")
+pkgname = tre-git
+gives = tre
+pkgver = 0.4.0
+pkgdesc = Tree command, improved
+source = https://github.com/dduan/tre.git
+makedepends = cargo
+makedepends = rustc
+incompatible = debian:bullseye

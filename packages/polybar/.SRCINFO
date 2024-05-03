@@ -1,8 +1,31 @@
-pkgname="polybar"
-gives="polybar"
-pkgver="3.7.1"
-pkgdesc="Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting"
-declare -a source=([0]="https://github.com/polybar/polybar/releases/download/3.7.1/polybar-3.7.1.tar.gz")
-declare -a makedepends=([0]="cmake" [1]="cmake-data" [2]="pkg-config" [3]="python3-sphinx" [4]="python3-packaging" [5]="libcairo2-dev" [6]="libxcb1-dev" [7]="libuv1-dev" [8]="libxcb-util0-dev" [9]="libxcb-randr0-dev" [10]="libxcb-composite0-dev" [11]="python3-xcbgen" [12]="xcb-proto" [13]="libxcb-image0-dev" [14]="libxcb-ewmh-dev" [15]="libxcb-icccm4-dev")
-declare -a optdepends=([0]="libxcb-xkb-dev: xkeyboard" [1]="libxcb-xrm-dev: xrdb" [2]="libxcb-cursor-dev: cursorclick/scroll" [3]="libasound2-dev: alsa" [4]="libpulse-dev: pulseaudio" [5]="libjsoncpp-dev: json" [6]="libmpdclient-dev: mpd" [7]="libcurl4-openssl-dev: github" [8]="libnl-genl-3-dev: network")
-declare -a sha256sums=([0]="5de6ad385ba09dc453a4e5ec7054749a4882b5b21a62c17ae40bf7c90613ff0f")
+pkgname = polybar
+gives = polybar
+pkgver = 3.7.1
+pkgdesc = Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting
+source = https://github.com/polybar/polybar/releases/download/3.7.1/polybar-3.7.1.tar.gz
+makedepends = cmake
+makedepends = cmake-data
+makedepends = pkg-config
+makedepends = python3-sphinx
+makedepends = python3-packaging
+makedepends = libcairo2-dev
+makedepends = libxcb1-dev
+makedepends = libuv1-dev
+makedepends = libxcb-util0-dev
+makedepends = libxcb-randr0-dev
+makedepends = libxcb-composite0-dev
+makedepends = python3-xcbgen
+makedepends = xcb-proto
+makedepends = libxcb-image0-dev
+makedepends = libxcb-ewmh-dev
+makedepends = libxcb-icccm4-dev
+optdepends = libxcb-xkb-dev: xkeyboard
+optdepends = libxcb-xrm-dev: xrdb
+optdepends = libxcb-cursor-dev: cursorclick/scroll
+optdepends = libasound2-dev: alsa
+optdepends = libpulse-dev: pulseaudio
+optdepends = libjsoncpp-dev: json
+optdepends = libmpdclient-dev: mpd
+optdepends = libcurl4-openssl-dev: github
+optdepends = libnl-genl-3-dev: network
+sha256sums = 5de6ad385ba09dc453a4e5ec7054749a4882b5b21a62c17ae40bf7c90613ff0f

@@ -1,8 +1,15 @@
-pkgname="slop-git"
-gives="slop"
-pkgver="7.6"
-pkgdesc="Queries for a selection from the user and prints the region to stdout"
-declare -a source=([0]="https://github.com/naelstrof/slop.git")
-declare -a depends=([0]="libglew-dev" [1]="libxext-dev")
-declare -a makedepends=([0]="cmake" [1]="libglm-dev" [2]="libxrender-dev" [3]="libxfixes-dev" [4]="libxcomposite-dev" [5]="libxrandr-dev")
-declare -a breaks=([0]="slop-bin" [1]="slop")
+pkgname = slop-git
+gives = slop
+pkgver = 7.6
+pkgdesc = Queries for a selection from the user and prints the region to stdout
+source = https://github.com/naelstrof/slop.git
+depends = libglew-dev
+depends = libxext-dev
+makedepends = cmake
+makedepends = libglm-dev
+makedepends = libxrender-dev
+makedepends = libxfixes-dev
+makedepends = libxcomposite-dev
+makedepends = libxrandr-dev
+breaks = slop-bin
+breaks = slop

@@ -1,7 +1,17 @@
-pkgname="pacup-git"
-gives="pacup"
-pkgver="3.0.0"
-pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
-declare -a source=([0]="https://github.com/pacstall/pacup.git")
-declare -a depends=([0]="libdata-compare-perl" [1]="libfile-chdir-perl" [2]="libipc-system-simple-perl" [3]="libjson-perl" [4]="libwww-perl" [5]="liblist-moreutils-perl" [6]="libterm-progressbar-perl")
-declare -a replaces=([0]="pacup" [1]="pacup.pl" [2]="pacup.py" [3]="pacup-bin" [4]="pacup-git")
+pkgname = pacup-git
+gives = pacup
+pkgver = 3.0.0
+pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
+source = https://github.com/pacstall/pacup.git
+depends = libdata-compare-perl
+depends = libfile-chdir-perl
+depends = libipc-system-simple-perl
+depends = libjson-perl
+depends = libwww-perl
+depends = liblist-moreutils-perl
+depends = libterm-progressbar-perl
+replaces = pacup
+replaces = pacup.pl
+replaces = pacup.py
+replaces = pacup-bin
+replaces = pacup-git

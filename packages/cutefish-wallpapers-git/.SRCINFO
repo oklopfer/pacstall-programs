@@ -1,7 +1,8 @@
-pkgname="cutefish-wallpapers-git"
-gives="cutefish-wallpapers"
-pkgver="1.0"
-pkgdesc="CutefishOS's system wallpaper."
-declare -a source=([0]="https://github.com/cutefishos/wallpapers.git")
-declare -a makedepends=([0]="cmake" [1]="ninja-build")
-declare -- license="GPL-3.0"
+pkgname = cutefish-wallpapers-git
+gives = cutefish-wallpapers
+pkgver = 1.0
+pkgdesc = CutefishOS's system wallpaper.
+source = https://github.com/cutefishos/wallpapers.git
+makedepends = cmake
+makedepends = ninja-build
+license = GPL-3.0

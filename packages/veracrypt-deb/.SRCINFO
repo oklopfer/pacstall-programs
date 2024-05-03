@@ -1,8 +1,10 @@
-pkgname="veracrypt-deb"
-gives="veracrypt"
-pkgver="1.26.7"
-pkgdesc="VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux"
-declare -a source=([0]="https://launchpad.net/veracrypt/trunk/1.26.7/+download/veracrypt-1.26.7-Ubuntu-23.04-amd64.deb")
-declare -a breaks=([0]="veracrypt" [1]="veracrypt-console" [2]="veracrypt-git")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="fadb9116aba042d8d8b087c280e5b02798ac3d2f400d1d94bd791587245329d2")
+pkgname = veracrypt-deb
+gives = veracrypt
+pkgver = 1.26.7
+pkgdesc = VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux
+arch = amd64
+source = https://launchpad.net/veracrypt/trunk/1.26.7/+download/veracrypt-1.26.7-Ubuntu-23.04-amd64.deb
+breaks = veracrypt
+breaks = veracrypt-console
+breaks = veracrypt-git
+sha256sums = fadb9116aba042d8d8b087c280e5b02798ac3d2f400d1d94bd791587245329d2

@@ -1,7 +1,24 @@
-pkgname="touchegg-git"
-gives="touchegg"
-pkgver="2.0.16"
-pkgdesc="Touchégg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop."
-declare -a source=([0]="https://github.com/JoseExposito/touchegg.git")
-declare -a makedepends=([0]="git" [1]="build-essential" [2]="gdb" [3]="cmake" [4]="debhelper" [5]="libudev-dev" [6]="libinput-dev" [7]="libpugixml-dev" [8]="libcairo2-dev" [9]="libx11-dev" [10]="libxtst-dev" [11]="libxrandr-dev" [12]="libxi-dev" [13]="libglib2.0-dev" [14]="libgtk-3-dev")
-declare -a breaks=([0]="touchegg" [1]="touchegg-bin" [2]="touchegg-deb" [3]="touchegg-app")
+pkgname = touchegg-git
+gives = touchegg
+pkgver = 2.0.16
+pkgdesc = Touchégg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop.
+source = https://github.com/JoseExposito/touchegg.git
+makedepends = git
+makedepends = build-essential
+makedepends = gdb
+makedepends = cmake
+makedepends = debhelper
+makedepends = libudev-dev
+makedepends = libinput-dev
+makedepends = libpugixml-dev
+makedepends = libcairo2-dev
+makedepends = libx11-dev
+makedepends = libxtst-dev
+makedepends = libxrandr-dev
+makedepends = libxi-dev
+makedepends = libglib2.0-dev
+makedepends = libgtk-3-dev
+breaks = touchegg
+breaks = touchegg-bin
+breaks = touchegg-deb
+breaks = touchegg-app

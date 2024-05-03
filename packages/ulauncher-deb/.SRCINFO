@@ -1,8 +1,13 @@
-pkgname="ulauncher-deb"
-gives="ulauncher"
-pkgver="6.0.0~beta10"
-pkgdesc="Application launcher for Linux"
-declare -a source=([0]="https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta10/ulauncher_6.0.0.beta10_all.deb")
-declare -a depends=([0]="gobject-introspection" [1]="gir1.2-gtklayershell-0.1" [2]="python3-xlib" [3]="gir1.2-xapp-1.0" [4]="xapps-common" [5]="python3-levenshtein")
-declare -a arch=([0]="any")
-declare -a sha256sums=([0]="647cab272b85b0e54f16cafbb326c5c184867f659723c6ea4d3c62820765534d")
+pkgname = ulauncher-deb
+gives = ulauncher
+pkgver = 6.0.0~beta10
+pkgdesc = Application launcher for Linux
+arch = any
+source = https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta10/ulauncher_6.0.0.beta10_all.deb
+depends = gobject-introspection
+depends = gir1.2-gtklayershell-0.1
+depends = python3-xlib
+depends = gir1.2-xapp-1.0
+depends = xapps-common
+depends = python3-levenshtein
+sha256sums = 647cab272b85b0e54f16cafbb326c5c184867f659723c6ea4d3c62820765534d

@@ -1,9 +1,41 @@
-pkgname="emacs-git"
-gives="emacs"
-pkgver="29.1"
-pkgdesc="An extensible, customizable, free/libre text editor — and more."
-declare -a source=([0]="https://github.com/emacs-mirror/emacs.git")
-declare -a depends=([0]="libalsaplayer0" [1]="libgnutls28-dev" [2]="libxml2" [3]="libjansson-dev gpm" [4]="m17n-lib-bin" [5]="libharfbuzz0b" [6]="libgccjit0" [7]="libgccjit-10-dev" [8]="libgtk-3-dev" [9]="libsm6" [10]="libxcb-util1" [11]="libxcb1" [12]="libjpeg62-turbo" [13]="libpng16-16" [14]="libgif-dev" [15]="libwebp6" [16]="libtiff5" [17]="libcairo2")
-declare -a makedepends=([0]="git" [1]="autoconf" [2]="texinfo" [3]="pkg-config" [4]="libncurses-dev" [5]="libjpeg-dev" [6]="libpng-dev" [7]="libtiff-dev" [8]="libgnutls28-dev" [9]="libgif-dev" [10]="libxaw7-dev" [11]="libxpm-dev" [12]="x11proto-dev" [13]="libxi-dev")
-declare -a breaks=([0]="emacs-git" [1]="emacs-git-nox")
-declare -a replaces=([0]="emacs-git" [1]="emacs-git-nox")
+pkgname = emacs-git
+gives = emacs
+pkgver = 29.1
+pkgdesc = An extensible, customizable, free/libre text editor — and more.
+source = https://github.com/emacs-mirror/emacs.git
+depends = libalsaplayer0
+depends = libgnutls28-dev
+depends = libxml2
+depends = libjansson-dev gpm
+depends = m17n-lib-bin
+depends = libharfbuzz0b
+depends = libgccjit0
+depends = libgccjit-10-dev
+depends = libgtk-3-dev
+depends = libsm6
+depends = libxcb-util1
+depends = libxcb1
+depends = libjpeg62-turbo
+depends = libpng16-16
+depends = libgif-dev
+depends = libwebp6
+depends = libtiff5
+depends = libcairo2
+makedepends = git
+makedepends = autoconf
+makedepends = texinfo
+makedepends = pkg-config
+makedepends = libncurses-dev
+makedepends = libjpeg-dev
+makedepends = libpng-dev
+makedepends = libtiff-dev
+makedepends = libgnutls28-dev
+makedepends = libgif-dev
+makedepends = libxaw7-dev
+makedepends = libxpm-dev
+makedepends = x11proto-dev
+makedepends = libxi-dev
+breaks = emacs-git
+breaks = emacs-git-nox
+replaces = emacs-git
+replaces = emacs-git-nox

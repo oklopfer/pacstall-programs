@@ -1,8 +1,15 @@
-pkgname="cutefish-calculator-git"
-gives="cutefish-calculator"
-pkgver="0.4"
-pkgdesc="CutefishOS Calculator."
-declare -a source=([0]="https://github.com/cutefishos/calculator.git")
-declare -a depends=([0]="fishui" [1]="libcutefish")
-declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
-declare -- license="GPL-3.0"
+pkgname = cutefish-calculator-git
+gives = cutefish-calculator
+pkgver = 0.4
+pkgdesc = CutefishOS Calculator.
+source = https://github.com/cutefishos/calculator.git
+depends = fishui
+depends = libcutefish
+makedepends = extra-cmake-modules
+makedepends = ninja-build
+makedepends = qttools5-dev-tools
+makedepends = qtbase5-dev
+makedepends = qtdeclarative5-dev
+makedepends = qtquickcontrols2-5-dev
+makedepends = qttools5-dev
+license = GPL-3.0

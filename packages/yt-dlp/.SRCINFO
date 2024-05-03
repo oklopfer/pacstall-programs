@@ -1,7 +1,10 @@
-pkgname="yt-dlp"
-pkgver="2024.03.10"
-pkgdesc="A youtube-dl fork with additional features and fixes"
-declare -a source=([0]="https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp")
-declare -a depends=([0]="python3" [1]="ffmpeg")
-declare -a breaks=([0]="yt-dlp-git" [1]="yt-dlp-bin" [2]="yt-dlp")
-declare -a sha256sums=([0]="5576348930e44102add235c0a032e766f416a507db1dd2c75da833ff21e9fb6c")
+pkgname = yt-dlp
+pkgver = 2024.03.10
+pkgdesc = A youtube-dl fork with additional features and fixes
+source = https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp
+depends = python3
+depends = ffmpeg
+breaks = yt-dlp-git
+breaks = yt-dlp-bin
+breaks = yt-dlp
+sha256sums = 5576348930e44102add235c0a032e766f416a507db1dd2c75da833ff21e9fb6c

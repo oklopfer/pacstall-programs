@@ -1,9 +1,27 @@
-pkgname="os-installer-git"
-gives="os-installer"
-pkgver="0.3"
-pkgdesc="A generic and changable os-installer"
-declare -a source=([0]="https://gitlab.gnome.org/p3732/os-installer.git")
-declare -a depends=([0]="libgnome-desktop-4-2" [1]="libadwaita-1-0" [2]="libgweather-4-0" [3]="python3-yaml" [4]="libudisks2-0" [5]="libvte-2.91-gtk4-0" [6]="gir1.2-gnomedesktop-4.0" [7]="gir1.2-vte-3.91")
-declare -a makedepends=([0]="meson" [1]="gettext" [2]="libgnome-desktop-4-dev" [3]="libadwaita-1-dev" [4]="libgweather-4-dev" [5]="python3-yaml" [6]="libudisks2-dev" [7]="libvte-2.91-gtk4-dev")
-declare -a optdepends=([0]="gnome-disk-utility: Default disk CMD if not set" [1]="epiphany-browser: Default browser CMD if not set" [2]="gnome-control-center: Default wifi CMD if not set")
-declare -a breaks=([0]="os-installer-bin" [1]="os-installer" [2]="os-installer-commit")
+pkgname = os-installer-git
+gives = os-installer
+pkgver = 0.3
+pkgdesc = A generic and changable os-installer
+source = https://gitlab.gnome.org/p3732/os-installer.git
+depends = libgnome-desktop-4-2
+depends = libadwaita-1-0
+depends = libgweather-4-0
+depends = python3-yaml
+depends = libudisks2-0
+depends = libvte-2.91-gtk4-0
+depends = gir1.2-gnomedesktop-4.0
+depends = gir1.2-vte-3.91
+makedepends = meson
+makedepends = gettext
+makedepends = libgnome-desktop-4-dev
+makedepends = libadwaita-1-dev
+makedepends = libgweather-4-dev
+makedepends = python3-yaml
+makedepends = libudisks2-dev
+makedepends = libvte-2.91-gtk4-dev
+optdepends = gnome-disk-utility: Default disk CMD if not set
+optdepends = epiphany-browser: Default browser CMD if not set
+optdepends = gnome-control-center: Default wifi CMD if not set
+breaks = os-installer-bin
+breaks = os-installer
+breaks = os-installer-commit

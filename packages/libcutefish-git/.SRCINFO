@@ -1,8 +1,22 @@
-pkgname="libcutefish-git"
-gives="libcutefish"
-pkgver="0.7"
-pkgdesc="Cutefish System Library."
-declare -a source=([0]="https://github.com/cutefishos/libcutefish.git")
-declare -a depends=([0]="kscreen" [1]="modemmanager-qt-dev" [2]="libkf5networkmanagerqt-dev" [3]="libqt5quickcontrols2-5" [4]="libkf5screen-dev" [5]="libkf5kio-dev" [6]="libqt5sensors5-dev" [7]="accountsservice" [8]="bluez")
-declare -a makedepends=([0]="extra-cmake-modules" [1]="ninja-build" [2]="qttools5-dev-tools" [3]="qtbase5-dev" [4]="qtdeclarative5-dev" [5]="qtquickcontrols2-5-dev" [6]="qttools5-dev")
-declare -- license="GPL-3.0"
+pkgname = libcutefish-git
+gives = libcutefish
+pkgver = 0.7
+pkgdesc = Cutefish System Library.
+source = https://github.com/cutefishos/libcutefish.git
+depends = kscreen
+depends = modemmanager-qt-dev
+depends = libkf5networkmanagerqt-dev
+depends = libqt5quickcontrols2-5
+depends = libkf5screen-dev
+depends = libkf5kio-dev
+depends = libqt5sensors5-dev
+depends = accountsservice
+depends = bluez
+makedepends = extra-cmake-modules
+makedepends = ninja-build
+makedepends = qttools5-dev-tools
+makedepends = qtbase5-dev
+makedepends = qtdeclarative5-dev
+makedepends = qtquickcontrols2-5-dev
+makedepends = qttools5-dev
+license = GPL-3.0

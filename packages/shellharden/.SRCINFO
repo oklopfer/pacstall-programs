@@ -1,9 +1,13 @@
-pkgname="shellharden"
-gives="shellharden"
-pkgver="4.3.0"
-pkgdesc="A syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance"
-declare -a source=([0]="https://github.com/anordal/shellharden/archive/refs/tags/v4.3.0.zip")
-declare -a makedepends=([0]="rustc" [1]="cargo")
-declare -a breaks=([0]="shellharden" [1]="shellharden-git" [2]="shellharden-deb" [3]="shellharden-app")
-declare -a incompatible=([0]="debian:bullseye")
-declare -a sha256sums=([0]="d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc")
+pkgname = shellharden
+gives = shellharden
+pkgver = 4.3.0
+pkgdesc = A syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance
+source = https://github.com/anordal/shellharden/archive/refs/tags/v4.3.0.zip
+makedepends = rustc
+makedepends = cargo
+breaks = shellharden
+breaks = shellharden-git
+breaks = shellharden-deb
+breaks = shellharden-app
+incompatible = debian:bullseye
+sha256sums = d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc

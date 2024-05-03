@@ -1,9 +1,11 @@
-pkgname="brave-browser-deb"
-gives="brave-browser"
-pkgver="1.64.122"
-pkgdesc="Release version of world's most unique, privacy friendly web browser"
-declare -a source=([0]="https://github.com/brave/brave-browser/releases/download/v1.64.122/brave-browser_1.64.122_amd64.deb")
-declare -a pacdeps=([0]="brave-keyring-deb")
-declare -a breaks=([0]="brave-browser-bin" [1]="brave-browser-git" [2]="brave-browser-app")
-declare -a arch=([0]="amd64")
-declare -a sha256sums=([0]="f6d4a83a7f5719b5ff6fc9fdbc3f479a98b6ea3ce65152689a80857522686a85")
+pkgname = brave-browser-deb
+gives = brave-browser
+pkgver = 1.64.122
+pkgdesc = Release version of world's most unique, privacy friendly web browser
+arch = amd64
+source = https://github.com/brave/brave-browser/releases/download/v1.64.122/brave-browser_1.64.122_amd64.deb
+pacdeps = brave-keyring-deb
+breaks = brave-browser-bin
+breaks = brave-browser-git
+breaks = brave-browser-app
+sha256sums = f6d4a83a7f5719b5ff6fc9fdbc3f479a98b6ea3ce65152689a80857522686a85

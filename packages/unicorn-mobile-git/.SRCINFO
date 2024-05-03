@@ -1,11 +1,42 @@
-pkgname="unicorn-mobile-git"
-gives="unicorn-mobile"
-pkgver="0.0.1"
-pkgrel="2"
-pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
-priority="required"
-declare -a source=([0]="https://github.com/rhino-linux/unicorn.git#branch=mobile")
-declare -a depends=([0]="xfwm4" [1]="xfdashboard" [2]="xfdashboard-plugins" [3]="plank" [4]="dconf-cli" [5]="yaru-theme-icon" [6]="yaru-theme-gtk" [7]="papirus-icon-theme" [8]="onboard" [9]="xfce4-helpers" [10]="xiccd" [11]="xfce4" [12]="dbus-x11" [13]="hardinfo" [14]="xarchiver" [15]="xdg-desktop-portal-gtk" [16]="xserver-xorg-video-vesa" [17]="xserver-xorg-video-fbdev" [18]="tumbler" [19]="tumbler-plugins-extra" [20]="ffmpegthumbnailer" [21]="bluez-firmware" [22]="xserver-xorg-input-multitouch" [23]="xserver-xorg-input-synaptics" [24]="ukui-touchpadserver" [25]="pipewire-audio" [26]="bluetooth")
-declare -a pacdeps=([0]="xfce4-settings-pine-git" [1]="lightpad-git" [2]="papirus-folders" [3]="ulauncher-deb" [4]="cortile-bin")
-declare -a replaces=([0]="unicorn-desktop" [1]="unicorn-desktop-git")
-declare -a incompatible=([0]="debian:*")
+pkgname = unicorn-mobile-git
+gives = unicorn-mobile
+pkgver = 0.0.1
+pkgrel = 2
+pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
+priority = required
+source = https://github.com/rhino-linux/unicorn.git#branch=mobile
+depends = xfwm4
+depends = xfdashboard
+depends = xfdashboard-plugins
+depends = plank
+depends = dconf-cli
+depends = yaru-theme-icon
+depends = yaru-theme-gtk
+depends = papirus-icon-theme
+depends = onboard
+depends = xfce4-helpers
+depends = xiccd
+depends = xfce4
+depends = dbus-x11
+depends = hardinfo
+depends = xarchiver
+depends = xdg-desktop-portal-gtk
+depends = xserver-xorg-video-vesa
+depends = xserver-xorg-video-fbdev
+depends = tumbler
+depends = tumbler-plugins-extra
+depends = ffmpegthumbnailer
+depends = bluez-firmware
+depends = xserver-xorg-input-multitouch
+depends = xserver-xorg-input-synaptics
+depends = ukui-touchpadserver
+depends = pipewire-audio
+depends = bluetooth
+pacdeps = xfce4-settings-pine-git
+pacdeps = lightpad-git
+pacdeps = papirus-folders
+pacdeps = ulauncher-deb
+pacdeps = cortile-bin
+replaces = unicorn-desktop
+replaces = unicorn-desktop-git
+incompatible = debian:*

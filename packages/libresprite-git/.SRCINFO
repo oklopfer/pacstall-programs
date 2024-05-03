@@ -1,8 +1,29 @@
-pkgname="libresprite-git"
-gives="libresprite"
-pkgver="1.0"
-pkgdesc="fork of last GPL version of aseprite"
-declare -a source=([0]="https://github.com/LibreSprite/LibreSprite.git")
-declare -- depends="libpixman-1-0 libcurl4 libgif7 zlib1g libpng16-16 libjpeg-turbo8 libwebp6 libxcursor1"
-declare -a makedepends=([0]="g++" [1]="libx11-dev" [2]="libxcursor-dev" [3]="cmake" [4]="ninja-build" [5]="zlib1g-dev" [6]="libpixman-1-dev" [7]="libpng-dev" [8]="libjpeg-turbo8-dev" [9]="libtinyxml-dev" [10]="libwebp-dev" [11]="libgif-dev" [12]="libgtest-dev" [13]="libfreetype-dev" [14]="libcurlpp-dev" [15]="libharfbuzz-dev" [16]="libsdl2-image-dev" [17]="liblua5.3-dev")
-declare -a breaks=([0]="aseprite" [1]="libresprite-bin" [2]="libresprite-app" [3]="libresprite-deb" [4]="libresprite")
+pkgname = libresprite-git
+gives = libresprite
+pkgver = 1.0
+pkgdesc = fork of last GPL version of aseprite
+source = https://github.com/LibreSprite/LibreSprite.git
+depends = libpixman-1-0 libcurl4 libgif7 zlib1g libpng16-16 libjpeg-turbo8 libwebp6 libxcursor1
+makedepends = g++
+makedepends = libx11-dev
+makedepends = libxcursor-dev
+makedepends = cmake
+makedepends = ninja-build
+makedepends = zlib1g-dev
+makedepends = libpixman-1-dev
+makedepends = libpng-dev
+makedepends = libjpeg-turbo8-dev
+makedepends = libtinyxml-dev
+makedepends = libwebp-dev
+makedepends = libgif-dev
+makedepends = libgtest-dev
+makedepends = libfreetype-dev
+makedepends = libcurlpp-dev
+makedepends = libharfbuzz-dev
+makedepends = libsdl2-image-dev
+makedepends = liblua5.3-dev
+breaks = aseprite
+breaks = libresprite-bin
+breaks = libresprite-app
+breaks = libresprite-deb
+breaks = libresprite

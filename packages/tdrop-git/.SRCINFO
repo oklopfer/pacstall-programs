@@ -1,7 +1,10 @@
-pkgname="tdrop-git"
-gives="tdrop"
-pkgver="1.5.0"
-pkgdesc="A Glorified WM-Independent Dropdown Creator"
-url="https://github.com/noctuid/tdrop"
-declare -a source=([0]="https://github.com/noctuid/tdrop.git")
-declare -a depends=([0]="xdotool" [1]="bash" [2]="gawk" [3]="procps")
+pkgname = tdrop-git
+gives = tdrop
+pkgver = 1.5.0
+pkgdesc = A Glorified WM-Independent Dropdown Creator
+url = https://github.com/noctuid/tdrop
+source = https://github.com/noctuid/tdrop.git
+depends = xdotool
+depends = bash
+depends = gawk
+depends = procps

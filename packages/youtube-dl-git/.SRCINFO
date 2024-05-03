@@ -1,7 +1,9 @@
-pkgname="youtube-dl-git"
-gives="youtube-dl"
-pkgver="2021.12.17"
-pkgdesc="Command-line program to download videos from YouTube.com and other video sites"
-declare -a source=([0]="https://github.com/ytdl-org/youtube-dl.git")
-declare -a depends=([0]="python3")
-declare -a makedepends=([0]="make" [1]="pandoc" [2]="python3")
+pkgname = youtube-dl-git
+gives = youtube-dl
+pkgver = 2021.12.17
+pkgdesc = Command-line program to download videos from YouTube.com and other video sites
+source = https://github.com/ytdl-org/youtube-dl.git
+depends = python3
+makedepends = make
+makedepends = pandoc
+makedepends = python3

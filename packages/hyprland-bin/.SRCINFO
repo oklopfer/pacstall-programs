@@ -1,11 +1,37 @@
-pkgname="hyprland-bin"
-gives="hyprland"
-pkgver="0.39.1"
-pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
-declare -a source=([0]="https://github.com/hyprwm/Hyprland/releases/download/v0.39.1/v0.39.1.tar.gz")
-declare -a depends=([0]="libegl1" [1]="libxcb-util1" [2]="libxcb-render0" [3]="libxcb-image0" [4]="libxcb-icccm4" [5]="libxcb-composite0" [6]="libxcb-res0" [7]="libxcb-ewmh2" [8]="libwayland-cursor0" [9]="libdisplay-info1" [10]="libxkbcommon0" [11]="libglib2.0-0" [12]="libharfbuzz0b" [13]="libpangocairo-1.0-0" [14]="libinput10" [15]="libseat-dev" [16]="libliftoff0" [17]="libopengl0" [18]="libglx0" [19]="libgles2")
-declare -a pacdeps=([0]="hyprlang" [1]="hyprcursor-bin" [2]="xcb-util-errors")
-declare -a replaces=([0]="hyprland")
-declare -a arch=([0]="amd64")
-declare -a compatible=([0]="*:mantic" [1]="*:noble" [2]="*:devel" [3]="debian:bookworm" [4]="debian:trixie" [5]="debian:sid")
-declare -a sha256sums=([0]="1c7bd3eeb6f795d4c95b936397489ca55f7ec6951d7efdea069bd71540007f58")
+pkgname = hyprland-bin
+gives = hyprland
+pkgver = 0.39.1
+pkgdesc = A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks
+arch = amd64
+source = https://github.com/hyprwm/Hyprland/releases/download/v0.39.1/v0.39.1.tar.gz
+depends = libegl1
+depends = libxcb-util1
+depends = libxcb-render0
+depends = libxcb-image0
+depends = libxcb-icccm4
+depends = libxcb-composite0
+depends = libxcb-res0
+depends = libxcb-ewmh2
+depends = libwayland-cursor0
+depends = libdisplay-info1
+depends = libxkbcommon0
+depends = libglib2.0-0
+depends = libharfbuzz0b
+depends = libpangocairo-1.0-0
+depends = libinput10
+depends = libseat-dev
+depends = libliftoff0
+depends = libopengl0
+depends = libglx0
+depends = libgles2
+pacdeps = hyprlang
+pacdeps = hyprcursor-bin
+pacdeps = xcb-util-errors
+replaces = hyprland
+compatible = *:mantic
+compatible = *:noble
+compatible = *:devel
+compatible = debian:bookworm
+compatible = debian:trixie
+compatible = debian:sid
+sha256sums = 1c7bd3eeb6f795d4c95b936397489ca55f7ec6951d7efdea069bd71540007f58

@@ -20,33 +20,43 @@ jobs:
       - name: Run
         run: |
           function srcinfo() {
-                local CARCH='${CARCH}' DISTRO='${DISTRO}' src sum vars a_sum var ar car \
-                    known_hashsums_src=("b2" "sha512" "sha384" "sha256" "sha224" "sha1" "md5") \
-                    known_archs_src=("amd64" "arm64" "armel" "armhf" "i386" "mips64el" "ppc64el" "riscv64" "s390x") \
-                    allvars=("pkgname" "gives" "pkgver" "pkgrel" "epoch" "pkgdesc" "url" "priority") \
-                    allars=("source" "depends" "makedepends" "checkdepends" "optdepends" "pacdeps" "conflicts" "breaks" \
-                    "replaces" "provides" "arch" "incompatible" "compatible" "backup" "mask" "noextract" "nosubmodules" "license")
-                source ${1}
-                for src in "${known_archs_src[@]}"; do
-                    for vars in {source,depends,makedepends,optdepends,pacdeps,checkdepends,provides,conflicts,breaks,replaces}; do
-                        allars+=("${vars}_${src}")
-                    done
-                    allvars+=("gives_${src}")
-                done
-                for sum in "${known_hashsums_src[@]}"; do
-                    allars+=("${sum}sums")
-                    for a_sum in "${known_archs_src[@]}"; do
-                        allars+=("${sum}sums_${a_sum}")
-                    done
-                done
-                for var in "${allvars[@]}"; do
-                    [[ -n ${!var} ]] && echo "${var}=\"${!var}\""
-                done
-                for ar in "${allars[@]}"; do
-                    [[ -n ${!ar} ]] && declare -p ${ar} | sed -e 's|\\||g'
-                done
-                unset "${allars[@]}" "${allvars[@]}"
-            }
+              local CARCH='CARCH_REPLACE' src sum vars a_sum var ar car aars bar ars \
+                  known_hashsums_src=("b2" "sha512" "sha384" "sha256" "sha224" "sha1" "md5") \
+                  known_archs_src=("amd64" "arm64" "armel" "armhf" "i386" "mips64el" "ppc64el" "riscv64" "s390x") \
+                  allvars=("pkgname" "gives" "pkgver" "pkgrel" "epoch" "pkgdesc" "url" "priority") \
+                  allars=("arch" "source" "depends" "makedepends" "checkdepends" "optdepends" "pacdeps" "conflicts" "breaks" \
+                  "replaces" "provides" "incompatible" "compatible" "backup" "mask" "noextract" "nosubmodules" "license")
+              source ${1}
+              for src in "${known_archs_src[@]}"; do
+                  for vars in {source,depends,makedepends,optdepends,pacdeps,checkdepends,provides,conflicts,breaks,replaces}; do
+                      allars+=("${vars}_${src}")
+                  done
+                  allvars+=("gives_${src}")
+              done
+              for sum in "${known_hashsums_src[@]}"; do
+                  allars+=("${sum}sums")
+                  for a_sum in "${known_archs_src[@]}"; do
+                      allars+=("${sum}sums_${a_sum}")
+                  done
+              done
+              for var in "${allvars[@]}"; do
+                  [[ -n ${!var} ]] && echo "${var} = ${!var}"
+              done
+              for ar in "${allars[@]}"; do
+                  declare -n "bar=${ar}"
+                  [[ -n ${bar[@]} ]] &&
+                  for ars in "${bar[@]}"; do
+                      if [[ ${ars} =~ CARCH_REPLACE ]]; then
+                          for aars in ${arch[@]}; do
+                              echo "${ar}_${aars} = ${ars}" | sed -e "s/CARCH_REPLACE/${aars}/g"
+                          done
+                      else
+                          echo "${ar} = ${ars}"
+                      fi
+                  done
+              done
+              unset "${allars[@]}" "${allvars[@]}"
+          }
           for i in $(git diff HEAD~1 --name-only | grep -E '^packages/[^/]+/[^/]+\.pacscript$'); do
             srcinfo "$i" | tee ${i%/*.pacscript}/.SRCINFO > /dev/null
           done

@@ -1,11 +1,50 @@
-pkgname="unicorn-desktop-git"
-gives="unicorn-desktop"
-pkgver="0.0.1"
-pkgrel="2"
-pkgdesc="Unicorn Desktop by the Rhino Linux Team"
-priority="required"
-declare -a source=([0]="https://github.com/rhino-linux/unicorn.git")
-declare -a depends=([0]="xfwm4" [1]="xfdashboard" [2]="xfdashboard-plugins" [3]="xfce4-appmenu-plugin" [4]="vala-panel-plugins-wnck" [5]="vala-panel-appmenu" [6]="appmenu-gtk2-module" [7]="appmenu-gtk3-module" [8]="xfce4-power-manager" [9]="xfce4-power-manager-plugins" [10]="xfce4-pulseaudio-plugin" [11]="xfce4-helpers" [12]="pavucontrol" [13]="plank" [14]="dconf-cli" [15]="yaru-theme-icon" [16]="yaru-theme-gtk" [17]="papirus-icon-theme" [18]="firmware-sof-signed" [19]="dbus-x11" [20]="hardinfo" [21]="xarchiver" [22]="xdg-desktop-portal-gtk" [23]="xserver-xorg-video-vesa" [24]="xserver-xorg-video-fbdev" [25]="light-locker" [26]="light-locker-settings" [27]="tumbler" [28]="tumbler-plugins-extra" [29]="ffmpegthumbnailer" [30]="bluez-firmware" [31]="xserver-xorg-input-multitouch" [32]="xserver-xorg-input-synaptics" [33]="ukui-touchpadserver" [34]="pipewire-audio" [35]="bluetooth")
-declare -a pacdeps=([0]="lightpad-git" [1]="papirus-folders" [2]="ulauncher-deb" [3]="cortile-bin")
-declare -a replaces=([0]="unicorn-mobile" [1]="unicorn-mobile-git")
-declare -a incompatible=([0]="debian:*")
+pkgname = unicorn-desktop-git
+gives = unicorn-desktop
+pkgver = 0.0.1
+pkgrel = 2
+pkgdesc = Unicorn Desktop by the Rhino Linux Team
+priority = required
+source = https://github.com/rhino-linux/unicorn.git
+depends = xfwm4
+depends = xfdashboard
+depends = xfdashboard-plugins
+depends = xfce4-appmenu-plugin
+depends = vala-panel-plugins-wnck
+depends = vala-panel-appmenu
+depends = appmenu-gtk2-module
+depends = appmenu-gtk3-module
+depends = xfce4-power-manager
+depends = xfce4-power-manager-plugins
+depends = xfce4-pulseaudio-plugin
+depends = xfce4-helpers
+depends = pavucontrol
+depends = plank
+depends = dconf-cli
+depends = yaru-theme-icon
+depends = yaru-theme-gtk
+depends = papirus-icon-theme
+depends = firmware-sof-signed
+depends = dbus-x11
+depends = hardinfo
+depends = xarchiver
+depends = xdg-desktop-portal-gtk
+depends = xserver-xorg-video-vesa
+depends = xserver-xorg-video-fbdev
+depends = light-locker
+depends = light-locker-settings
+depends = tumbler
+depends = tumbler-plugins-extra
+depends = ffmpegthumbnailer
+depends = bluez-firmware
+depends = xserver-xorg-input-multitouch
+depends = xserver-xorg-input-synaptics
+depends = ukui-touchpadserver
+depends = pipewire-audio
+depends = bluetooth
+pacdeps = lightpad-git
+pacdeps = papirus-folders
+pacdeps = ulauncher-deb
+pacdeps = cortile-bin
+replaces = unicorn-mobile
+replaces = unicorn-mobile-git
+incompatible = debian:*

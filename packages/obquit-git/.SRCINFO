@@ -1,7 +1,10 @@
-pkgname="obquit-git"
-gives="obquit"
-pkgver="0.0.1"
-pkgdesc="Utility script for logging out of a session, inspired by Oblogout"
-declare -a source=([0]="https://github.com/dglava/obquit.git")
-declare -a depends=([0]="python3-distutils" [1]="python3-cairo" [2]="python-gi-dev")
-declare -a breaks=([0]="obquit" [1]="obquit-bin")
+pkgname = obquit-git
+gives = obquit
+pkgver = 0.0.1
+pkgdesc = Utility script for logging out of a session, inspired by Oblogout
+source = https://github.com/dglava/obquit.git
+depends = python3-distutils
+depends = python3-cairo
+depends = python-gi-dev
+breaks = obquit
+breaks = obquit-bin

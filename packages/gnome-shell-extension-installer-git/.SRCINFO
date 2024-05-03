@@ -1,6 +1,8 @@
-pkgname="gnome-shell-extension-installer-git"
-gives="gnome-shell-extension-installer"
-pkgver="1.7"
-pkgdesc="A bash script to install and search extensions from extensions.gnome.org"
-declare -a source=([0]="https://github.com/brunelli/gnome-shell-extension-installer.git")
-declare -a depends=([0]="curl" [1]="perl" [2]="dbus")
+pkgname = gnome-shell-extension-installer-git
+gives = gnome-shell-extension-installer
+pkgver = 1.7
+pkgdesc = A bash script to install and search extensions from extensions.gnome.org
+source = https://github.com/brunelli/gnome-shell-extension-installer.git
+depends = curl
+depends = perl
+depends = dbus
