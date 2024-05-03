@@ -9,5 +9,5 @@ arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 package() {
   cd "${_archive}"
-  install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
+  install -Dm755 "op" -t "${pkgdir}/usr/bin"
 }
