@@ -34,8 +34,9 @@ function srcinfo() {
       elem="${elem%[[:space:]]}"
       if [[ ${elem} = *@CARCH@* ]]; then
         for a in "${arch[@]}"; do
-          elem="${elem//@CARCH@/${a}}"
-          printf '%s_%s = %s\n' "${ar}" "${a}" "${elem}"
+          : "${ar}_${a} = ${elem}"
+          : "${_//@CARCH@/${a}}"
+          printf '%s\n' "${_}"
         done
       else
         printf '%s = %s\n' "${ar}" "${elem}"
