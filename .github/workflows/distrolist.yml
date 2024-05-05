@@ -73,7 +73,7 @@ jobs:
         if: steps.calc_pr.outputs.changes_detected == 'true'
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           add-path: distrolist
           base: master
           branch: update-distrolist-${{ env.dl_date }}
