@@ -9,4 +9,5 @@ debian:
   bullseye/11
   bookworm/12
   trixie/13
+  jeff/19
   sid
