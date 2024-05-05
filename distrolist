@@ -6,7 +6,7 @@ ubuntu:
   devel
 debian:
   buster/10
-  bullseye/11
+  bullseye/12
   bookworm/12
   trixie/13
   jeff/19
