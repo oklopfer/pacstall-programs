@@ -4,6 +4,7 @@ ubuntu:
   mantic/23.10
   noble/24.04
   oracular/24.10
+  fortnite/25.04
   devel
 debian:
   buster/10
