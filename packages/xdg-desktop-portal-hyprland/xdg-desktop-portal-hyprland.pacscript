@@ -8,6 +8,7 @@ arch=("amd64" "arm64")
 compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:oracular' 'ubuntu:noble')
 license=('MIT')
 provides=("xdg-desktop-portal-impl")
+pacdeps=("hyprlang")
 depends=("pipewire" "xdg-desktop-portal" "grim" "slurp")
 makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin" "libdrm-dev")
 optdepends=('grim: required for the screenshot portal to function'
