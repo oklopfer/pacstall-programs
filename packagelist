@@ -12,6 +12,8 @@ anydesk-bin
 anydesk-deb
 anytype-deb
 appimagelauncher-deb
+appmenu-glib-translator
+appmenu-gtk-module
 apx-git
 ardour-git
 arduino-cli-bin
@@ -488,6 +490,9 @@ uwufetch
 vega-strike-engine-git
 vega-strike-git
 veracrypt-deb
+vala-panel-appmenu-common
+vala-panel-appmenu
+vala-panel
 viper4linux
 virtualbox-deb
 vivaldi-deb
@@ -517,6 +522,7 @@ wsysmon-bin
 xapps-common-deb
 xcb-util-errors
 xdg-desktop-portal-hyprland
+xfce4-appmenu-plugin
 xfce4-deb
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
