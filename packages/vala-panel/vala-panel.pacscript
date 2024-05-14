@@ -7,7 +7,7 @@ license=('LGPL-3.0-only')
 arch=('amd64' 'arm64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 provides=('vala-panel-plugins-wnck' 'vala-panel-common' 'libvalapanel-dev' 'libvalapanel0')
-replaces=("${provides}")
+replaces=("${provides[@]}")
 depends=(
   'libgtk-layer-shell0'
   'libgtk-3-0'
