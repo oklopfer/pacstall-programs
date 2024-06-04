@@ -106,7 +106,7 @@ body:
   - type: input
     id: runtime_dependencies
     attributes:
-      label: "Runtime dependencies"
+      label: "Dependencies"
       description: "Enter the runtime dependencies (comma-separated, e.g., dependency1, dependency2)"
     validations:
       required: false
@@ -114,7 +114,7 @@ body:
   - type: input
     id: build_time_dependencies
     attributes:
-      label: "Build-time dependencies"
+      label: "Build Dependencies"
       description: "Enter the build-time dependencies (comma-separated, e.g., dependency1, dependency2)"
     validations:
       required: false
@@ -122,7 +122,7 @@ body:
   - type: input
     id: testing_dependencies
     attributes:
-      label: "Testing dependencies"
+      label: "Check Dependencies"
       description: "Enter the testing dependencies (comma-separated, e.g., dependency1, dependency2)"
     validations:
       required: false
@@ -130,7 +130,7 @@ body:
   - type: input
     id: optional_dependencies
     attributes:
-      label: "Optional dependencies"
+      label: "Optional Dependencies"
       description: "Enter the optional dependencies (comma-separated, format: pkg: description, e.g., dependency1: description1, dependency2: description2)"
     validations:
       required: false
@@ -138,7 +138,7 @@ body:
   - type: textarea
     id: package_description
     attributes:
-      label: "Package description"
+      label: "Package Description"
       description: "Enter the package description (e.g., A short description)"
       value: "A short description"
     validations:
@@ -168,7 +168,7 @@ body:
       label: "Building guide"
       description: "Provide the link to the building guide (e.g., https://foo.com/build-guide)"
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: context
