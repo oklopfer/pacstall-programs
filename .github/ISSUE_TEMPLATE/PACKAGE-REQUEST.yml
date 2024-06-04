@@ -2,6 +2,7 @@ name: Pacscript Request
 description: Use this template to request the creation of a new Pacscript.
 title: "PacReq: name_of_the_package"
 labels: ["package request"]
+body:
   - type: input
     id: package_name
     attributes:
