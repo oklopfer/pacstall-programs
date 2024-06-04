@@ -16,7 +16,6 @@ body:
     attributes:
       label: Repology reference
       description: Enter the repology reference (e.g., project: bar)
-      value: project\: bar
     validations:
       required: true
 
