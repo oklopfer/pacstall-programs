@@ -17,7 +17,7 @@ body:
       label: Repology reference
       description: Enter the repology reference
     validations:
-      required: true
+      required: false
 
   - type: input
     id: architectures
@@ -26,7 +26,7 @@ body:
       description: Enter the architectures (comma-separated)
       value: any
     validations:
-      required: true
+      required: false
 
   - type: input
     id: upstream_package_version
@@ -43,7 +43,7 @@ body:
       description: Enter the package release version
       value: 1
     validations:
-      required: true
+      required: false
 
   - type: input
     id: homepage_url
@@ -51,7 +51,7 @@ body:
       label: Homepage URL
       description: Enter the homepage URL
     validations:
-      required: true
+      required: false
 
   - type: input
     id: source_urls
@@ -116,7 +116,7 @@ body:
       description: Enter the license
       value: LGPL-2.1-or-later
     validations:
-      required: true
+      required: false
 
   - type: input
     id: maintainer
