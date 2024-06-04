@@ -12,7 +12,7 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkboxes
     id: type
     attributes:
       label: Types
@@ -30,7 +30,7 @@ body:
       label: Architectures
       description: Select the architectures
       options:
-        - label: any
+        - label: any/all
         - label: amd64
         - label: arm64
         - label: armel
@@ -41,7 +41,7 @@ body:
         - label: riscv64
         - label: s390x
     validations:
-      required: true
+      required: false
 
   - type: input
     id: repology_reference
