@@ -55,20 +55,11 @@ body:
   - type: input
     id: upstream_package_version
     attributes:
-      label: "Upstream package version"
+      label: "Package version"
       description: "Enter the upstream package version (e.g., 1.0.0)"
       value: "1.0.0"
     validations:
       required: true
-
-  - type: input
-    id: package_release_version
-    attributes:
-      label: "Package release version"
-      description: "Enter the package release version (e.g., 1)"
-      value: "1"
-    validations:
-      required: false
 
   - type: input
     id: homepage_url
