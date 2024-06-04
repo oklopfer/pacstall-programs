@@ -6,7 +6,7 @@ body:
   - type: dropdown
     id: type
     attributes:
-      label: Types
+      label: Type
       description: Select the type of pacscript you're requesting
       options:
         - -bin (Binary release of the package)
