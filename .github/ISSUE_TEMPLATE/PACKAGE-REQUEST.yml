@@ -30,16 +30,16 @@ body:
       label: "Architectures"
       description: "Select the architectures"
       options:
-        - label: "any/all"
-        - label: "amd64"
-        - label: "arm64"
-        - label: "armel"
-        - label: "armhf"
-        - label: "i386"
-        - label: "mips64el"
-        - label: "ppc64el"
-        - label: "riscv64"
-        - label: "s390x"
+        - "any/all"
+        - "amd64"
+        - "arm64"
+        - "armel"
+        - "armhf"
+        - "i386"
+        - "mips64el"
+        - "ppc64el"
+        - "riscv64"
+        - "s390x"
     validations:
       required: false
 
