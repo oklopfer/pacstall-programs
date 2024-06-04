@@ -8,7 +8,7 @@ body:
     attributes:
       label: Package name
       description: Enter the package name
-      value: package
+      value: "package"
     validations:
       required: true
 
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Architectures
       description: Enter the architectures (comma-separated)
-      value: any
+      value: "any"
     validations:
       required: false
 
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Upstream package version
       description: Enter the upstream package version
-      value: 1.0.0
+      value: "1.0.0"
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     attributes:
       label: Package release version
       description: Enter the package release version
-      value: 1
+      value: "1"
     validations:
       required: false
 
@@ -60,7 +60,7 @@ body:
     attributes:
       label: Source URLs
       description: Enter the source URLs (comma-separated)
-      value: website.com
+      value: "https://website.com"
     validations:
       required: true
 
@@ -69,7 +69,7 @@ body:
     attributes:
       label: Checksums
       description: Enter the checksums (comma-separated)
-      value: SKIP
+      value: "SKIP"
     validations:
       required: true
 
@@ -110,7 +110,7 @@ body:
     attributes:
       label: Package description
       description: Enter the package description
-      value: A short description
+      value: "A short description"
     validations:
       required: true
 
@@ -119,7 +119,7 @@ body:
     attributes:
       label: License
       description: Enter the license
-      value: LGPL-2.1-or-later
+      value: "LGPL-2.1-or-later"
     validations:
       required: false
 
@@ -128,7 +128,7 @@ body:
     attributes:
       label: Maintainer
       description: Enter the maintainer
-      value: Person <place@thing.com>
+      value: "Person <place@thing.com>"
     validations:
       required: true
 
