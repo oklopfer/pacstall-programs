@@ -27,7 +27,7 @@ body:
       description: Enter the architectures (comma-separated)
       value: "any"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: upstream_package_version
