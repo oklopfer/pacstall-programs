@@ -22,7 +22,7 @@ body:
     attributes:
       label: "Package name"
       description: "Enter the package name (e.g., foo-bin)"
-      value: "package"
+      value: "foo-bin"
     validations:
       required: true
 
@@ -30,7 +30,7 @@ body:
     id: architectures
     attributes:
       label: "Architectures"
-      description: "Select the architectures"
+      description: "Select the architectures (leave blank for any/all)"
       multiple: true
       options:
         - "amd64"
@@ -46,18 +46,10 @@ body:
       required: false
 
   - type: input
-    id: repology_reference
-    attributes:
-      label: "Repology reference"
-      description: "Enter the repology reference (e.g., project: bar)"
-    validations:
-      required: false
-
-  - type: input
     id: upstream_package_version
     attributes:
-      label: "Package version"
-      description: "Enter the upstream package version (e.g., 1.0.0)"
+      label: "Latest package version"
+      description: "Enter the most recent package version (e.g., 1.0.0)"
       value: "1.0.0"
     validations:
       required: true
@@ -75,7 +67,7 @@ body:
     attributes:
       label: "Source URLs"
       description: "Enter the source URLs (comma-separated, e.g., https://website.com)"
-      value: "https://website.com"
+      value: "https://website.com/foo-bin.tar.xz"
     validations:
       required: true
 
@@ -99,7 +91,7 @@ body:
     id: checksums
     attributes:
       label: "Checksums"
-      description: "Enter the checksums (comma-separated, use 'SKIP' if not applicable)"
+      description: "Enter the checksums (comma-separated, in matched order to source URLs; use 'SKIP' for -git or any not applicable)"
       value: "SKIP"
     validations:
       required: true
@@ -132,7 +124,7 @@ body:
     id: optional_dependencies
     attributes:
       label: "Optional Dependencies"
-      description: "Enter the optional dependencies (comma-separated, format: pkg: description, e.g., dependency1: description1, dependency2: description2)"
+      description: "Enter the optional dependencies (comma-separated, format: pkg: description; e.g., dependency1: A brief description, dependency2: Another brief description)"
     validations:
       required: false
 
@@ -144,6 +136,14 @@ body:
       value: "A short description"
     validations:
       required: true
+
+  - type: input
+    id: repology_reference
+    attributes:
+      label: "Repology reference"
+      description: "Enter the repology reference (e.g., project: bar)"
+    validations:
+      required: false
 
   - type: input
     id: license
