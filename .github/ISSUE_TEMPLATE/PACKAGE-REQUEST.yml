@@ -12,8 +12,8 @@ body:
         - -bin (Binary release of the package)
         - -git (Compiled off of the latest commit of the package)
         - -app (Appimage of the package)
-        - nosuffix (Compiled off of the released source code)
         - -deb (Debian achieve release of the package)
+        - other/nosuffix (Compiled off of the released source code, etc.)
     validations:
       required: true
 
