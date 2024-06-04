@@ -30,6 +30,7 @@ body:
     attributes:
       label: Architectures
       description: Select the architectures
+      multiple: true
       options:
         - any
         - amd64
