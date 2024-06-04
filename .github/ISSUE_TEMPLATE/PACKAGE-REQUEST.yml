@@ -14,6 +14,8 @@ body:
         - -app (Appimage of the package)
         - nosuffix (Compiled off of the released source code)
         - -deb (Debian achieve release of the package)
+    validations:
+      required: true
 
   - type: input
     id: package_name
@@ -30,7 +32,6 @@ body:
       label: "Architectures"
       description: "Select the architectures"
       options:
-        - "any/all"
         - "amd64"
         - "arm64"
         - "armel"
