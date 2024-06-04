@@ -29,7 +29,6 @@ body:
     attributes:
       label: Architectures
       description: Select the architectures
-      multiple: true
       options:
         - label: any
         - label: amd64
