@@ -3,6 +3,18 @@ description: "Use this template to request the creation of a new Pacscript."
 title: "PacReq: name_of_the_package"
 labels: ["package request"]
 body:
+ - type: dropdown
+    id: type
+    attributes:
+      label: Types
+      description: Select the type of pacscript you're requesting
+      options:
+        - -bin (Binary release of the package)
+        - -git (Compiled off of the latest commit of the package)
+        - -app (Appimage of the package)
+        - nosuffix (Compiled off of the released source code)
+        - -deb (Debian achieve release of the package)
+
   - type: input
     id: package_name
     attributes:
@@ -12,7 +24,7 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: architectures
     attributes:
       label: "Architectures"
