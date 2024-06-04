@@ -1,34 +1,145 @@
-name: Package Request
-description: Request a package to be added to Pacstall repository
+name: Pacscript Request
+description: Use this template to request the creation of a new Pacscript.
 title: "PacReq: name_of_the_package"
 labels: ["package request"]
-body:
-  - type: dropdown
-    id: type
+  - type: input
+    id: package_name
     attributes:
-      label: Types
-      description: Select the types of pacscripts you're requesting
-      multiple: true
-      options:
-        - -bin (Binary release of the package)
-        - -git (Compiled off of the latest commit of the package)
-        - -app (Appimage of the package)
-        - nosuffix (Compiled off of the released source code)
-        - -deb (Debian achieve release of the package)
-  - type: textarea
-    id: url
-    attributes:
-      label: URL
-      description: Provide the URL of the package
+      label: Package name
+      description: Enter the package name (e.g., foo)
     validations:
       required: true
-  - type: textarea
-    id: building
+
+  - type: input
+    id: repology_reference
     attributes:
-      label: Building guide
-      description: Provide the link to the building guide
-  - type: textarea
-    id: context
+      label: Repology reference
+      description: Enter the repology reference (e.g., project: bar)
+      value: project: bar
+    validations:
+      required: true
+
+  - type: input
+    id: architectures
     attributes:
-      label: Additional context
-      description: Anything else you want to tell us about
+      label: Architectures
+      description: Enter the architectures (comma-separated, e.g., any, amd64, arm64)
+      value: any
+    validations:
+      required: true
+
+  - type: input
+    id: upstream_package_version
+    attributes:
+      label: Upstream package version
+      description: Enter the upstream package version (e.g., 1.0.0)
+    validations:
+      required: true
+
+  - type: input
+    id: package_release_version
+    attributes:
+      label: Package release version
+      description: Enter the package release version (e.g., 1)
+      value: 1
+    validations:
+      required: true
+
+  - type: input
+    id: epoch
+    attributes:
+      label: Epoch
+      description: Enter the epoch (e.g., 0)
+      value: 0
+    validations:
+      required: true
+
+  - type: input
+    id: homepage_url
+    attributes:
+      label: Homepage URL
+      description: Enter the homepage URL (e.g., https://foo.com/bar)
+    validations:
+      required: true
+
+  - type: input
+    id: source_urls
+    attributes:
+      label: Source URLs
+      description: Enter the source URLs (comma-separated)
+    validations:
+      required: true
+
+  - type: input
+    id: checksums
+    attributes:
+      label: Checksums
+      description: Enter the checksums (comma-separated, use 'SKIP' if not applicable)
+      value: SKIP
+    validations:
+      required: true
+
+  - type: input
+    id: runtime_dependencies
+    attributes:
+      label: Runtime dependencies
+      description: Enter the runtime dependencies (comma-separated)
+    validations:
+      required: false
+
+  - type: input
+    id: build_time_dependencies
+    attributes:
+      label: Build-time dependencies
+      description: Enter the build-time dependencies (comma-separated)
+    validations:
+      required: false
+
+  - type: input
+    id: testing_dependencies
+    attributes:
+      label: Testing dependencies
+      description: Enter the testing dependencies (comma-separated)
+    validations:
+      required: false
+
+  - type: input
+    id: optional_dependencies
+    attributes:
+      label: Optional dependencies
+      description: Enter the optional dependencies (comma-separated, format: pkg: description)
+    validations:
+      required: false
+
+  - type: textarea
+    id: package_description
+    attributes:
+      label: Package description
+      description: Enter the package description
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: Enter the license (e.g., LGPL-2.1-or-later)
+      value: LGPL-2.1-or-later
+    validations:
+      required: true
+
+  - type: input
+    id: maintainer
+    attributes:
+      label: Maintainer
+      description: Enter the maintainer (format: Name <email>)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any additional information or special instructions
+    validations:
+      required: false
