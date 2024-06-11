@@ -42,11 +42,11 @@ packer() {
   else
     target="@$(get_tag "${dist}" "${arch}")"
   fi
-  docker run -it --net=host --privileged "ghcr.io/pacstall/${dist}${target}" bash -c "mkdir -p out && cd out && pacstall -PBI ${pkg}"
-  container="$(docker ps -lq)"
-  docker cp "${container}":/home/pacstall/out/. .
-  echo -e "[${BCyan}⌘${NC}] ${BOLD}PACK${NC}: deb for ${BPurple}${pkg}${NC}/${PURPLE}${dist/-/:}${NC}/${CYAN}${arch}${NC} built at ${BGreen}${PWD}${NC}"
-  docker rm "${container}" &> /dev/null
+  docker run --net=host --privileged "ghcr.io/pacstall/${dist}${target}" bash -c "mkdir -p out && cd out && pacstall -PBI ${pkg}" \
+  && container="$(docker ps -lq)" \
+  && docker cp "${container}":/home/pacstall/out/. . \
+  && echo -e "[${BCyan}⌘${NC}] ${BOLD}PACK${NC}: deb for ${BPurple}${pkg}${NC}/${PURPLE}${dist/-/:}${NC}/${CYAN}${arch}${NC} built at ${BGreen}${PWD}${NC}" \
+  && docker rm "${container}" &> /dev/null
 }
 
 packer "${1}" "${2}" "${3}"
