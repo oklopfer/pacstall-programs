@@ -32,7 +32,7 @@ packer() {
     echo "Valid entries: amd64, arm64, all, aarch64, x86_64, any"
     exit 1
   fi
-  if [[ ${dist} != @(debian-{stable,testing,unstable}|ubuntu-{latest,rolling,devel}) ]]; then
+  if [[ ${dist} != @(debian-stable|debian-testing|debian-unstable|ubuntu-latest|ubuntu-rolling|ubuntu-devel) ]]; then
     echo "${dist} is not a supported distro."
     echo "Valid entries: debian-stable, debian-testing, debian-unstable, ubuntu-latest, ubuntu-rolling, ubuntu-devel"
     exit 1
