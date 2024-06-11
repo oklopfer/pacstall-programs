@@ -11,20 +11,20 @@ on:
         required: true
         type: choice
         options:
-          - debian-stable
-          - debian-testing
-          - debian-unstable
           - ubuntu-latest
           - ubuntu-rolling
           - ubuntu-devel
+          - debian-stable
+          - debian-testing
+          - debian-unstable
       architecture:
         description: 'Architecture to build on'
         required: true
         type: choice
         options:
+          - all
           - amd64
           - arm64
-          - all
 
 jobs:
   build:
