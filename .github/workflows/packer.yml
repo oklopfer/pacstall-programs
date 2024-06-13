@@ -56,4 +56,4 @@ jobs:
     - name: Sync to repo
       run: |
         rclone config create backblaze b2 account ${{ secrets.B2_ID }} key ${{ secrets.B2_KEY }}
-        rclone copy out/${{ env.DEBNAME }} backblaze:pacstall/${{ github.event.inputs.distro }}/${{ github.event.inputs.architecture }}/${{ env.DEBNAME }}
+        rclone copy out/${{ env.DEBNAME }} backblaze:pacstall/${{ github.event.inputs.distro }}/${{ github.event.inputs.architecture }}
