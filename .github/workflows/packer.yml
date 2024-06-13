@@ -55,5 +55,5 @@ jobs:
 
     - name: Sync to repo
       run: |
-        rclone config create b2 backblaze application_key ${{ secrets.B2_KEY }} application_key_id ${{ secrets.B2_ID }}
-        rclone copy out/${{ env.DEBNAME }} b2:pacstall/${{ github.event.inputs.distro }}/${{ matrix.architecture }}/${{ env.DEBNAME }}
+        rclone config create backblaze b2 application_key ${{ secrets.B2_KEY }} application_key_id ${{ secrets.B2_ID }}
+        rclone copy out/${{ env.DEBNAME }} backblaze:pacstall/${{ github.event.inputs.distro }}/${{ matrix.architecture }}/${{ env.DEBNAME }}
