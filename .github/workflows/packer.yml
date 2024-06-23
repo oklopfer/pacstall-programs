@@ -37,8 +37,12 @@ jobs:
     - name: Set up docker on macos
       if: github.event.inputs.architecture == 'arm64'
       run: |
-        brew install docker
-        colima start
+          brew install --overwrite python@3.11
+          brew install docker docker-compose lima
+          sudo rm -f /usr/local/bin/2to3*
+          brew install --overwrite mysql-client || true
+          brew install colima
+          colima start
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v3
