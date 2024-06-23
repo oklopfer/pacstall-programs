@@ -34,6 +34,12 @@ jobs:
     - name: Init
       uses: actions/checkout@v4
 
+    - name: Set up docker on macos
+      if: github.event.inputs.architecture == 'arm64'
+      run: |
+        brew install docker
+        colima start
+
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v3
 
