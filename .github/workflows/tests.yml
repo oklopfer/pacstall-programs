@@ -161,6 +161,9 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Capture Job Status
         if: ${{ always() }}
         run: |
@@ -169,13 +172,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ env.SANITIZED_OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   test-on-debian:
     strategy:
@@ -301,6 +304,9 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Capture Job Status
         if: ${{ always() }}
         run: |
@@ -309,13 +315,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ env.SANITIZED_OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   update-pr:
     runs-on: ubuntu-latest
