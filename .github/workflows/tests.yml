@@ -335,9 +335,10 @@ jobs:
       - name: Aggregate and Update PR Description
         run: |
           STATUS_SUMMARY=""
-          for FILE in */*.txt; do
+          for FILE in job-status*/*.txt; do
             STATUS=$(cat $FILE)
-            STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${STATUS}"
+            STATUS_SUMMARY="${STATUS_SUMMARY}
+            - ${STATUS}"
           done
           
           PR_DESCRIPTION=$(gh pr view ${{ github.event.pull_request.number }} --json body -q ".body")
