@@ -335,7 +335,7 @@ jobs:
       - name: Aggregate and Update PR Description
         run: |
           STATUS_SUMMARY=""
-          for FILE in *.txt; do
+          for FILE in */*.txt; do
             STATUS=$(cat $FILE)
             STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${STATUS}"
           done
