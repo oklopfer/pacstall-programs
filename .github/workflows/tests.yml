@@ -41,6 +41,9 @@ jobs:
               - 'packages/*/*.pacscript'
       - id: files
         uses: Ana06/get-changed-files@v2.3.0
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -161,9 +164,6 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
-      - name: Sanitize OS Name
-        id: sanitize
-        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Capture Job Status
         if: ${{ always() }}
         run: |
@@ -210,6 +210,9 @@ jobs:
               - 'packages/*/*.pacscript'
       - id: files
         uses: Ana06/get-changed-files@v2.3.0
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -304,9 +307,6 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
-      - name: Sanitize OS Name
-        id: sanitize
-        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Capture Job Status
         if: ${{ always() }}
         run: |
