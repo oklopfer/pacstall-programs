@@ -394,7 +394,7 @@ function srcinfo.match_pkg() {
     var="${var//./_}"
     declare -n output="${var}_array_${search}"
     if [[ -n ${output[*]} ]]; then
-      if [[ ${search} == "pkgbase" ]]; then
+      if [[ ${search} == "pkgbase" && ${var} == *"_array_pkgbase" ]]; then
         echo "pkgbase:${output[0]}"
       elif [[ ${search} == "pkgname" || ${var}_array_${search} == "srcinfo_${pkg}_array_${search}" ]]; then
         printf '%s\n' "${output[@]}"
