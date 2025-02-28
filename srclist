@@ -10803,12 +10803,13 @@ pkgbase = rhino-pkg-git
 	pkgver = 0.1.2
 	pkgrel = 2
 	pkgdesc = Rhino-pkg wrapper script
-	arch = all
-	depends = gettext
+	arch = amd64
+	arch = arm64
 	makedepends = make
 	makedepends = gettext
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/rhino-pkg.git
+	depends_debian_arm64 = gettext
 
 pkgname = rhino-pkg-git
 ---

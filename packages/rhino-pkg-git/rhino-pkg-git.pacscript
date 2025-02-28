@@ -1,11 +1,11 @@
 pkgname="rhino-pkg-git"
 source=("https://github.com/rhino-linux/rhino-pkg.git")
-arch=("all")
+arch=("amd64" "arm64")
 pkgver="0.1.2"
 pkgrel="2"
 gives="rhino-pkg"
 makedepends=("make" "gettext")
-depends=("gettext")
+depends_debian_arm64=("gettext")
 pkgdesc="Rhino-pkg wrapper script"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
