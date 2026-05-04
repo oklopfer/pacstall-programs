@@ -1,6 +1,6 @@
 pkgbase = legcord-deb
 	gives = legcord
-	pkgver = 1.1.5
+	pkgver = 1.2.2
 	pkgdesc = Custom client designed to enhance your Discord experience while keeping everything lightweight
 	arch = arm64
 	arch = amd64
@@ -16,9 +16,9 @@ pkgbase = legcord-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: legcord
-	source_arm64 = https://github.com/Legcord/Legcord/releases/download/v1.1.5/Legcord-1.1.5-linux-arm64.deb
-	sha256sums_arm64 = 6e512d5c94fa96cf56fea877a12584eb6b0ce224d4d92e40ae9a7f71685e3b4a
-	source_amd64 = https://github.com/Legcord/Legcord/releases/download/v1.1.5/Legcord-1.1.5-linux-amd64.deb
-	sha256sums_amd64 = 9268ff02a62ffaa3350f2153e464174b88eea65044a0f7b1b3c8ec01b4b6b929
+	source_arm64 = https://github.com/Legcord/Legcord/releases/download/v1.2.2/Legcord-1.2.2-linux-arm64.deb
+	sha256sums_arm64 = 77f82df4ac2ccea42c4d8d0eb81f3195e8a2d012720522886438486938851227
+	source_amd64 = https://github.com/Legcord/Legcord/releases/download/v1.2.2/Legcord-1.2.2-linux-amd64.deb
+	sha256sums_amd64 = c2fcf7b6855874d807887b1375c6b05cc7fdd492fb78c5dc23269e3688929d8f
 
 pkgname = legcord-deb

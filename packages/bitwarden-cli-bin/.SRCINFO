@@ -1,13 +1,13 @@
 pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
-	pkgver = 2025.7.0
+	pkgver = 2026.1.0
 	pkgdesc = Bitwarden's command-line interface - Binary
 	arch = amd64
 	breaks = bitwarden-cli-git
 	replaces = bitwarden-cli
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bitwarden-cli
-	source = https://github.com/bitwarden/clients/releases/download/cli-v2025.7.0/bw-linux-2025.7.0.zip
-	sha256sums = b0bdaaa1f77d8dbf304e37403fa57a54aa1dafbe7c660d120ad67f286c174adf
+	source = https://github.com/bitwarden/clients/releases/download/cli-v2026.1.0/bw-linux-2026.1.0.zip
+	sha256sums = 1d7b44c94b17a0a6c1264ba529f94b8b50fe059ab08d20aa5a5cbfdd25084aab
 
 pkgname = bitwarden-cli-bin

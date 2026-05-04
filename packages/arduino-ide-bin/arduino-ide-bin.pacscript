@@ -1,18 +1,18 @@
 pkgname="arduino-ide-bin"
 gives="arduino-ide"
 arch=("amd64")
-pkgver="2.3.6"
+pkgver="2.3.8"
 repology=("project: arduino")
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 source=(
   "@${pkgname}~${pkgver}::https://downloads.arduino.cc/${gives}/${gives}_${pkgver}_Linux_64bit.zip"
-  "arduino.svg::https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
+  "arduino.svg::https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
 )
 pkgdesc="An open-source IDE that makes it easy to write code and upload it to Arduino boards"
 sha256sums=(
-  "33bf2cb868abf92b3d160f7433dcd6348cec1c9e633b5c9e1c761f630f87b82b"
+  "226932e402fbdd6763f3988257cf0f69050934f92cdd01ede9dab99e1a238bdb"
   "SKIP"
   "SKIP"
 )

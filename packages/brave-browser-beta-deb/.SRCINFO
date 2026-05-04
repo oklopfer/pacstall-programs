@@ -1,6 +1,6 @@
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.82.139
+	pkgver = 1.90.99
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -11,7 +11,7 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.82.139/brave-browser-beta_1.82.139_amd64.deb
-	sha256sums = b52a9fa193a1758c58363c5e87fb442dc65737fe6252061c30dd84ec8c01041c
+	source = https://github.com/brave/brave-browser/releases/download/v1.90.99/brave-browser-beta_1.90.99_amd64.deb
+	sha256sums = e74e42ff9b68c7e4e01ac8c8b644ff657a34e4e07dc342f16faf273d9a6b392a
 
 pkgname = brave-browser-beta-deb

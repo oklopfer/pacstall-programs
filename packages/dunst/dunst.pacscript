@@ -1,10 +1,10 @@
 pkgname="dunst"
 arch=("any")
-pkgver="1.12.2"
+pkgver="1.13.1"
 source=("@${pkgname}~${pkgver}::https://github.com/dunst-project/dunst/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("libdbus-1-dev" "libxinerama1" "libxrandr2" "libxss1" "libxss-dev" "libgtk-3-dev" "libnotify-dev")
 pkgdesc="A highly configurable and lightweight notification daemon"
-sha256sums=("8f7664bd4e6083e9604e282145fe5b8dee7655fa0b099a5b682a2549e1f33d32")
+sha256sums=("a578e5c2cdb546187355c710f1aa84c472e6e23828e692fe1cb0ebb9635b11a6")
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: ${pkgname}")
 

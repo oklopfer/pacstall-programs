@@ -1,6 +1,6 @@
 pkgname="hamclock"
 arch=("any")
-pkgver="4.20"
+pkgver="4.22"
 source=(
   "https://github.com/fang64/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
   "hamclock.desktop"
@@ -11,7 +11,7 @@ breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock" "${breaks[@]}")
 pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
 sha256sums=(
-  "612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f"
+  "3d577561eaa716ebd1b941e3e6abb4763c9a7f68c5f8917b8adb8cf7dd74fa06"
   "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
 )
 maintainer=("Roy Williams <fang64@gmail.com>")
@@ -25,6 +25,9 @@ prepare() {
   # Set NO_UPGRADE definition this will disable updates
   sed -i '18 i CXXFLAGS += -DNO_UPGRADE' Makefile
 
+  # Change default backend server to hamclock.com instead of clearskyinstitute.com
+  # Elwood Downey has passed away and the service is going to be shutdown in June 2026.
+  sed -i 's/clearskyinstitute.com/hamclock.com/g' wifi.cpp
 }
 
 build() {
@@ -38,6 +41,6 @@ package() {
   cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
   cp hamclock.png "${pkgdir}/usr/share/icons"
   cp LICENSE "${pkgdir}/usr/share/licenses/${gives}"
-  cp hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
+  cp ../../hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
   chmod -x "${pkgdir}/usr/share/applications/hamclock.desktop"
 }
